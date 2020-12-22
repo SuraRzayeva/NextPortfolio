@@ -13,6 +13,7 @@ transition: 0.3s ease all;
 overflow: hidden;
 margin: 0 auto;
 padding: 0 10rem;
+position: fixed;
 display: flex;
 flex-direction: column;
 justify-content: center;
@@ -55,41 +56,22 @@ opacity: ${(props) => (props.menuActive ? 0.3 : 1)};
     width: 100%;
     height: 5px;
     background: ${detailColor2};
-    border-radius: 10px;
-    position: relative;
+    border-radius: 10px;z
+  }
 
-
-    .circle {
+  .circle {
+      transition: .5s ease all;
+      left: ${(props) => `${props.mouseX}px`};
+      top: ${(props) => `${props.mouseY}px`};
       position: absolute;
-      right: -15px;
-      top: 0;
-      width: 0;
-      height: 0;
-      border-radius: 50%;
-      transition: .2s ease all;
-      animation: rotateCircle 3s 1s ease infinite;
-      backface-visibility: visible;
-      z-index: 10;
+      border: solid 2px ${(props) => (props.borderColor ? detailColor2 : black)};
+	    width: ${(props) => `${props.circleSize}rem`}; 
+	    height: ${(props) => `${props.circleSize}rem`}; 
+      border-radius: 50%;  
     } 
-
-  }
-  :hover .circle {
-      background: transparent;
-      border: 2px solid ${black};
-      width: 100px;
-      height: 100px;
-      right: -20px;
-      top: -55px;
-      cursor: pointer;
-    }
 }
 
-@keyframes rotateCircle {
-  from {
-    transform: rotate(0);
-  }   to {
-    transform: rotateY(360deg);
-  }
-}
+
+
 
 `

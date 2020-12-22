@@ -9,7 +9,7 @@ export const HeaderStyle = Styled.div`
   outline: none;
 }
 
-z-index: 100;
+z-index: 200;
 position: absolute;
 width: 100%;
 padding-top: 3rem;
@@ -24,7 +24,7 @@ transition: 0.3s ease all;
     flex-direction: column;
     justify-content: center;
     padding-left: 10rem;
-
+    cursor: pointer;
 
 
     .title {
@@ -69,21 +69,31 @@ transition: 0.3s ease all;
             padding: 0;
             margin: 0;
             font-size: 1.6rem;
+            transition: .3s ease all;
         }
 
         h4:after {
             content: '';
             width: 0;
+            height: 0;
+            border-radius: 50%;
             position: absolute;
-            left: 0;
-            bottom: -1rem;
-            height: .3rem;
-            background: ${detailColor2};
-            transition: .2s ease all;
+            top: 50%;
+            left:50%;
+            opacity: 0;
+            transform: translate(-50%,-50%);
+            transition: .3s ease all;
         }
 
         :hover h4:after {
-            width: 100%;
+            width: 4rem;
+            height: 4rem;
+            border: 2px solid ${detailColor2};
+            opacity: 1;
+        }
+
+        :hover h4 {
+            font-size: 1.75rem;
         }
     }
 
@@ -102,10 +112,21 @@ transition: 0.3s ease all;
             margin-top: .4rem;
             background: ${black};
             border-radius: 0.25rem;
+            transition: .3s ease all;
         }
         .line2 {
             width: 50%;
         }
+
+        .line1x {
+            transform: rotate(-45deg) translate(-5%,100%);
+            
+        }
+        .line2x {
+            width: 80%;
+            transform: rotate(45deg) translate(-5%,-100%);
+        }
+
     }
 }
 
@@ -130,6 +151,16 @@ transition: 0.3s ease all;
         button {
             margin-right: 1rem;
         }
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .logo-section {
+        padding-left: 2rem;
+    }
+    
+    .nav-section {
+        padding-right: 2rem;
     }
 }
 

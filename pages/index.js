@@ -1,13 +1,14 @@
-import { useContext } from 'react'
+import { useContext, useEffect, useState } from 'react'
 import Context from '../context/Context'
 import { IndexStyle } from '../style/pageStyles/IndexStyle'
 
 export default function Home() {
   const { menuActive, setMenuActive, englishActive } = useContext(Context)
 
-  const openMenu = () => {
+  const toggleMenu = () => {
     setMenuActive((prev) => !prev)
   }
+
   return (
     <IndexStyle menuActive={menuActive}>
       <div className="hero">
@@ -20,11 +21,9 @@ export default function Home() {
       </div>
       <div className="line-block">
         <div className="start-here">
-          <button onClick={openMenu}>{englishActive ? 'Start here' : "Los geht's"}</button>
+          <button onClick={toggleMenu}>{englishActive ? 'Start here' : "Los geht's"}</button>
         </div>
-        <div className="line">
-          <div className="circle" onClick={openMenu}></div>
-        </div>
+        <div className="line"></div>
       </div>
     </IndexStyle>
   )
