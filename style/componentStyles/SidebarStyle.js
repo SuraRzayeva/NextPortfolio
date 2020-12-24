@@ -52,10 +52,15 @@ ul {
 }
 
 @media screen and (max-width: 850px) {
-    position: unset;
-    width: 100%;
-    height: unset;
-    padding: 0 10rem;
+    position: ${(props) => (props.homeActive ? 'absolute' : 'unset')};
+    bottom: 0;
+    top: unset;
+    right: unset;
+    bottom: 3.5rem;
+    display: flex;
+    justify-content: ${(props) => (props.homeActive ? 'flex-end' : 'flex-start')}
+    width: 100vw;
+    padding: 0 5rem;
     transform: unset;
 
 
@@ -63,12 +68,24 @@ ul {
         display: flex;
         padding: 0;
         align-items: center;
+        width: 40vw;
+        justify-content: space-between;
         
 
         li {
-            width: 2.5rem;
+            width: 1.5rem;
             margin: 0;
-            margin-right: 3rem;
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    bottom: 3.5rem;
+    ul {
+        width: 50vw;
+
+        li {
+            width: 1.7rem;
         }
     }
 }

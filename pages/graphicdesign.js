@@ -1,5 +1,7 @@
 import { GraphicDesignStyle } from '../style/pageStyles/GraphicDesignStyle'
 import Subnav from '../components/Subnav'
+import { useContext } from 'react'
+import Context from '../context/Context'
 
 const GraphicDesign = () => {
   return (

@@ -11,7 +11,7 @@ padding: 0 10rem;
 
 ul {
     display: flex;
-    padding: 0;
+    padding: 0; 
     
     li {
         margin-right: 10rem;
@@ -31,6 +31,54 @@ ul {
         height: .2rem;
         background: ${detailColor2};
         transition: .2s ease all;
+    }
+
+    .web:after {
+        width: ${(props) => (props.uiuxActivePage === 1 ? '100%' : 0)}
+    }
+
+    .app:after {
+        width: ${(props) => (props.uiuxActivePage === 2 ? '100%' : 0)}
+    }
+
+    .icon:after {
+        width: ${(props) => (props.uiuxActivePage === 3 ? '100%' : 0)}
+    }
+
+    .svg:after {
+        width: ${(props) => (props.uiuxActivePage === 4 ? '100%' : 0)}
+    }
+
+    .marketing:after {
+        width: ${(props) => (props.graphicActivePage === 1 ? '100%' : 0)}
+    }
+
+    .illustration:after {
+        width: ${(props) => (props.graphicActivePage === 2 ? '100%' : 0)}
+    }
+
+    .character:after {
+        width: ${(props) => (props.graphicActivePage === 3 ? '100%' : 0)}
+    }
+
+    .lineart:after {
+        width: ${(props) => (props.graphicActivePage === 4 ? '100%' : 0)}
+    }
+
+    .professional:after {
+        width: ${(props) => (props.blogActivePage === 1 ? '100%' : 0)}
+    }
+
+    .philosophical:after {
+        width: ${(props) => (props.blogActivePage === 2 ? '100%' : 0)}
+    }
+
+    .development:after {
+        width: ${(props) => (props.projectsActivePage === 1 ? '100%' : 0)}
+    }
+
+    .design:after {
+        width: ${(props) => (props.projectsActivePage === 2 ? '100%' : 0)}
     }
 
     li:hover:after {

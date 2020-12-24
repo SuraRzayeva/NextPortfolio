@@ -3,7 +3,11 @@ import Context from '../context/Context'
 import { IndexStyle } from '../style/pageStyles/IndexStyle'
 
 export default function Home() {
-  const { menuActive, setMenuActive, englishActive } = useContext(Context)
+  const { menuActive, setMenuActive, englishActive, setHomeActive, homeActive } = useContext(Context)
+
+  useEffect(() => {
+    setHomeActive(true)
+  }, [])
 
   const toggleMenu = () => {
     setMenuActive((prev) => !prev)

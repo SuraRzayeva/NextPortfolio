@@ -3,6 +3,7 @@ import { Colors } from '../designSpecs'
 const { black, detailColor, detailColor2 } = Colors
 
 export const IndexStyle = Styled.div`
+
 *:active, *:focus {
   outline: none;
 }
@@ -46,7 +47,7 @@ opacity: ${(props) => (props.menuActive ? 0.3 : 1)};
     padding: 0;
     margin-bottom: 10%;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 1.4rem;
     cursor: pointer;
     color: ${black};
   }
@@ -54,24 +55,40 @@ opacity: ${(props) => (props.menuActive ? 0.3 : 1)};
 
   .line {
     width: 100%;
-    height: 5px;
+    height: .5rem;
     background: ${detailColor2};
-    border-radius: 10px;z
+    border-radius: 1rem;
   }
 
-  .circle {
-      transition: .5s ease all;
-      left: ${(props) => `${props.mouseX}px`};
-      top: ${(props) => `${props.mouseY}px`};
-      position: absolute;
-      border: solid 2px ${(props) => (props.borderColor ? detailColor2 : black)};
-	    width: ${(props) => `${props.circleSize}rem`}; 
-	    height: ${(props) => `${props.circleSize}rem`}; 
-      border-radius: 50%;  
-    } 
 }
 
 
+@media screen and (max-width: 850px) {
 
+padding: 0 5rem;
+
+.hero {
+  .hero-text {
+    font-size: 9rem;
+    line-height: 9rem;
+  }
+}
+.line-block {
+  width: 75%;
+}
+}
+
+@media screen and (max-width: 450px) {
+
+.hero {
+  .hero-text {
+    font-size: 6rem;
+    line-height: 6rem;
+  }
+}
+.line-block {
+  width: 90%;
+}
+}
 
 `

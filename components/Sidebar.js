@@ -1,9 +1,13 @@
 import { SidebarStyle } from '../style/componentStyles/SidebarStyle'
 import Link from 'next/link'
+import { useContext } from 'react'
+import Context from '../context/Context'
 
 const Sidebar = () => {
+  const { homeActive, setHomeActive } = useContext(Context)
+
   return (
-    <SidebarStyle>
+    <SidebarStyle homeActive={homeActive}>
       <ul>
         <Link href="">
           <li>
