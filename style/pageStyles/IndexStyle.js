@@ -9,7 +9,7 @@ export const IndexStyle = Styled.div`
 }
 
 width: 100%;
-height: 100vh;
+height: 100%;
 transition: 0.3s ease all;
 overflow: hidden;
 margin: 0 auto;
@@ -69,8 +69,8 @@ padding: 0 5rem;
 
 .hero {
   .hero-text {
-    font-size: 9rem;
-    line-height: 9rem;
+    font-size: 12rem;
+    line-height: 12rem;
   }
 }
 .line-block {
@@ -80,10 +80,12 @@ padding: 0 5rem;
 
 @media screen and (max-width: 450px) {
 
+  padding: 0 3rem;
+
 .hero {
   .hero-text {
-    font-size: 6rem;
-    line-height: 6rem;
+    font-size: 6.5rem;
+    line-height: 6.5rem;
   }
 }
 .line-block {

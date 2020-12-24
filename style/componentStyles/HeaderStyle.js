@@ -132,9 +132,19 @@ transition: 0.3s ease all;
 
 //------------------------------------------------------------------------------------------------------ media queries
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 850px) {
     .logo-section {
         padding-left: 5rem;
+    }
+    .nav-section {
+        padding-right: 5rem;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+    .logo-section {
+        padding-left: 3rem;
 
         .profession {
 
@@ -146,10 +156,10 @@ transition: 0.3s ease all;
     }
     
     .nav-section {
-        padding-right: 5rem;
+        padding-right: 3rem;
 
         button {
-            margin-right: 1rem;
+            margin-right: .5rem;
         }
     }
 }

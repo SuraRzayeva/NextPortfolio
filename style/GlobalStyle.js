@@ -19,7 +19,29 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
-    background-color: ${Colors.white}
+    background-color: ${Colors.white};
+    ${(props) => (props.scroll ? 'overflow: hidden;' : null)}
+}
+
+@media screen and (min-width: 1800px) {
+    html {
+        font-size: 70%;
+    }
+}
+
+
+@media screen and (max-width: 1300px) {
+    
+    html {
+        font-size: 59%;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    
+    html {
+        font-size: 55%;
+    }
 }
 
 @media screen and (max-width: 450px) {

@@ -9,8 +9,16 @@ const ContextWrapper = ({ children }) => {
   const [graphicActivePage, setGraphicActivePage] = useState(1)
   const [blogActivePage, setBlogActivePage] = useState(1)
   const [projectsActivePage, setProjectsActivePage] = useState(1)
+  const [overlay, setOverlay] = useState({
+    status: false,
+    data: '',
+  })
 
-  return <Context.Provider value={{ menuActive, setMenuActive, englishActive, setEnglishActive, homeActive, setHomeActive, uiuxActivePage, setUiuxActivePage, graphicActivePage, setGraphicActivePage, blogActivePage, setBlogActivePage, projectsActivePage, setProjectsActivePage }}>{children}</Context.Provider>
+  return (
+    <Context.Provider value={{ menuActive, setMenuActive, englishActive, setEnglishActive, homeActive, setHomeActive, uiuxActivePage, setUiuxActivePage, graphicActivePage, setGraphicActivePage, blogActivePage, setBlogActivePage, projectsActivePage, setProjectsActivePage, overlay, setOverlay }}>
+      {children}
+    </Context.Provider>
+  )
 }
 
 export default ContextWrapper

@@ -87,14 +87,14 @@ ul {
 }
 
 @media screen and (max-width: 850px) {
-   
+    padding:0 5rem;
 
     ul {
         width: 100%;
         justify-content: space-between;
         li {
             margin: 0;
-            font-size: 1rem;
+            font-size: 1.5rem;
             span {
                 display: none;
             }
@@ -103,7 +103,7 @@ ul {
 }
 
 @media screen and (max-width: 450px) {
-    padding:0 5rem;
+    padding:0 3rem;
 }
 
 @media screen and (max-width: 350px) {

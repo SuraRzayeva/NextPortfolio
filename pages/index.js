@@ -7,6 +7,7 @@ export default function Home() {
 
   useEffect(() => {
     setHomeActive(true)
+    menuActive && setMenuActive(false)
   }, [])
 
   const toggleMenu = () => {

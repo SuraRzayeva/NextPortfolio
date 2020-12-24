@@ -3,7 +3,7 @@ import Styled from 'styled-components'
 export const FooterStyle = Styled.div`
 
 width: 100%;
-position: absolute;
+position: ${(props) => (props.homeActive ? 'absolute' : 'unset')};
 bottom: 0;
 left: 0;
 
@@ -20,7 +20,12 @@ p {
     p {
         padding-left: 5rem;
     }
+}
 
+@media screen and (max-width: 450px) {
+    p {
+        padding-left: 3rem;
+    }
 }
 
 

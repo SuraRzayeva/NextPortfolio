@@ -68,12 +68,12 @@ ul {
         display: flex;
         padding: 0;
         align-items: center;
-        width: 40vw;
+        width: 35vw;
         justify-content: space-between;
         
 
         li {
-            width: 1.5rem;
+            width: 2rem;
             margin: 0;
         }
     }
@@ -81,6 +81,7 @@ ul {
 
 @media screen and (max-width: 450px) {
     bottom: 3.5rem;
+    padding: 0 3rem;
     ul {
         width: 50vw;
 
