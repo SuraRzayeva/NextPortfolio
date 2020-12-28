@@ -8,7 +8,7 @@ const GlobalStyle = createGlobalStyle`
     list-style: none;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     user-select: none;
-    ${(props) => (props.overlay ? 'overflow: hidden;' : null)}
+
 }
 
 html {
@@ -21,6 +21,7 @@ body {
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
     background-color: ${Colors.white};
+    overflow-y: ${(props) => (props.overlay ? 'hidden' : 'scroll')}
 }
 
 @media screen and (min-width: 1800px) {

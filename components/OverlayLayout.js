@@ -8,8 +8,10 @@ const OverlayLayout = () => {
 
   return (
     <OverlayStyle onClick={() => setOverlay(false)}>
-      <div className="container">
-        <img src={data} alt="" />
+      <div className="wrapper">
+        <div className="container">
+          <img src={data} alt="" />
+        </div>
       </div>
     </OverlayStyle>
   )

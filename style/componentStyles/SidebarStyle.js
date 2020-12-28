@@ -51,7 +51,7 @@ ul {
     }
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 1000px) {
     position: ${(props) => (props.homeActive ? 'absolute' : 'unset')};
     bottom: 0;
     top: unset;

@@ -1,6 +1,6 @@
 import Styled from 'styled-components'
 
-export const WebDesignStyle = Styled.div`
+export const IconDesignStyle = Styled.div`
 
 width: 90%;
 padding: 0 10rem;

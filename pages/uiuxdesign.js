@@ -4,9 +4,11 @@ import { useContext, useEffect } from 'react'
 import Context from '../context/Context'
 import WebDesign from '../components/subpages/WebDesign'
 import OverlayLayout from '../components/OverlayLayout'
+import AppDesign from '../components/subpages/AppDesign'
+import IconDesign from '../components/subpages/IconDesign'
 
 const UiUxDesign = () => {
-  const { homeActive, setHomeActive, uiuxActivePage, overlay, setOverlay } = useContext(Context)
+  const { homeActive, setHomeActive, uiuxActivePage, overlay, setOverlay, menuActive } = useContext(Context)
   const { status } = overlay
 
   useEffect(() => {
@@ -14,13 +16,13 @@ const UiUxDesign = () => {
   }, [])
 
   return (
-    <UiuxdesignStyle>
+    <UiuxdesignStyle menuActive={menuActive}>
       {status && <OverlayLayout />}
       <Subnav uiux={true} />
       <div className="container">
         {uiuxActivePage === 1 && <WebDesign />}
-        <div className="div">{uiuxActivePage === 2 && 'app active'}</div>
-        <div className="div">{uiuxActivePage === 3 && 'icon active'}</div>
+        <div className="div">{uiuxActivePage === 2 && <AppDesign />}</div>
+        <div className="div">{uiuxActivePage === 3 && <IconDesign />}</div>
         <div className="div">{uiuxActivePage === 4 && 'svg active'}</div>
       </div>
     </UiuxdesignStyle>

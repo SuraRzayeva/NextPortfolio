@@ -10,16 +10,16 @@ const Subnav = ({ uiux, graphic, blog, projects }) => {
       {uiux ? (
         <ul>
           <li className="web" onClick={() => setUiuxActivePage(1)}>
-            Web Design
+            Web <span>Design</span>
           </li>
           <li className="app" onClick={() => setUiuxActivePage(2)}>
-            App Design
+            App <span>Design</span>
           </li>
           <li className="icon" onClick={() => setUiuxActivePage(3)}>
-            Iconography
+            Icon <span> Design</span>
           </li>
           <li className="svg" onClick={() => setUiuxActivePage(4)}>
-            SVG Animations
+            SVG <span>Animations</span>
           </li>
         </ul>
       ) : null}

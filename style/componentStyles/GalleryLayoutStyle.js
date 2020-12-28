@@ -1,13 +1,45 @@
 import Styled from 'styled-components'
 
-export const GalleryBoxStyle = Styled.div`
+export const GalleryLayoutStyle = Styled.div`
 
-        display: flex;
-        overflow: hidden;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-        border-radius: 1rem;
+width: 100%;
+
+.grid {
+    width: 100%;
+
+
+.my-masonry-grid {
+width: 100%;
+  display: flex;
+justify-content: center;
+margin: 0;
+padding: 0;
+align-items: flex-start;
+  width: auto;
+}
+
+ 
+/* Style your items */
+.my-masonry-grid_column > div { /* change div to reference your elements you put in <Masonry> */
+  background: grey;
+  margin-bottom: 3%;
+}
+
+
+.gallery-box {
+
+    width: 97%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 1rem;
+    margin-right: 3rem;
+    background: gray;
+
+        img {
+            width: 100%;
+        }
         
         :hover .overlay{
             opacity: 1;
@@ -15,7 +47,8 @@ export const GalleryBoxStyle = Styled.div`
 
         .overlay {
                 position: absolute;
-                width: 100%;
+                min-width: 100%;
+                max-width: 100%;
                 height: 60%;
                 bottom: 0;
                 left:0;
@@ -53,5 +86,15 @@ export const GalleryBoxStyle = Styled.div`
 
                     }
                 }
+
+
+            }  
+    }
+           
+}
+
+@media screen and (max-width: 450px) {
+    pointer-events: none;
+}
 
 `

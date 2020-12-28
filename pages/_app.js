@@ -19,7 +19,7 @@ function MyApp({ Component, pageProps }) {
       <Sidebar />
       <Footer />
       <Menu />
-      <GlobalStyle overlay={overlay} />
+      <GlobalStyle overlay={overlay.status} />
     </ContextWrapper>
   )
 }
