@@ -1,16 +1,25 @@
-import { GraphicDesignStyle } from '../style/pageStyles/GraphicDesignStyle'
-import Subnav from '../components/Subnav'
+import { GalleryPageStyle } from '../style/pageStyles/GalleryPageStyle'
+import Subnav from '../components/atoms/Subnav'
 import { useContext } from 'react'
 import Context from '../context/Context'
+import OverlayLayout from '../components/atoms/OverlayLayout'
+import PosterDesign from '../components/subpages/GraphicGallery/PosterDesign'
 
 const GraphicDesign = () => {
+  const { graphicActivePage, overlay, menuActive } = useContext(Context)
+  const { status } = overlay
+
   return (
-    <GraphicDesignStyle>
+    <GalleryPageStyle menuActive={menuActive}>
+      {status && <OverlayLayout />}
       <Subnav graphic={true} />
       <div className="container">
-        <div className="grid"></div>
+        {graphicActivePage === 1 && <PosterDesign />}
+        {graphicActivePage === 2 && 'heyyo'}
+        {graphicActivePage === 3 && 'huuuuu'}
+        {graphicActivePage === 4 && 'svg active'}
       </div>
-    </GraphicDesignStyle>
+    </GalleryPageStyle>
   )
 }
 

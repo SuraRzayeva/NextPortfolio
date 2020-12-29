@@ -1,6 +1,6 @@
 import { useContext, useState } from 'react'
-import Context from '../context/Context'
-import { HeaderStyle } from '../style/componentStyles/HeaderStyle'
+import Context from '../../context/Context'
+import { HeaderStyle } from '../../style/componentStyles/HeaderStyle'
 import Link from 'next/link'
 
 const Header = () => {

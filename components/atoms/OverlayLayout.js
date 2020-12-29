@@ -1,6 +1,6 @@
-import { OverlayStyle } from '../style/componentStyles/OverlayStyle'
+import { OverlayStyle } from '../../style/componentStyles/OverlayStyle'
 import { useContext, useEffect } from 'react'
-import Context from '../context/Context'
+import Context from '../../context/Context'
 
 const OverlayLayout = () => {
   const { overlay, setOverlay } = useContext(Context)

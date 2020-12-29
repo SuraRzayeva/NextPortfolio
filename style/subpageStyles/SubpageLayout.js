@@ -1,6 +1,6 @@
 import Styled from 'styled-components'
 
-export const AppDesignStyle = Styled.div`
+export const SubpageLayout = Styled.div`
 
 width: 90%;
 padding: 0 10rem;

@@ -91,10 +91,11 @@ ul {
 
     ul {
         width: 100%;
-        justify-content: space-between;
+        
         li {
             margin: 0;
             font-size: 1.5rem;
+            margin-right: 5rem;
             span {
                 display: none;
             }

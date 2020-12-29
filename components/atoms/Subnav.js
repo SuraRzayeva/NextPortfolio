@@ -1,6 +1,6 @@
-import { SubnavStyle } from '../style/componentStyles/SubnavStyle'
+import { SubnavStyle } from '../../style/componentStyles/SubnavStyle'
 import { useContext } from 'react'
-import Context from '../context/Context'
+import Context from '../../context/Context'
 
 const Subnav = ({ uiux, graphic, blog, projects }) => {
   const { uiuxActivePage, setUiuxActivePage, graphicActivePage, setGraphicActivePage, blogActivePage, setBlogActivePage, projectsActivePage, setProjectsActivePage } = useContext(Context)

@@ -1,6 +1,6 @@
-import { GalleryLayoutStyle } from '../../../style/componentStyles/GalleryLayoutStyle'
+import { GalleryLayoutStyle } from '../../style/componentStyles/GalleryLayoutStyle'
 import { useContext } from 'react'
-import Context from '../../../context/Context'
+import Context from '../../context/Context'
 import Masonry from 'react-masonry-css'
 
 const Gallery = ({ data }) => {
@@ -8,7 +8,7 @@ const Gallery = ({ data }) => {
 
   const showOverlay = (data) => {
     window.scrollTo(0, 0)
-    setOverlay({ status: true, data: `/Galleries/WebDesign/${data}.jpg` })
+    setOverlay({ status: true, data: data })
   }
 
   const breakpointColumnsObj = {
@@ -23,7 +23,7 @@ const Gallery = ({ data }) => {
       <div className="grid">
         <Masonry breakpointCols={breakpointColumnsObj} className="my-masonry-grid" columnClassName="my-masonry-grid_column">
           {data.map((item) => (
-            <div className="gallery-box" key={item.id} onClick={() => showOverlay(item.id)}>
+            <div className="gallery-box" key={item.id} onClick={() => showOverlay(item.url)}>
               <img src={item.url} />
               <div className="overlay">
                 <div className="title">

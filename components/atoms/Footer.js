@@ -1,6 +1,6 @@
-import { FooterStyle } from '../style/componentStyles/FooterStyle'
+import { FooterStyle } from '../../style/componentStyles/FooterStyle'
 import { useContext } from 'react'
-import Context from '../context/Context'
+import Context from '../../context/Context'
 
 const Footer = () => {
   const { homeActive, setHomeActive } = useContext(Context)

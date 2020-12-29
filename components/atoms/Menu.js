@@ -1,6 +1,6 @@
 import { useContext } from 'react'
-import { MenuStyle } from '../style/componentStyles/MenuStyle'
-import Context from '../context/Context'
+import { MenuStyle } from '../../style/componentStyles/MenuStyle'
+import Context from '../../context/Context'
 import Link from 'next/link'
 
 const Menu = () => {

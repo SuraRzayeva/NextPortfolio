@@ -5,4 +5,5 @@ export const Colors = {
   shadow2: '#FFFFFF',
   detailColor2: '#8BE8CB',
   detailColor: '#888DA7',
+  blackOpa: 'rgb(18, 41, 50, 0.5)',
 }

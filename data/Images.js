@@ -141,3 +141,21 @@ export const IconImages = [
     url: '/Galleries/WebDesign/1.jpg',
   },
 ]
+
+export const PosterImages = [
+  {
+    id: 1,
+    title: 'Zara UI Design',
+    url: '/Galleries/PosterDesign/1.png',
+  },
+  {
+    id: 1,
+    title: 'Zara UI Design',
+    url: '/Galleries/PosterDesign/1.png',
+  },
+  {
+    id: 2,
+    title: 'Yummy Recipes Design',
+    url: '/Galleries/PosterDesign/1.png',
+  },
+]

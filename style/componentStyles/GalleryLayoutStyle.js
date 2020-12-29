@@ -1,4 +1,7 @@
 import Styled from 'styled-components'
+import { Colors } from '../designSpecs'
+
+const { black, shadow1, blackOpa } = Colors
 
 export const GalleryLayoutStyle = Styled.div`
 
@@ -8,7 +11,7 @@ width: 100%;
     width: 100%;
 
 
-.my-masonry-grid {
+.my-masonry-grid { 
 width: 100%;
   display: flex;
 justify-content: center;
@@ -39,6 +42,7 @@ align-items: flex-start;
 
         img {
             width: 100%;
+            box-shadow: 0 0 5px ${blackOpa};
         }
         
         :hover .overlay{
@@ -53,7 +57,7 @@ align-items: flex-start;
                 bottom: 0;
                 left:0;
                 z-index: 10;
-                background: linear-gradient(to top, rgba(0,0,0,.6), transparent);
+                background: linear-gradient(to top, black, transparent);
                 display: flex;
                 justify-content: space-around;
                 align-items: flex-end;

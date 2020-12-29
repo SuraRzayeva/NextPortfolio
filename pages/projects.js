@@ -1,5 +1,5 @@
 import { ProjectsStyle } from '../style/pageStyles/ProjectsStyle'
-import Subnav from '../components/Subnav'
+import Subnav from '../components/atoms/Subnav'
 
 const Projects = () => {
   return (
