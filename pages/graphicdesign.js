@@ -1,13 +1,17 @@
 import { GalleryPageStyle } from '../style/pageStyles/GalleryPageStyle'
 import Subnav from '../components/atoms/Subnav'
-import { useContext } from 'react'
+import { useContext, useEffect } from 'react'
 import Context from '../context/Context'
 import OverlayLayout from '../components/atoms/OverlayLayout'
 import PosterDesign from '../components/subpages/GraphicGallery/PosterDesign'
 
 const GraphicDesign = () => {
-  const { graphicActivePage, overlay, menuActive } = useContext(Context)
+  const { graphicActivePage, overlay, menuActive, setHomeActive } = useContext(Context)
   const { status } = overlay
+
+  useEffect(() => {
+    setHomeActive(false)
+  }, [])
 
   return (
     <GalleryPageStyle menuActive={menuActive}>

@@ -8,7 +8,7 @@ const GlobalStyle = createGlobalStyle`
     list-style: none;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     user-select: none;
-
+    color: ${Colors.black};
 }
 
 html {
@@ -21,7 +21,14 @@ body {
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
     background-color: ${Colors.white};
+    overflow-x: hidden;
     overflow-y: ${(props) => (props.overlay ? 'hidden' : 'scroll')}
+}
+
+button {
+    border-style: none;
+    font-family: 'Montserrat', sans-serif;
+    color: ${Colors.black};
 }
 
 @media screen and (min-width: 1800px) {

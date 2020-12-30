@@ -6,8 +6,8 @@ export default function Home() {
   const { menuActive, setMenuActive, englishActive, setHomeActive, homeActive } = useContext(Context)
 
   useEffect(() => {
-    setHomeActive(true)
-    menuActive && setMenuActive(false)
+    setHomeActive(true) // to stylize the credit and other homepage related design
+    menuActive && setMenuActive(false) // to close the menu when getting back to the homepage clicking on the logo
   }, [])
 
   const toggleMenu = () => {

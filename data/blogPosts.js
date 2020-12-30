@@ -1,10 +1,11 @@
 export const PhilosophicalPosts = [
   {
     id: 1,
-    title: 'People say I have sad eyes.',
+    title: 'They say I have sad eyes.',
     description: 'There is an immense curiosity growing inside me, I cannot stop. When I was a child, the questions were easier to answer. Or maybe I was just too naïve to be convinced with answers deeply rooted in our manmade fictional culture, which is considered an absolute reality… which is...',
     url: '/BlogPosts/post1.jpg',
-    article: `${(
+    date: 'September 13, 2019',
+    article: `
       <div className="content">
         <p>There is an immense curiosity growing inside me, I cannot stop. When I was a child, the questions were easier to answer. Or maybe I was just too naïve to be convinced with answers deeply rooted in our manmade fictional culture, which is considered an absolute reality… which is not.</p>
         <p>Grown-up questions are different… at least if you know which questions to ask. I’m talking about the existential ones, which have no answers. Have you ever thought about that? We are even aware of the fact that those questions will never be answered… at all. </p>
@@ -39,15 +40,15 @@ export const PhilosophicalPosts = [
           Because, as Alain de Botton said, melancholy is not rage or bitterness or a mental illness needs to be cured. It is a noble species of sadness that arises when we are open to the fact that life is inherently difficult for everyone and that suffering and disappointment are at the heart of human experience. It
           is a tender-hearted, calm, dispassionate acknowledgement of how much pain we must inevitably all travel through.
         </p>
-      </div>
-    )}`,
+      </div>`,
   },
   {
     id: 2,
     title: 'We are too loud.',
     description: 'Our complexity is a simple one. Our complexity lies on the basis of everything… or nothing. It’s without masks… without stories… without values… without meaning. It’s just there… as a nice, soft feeling of sadness and… ',
     url: '/BlogPosts/post2.jpg',
-    article: `${(
+    date: 'September 13, 2019',
+    article: `
       <div className="article">
         <p>… can we just stop?</p>
         <p>No, we can’t. We are just a bunch of lost souls, hovering on life… silently, without shadows. Do you know that shadows can’t have shadows? </p>
@@ -88,15 +89,15 @@ export const PhilosophicalPosts = [
         <p>…</p>
         <p>Everyone stopped talking. </p>
         <p>Let’s have a quiet night. Don’t be scared. Everything is ok. </p>
-      </div>
-    )}`,
+      </div>`,
   },
   {
     id: 3,
     title: 'Time to free yourself.',
     description: 'Let’s play a game. We ask questions… and when it starts to hurt, we drink. I start. Why do people think that ‘happiness’ is equal to...',
     url: '/BlogPosts/post3.jpg',
-    article: `${(
+    date: 'September 13, 2019',
+    article: `
       <div className="article">
         <p>It’s time to wake up, sweetheart, you’re missing life.</p>
         <p>Let’s play a game. We ask questions… and when it starts to hurt, we drink. </p>
@@ -151,15 +152,15 @@ export const PhilosophicalPosts = [
         <p>There is nothing for you to lose. Wake up! You are dying.</p>
         <p> Drink.</p>
         <p>It’s your turn. Ask me your question. </p>
-      </div>
-    )}`,
+      </div>`,
   },
   {
     id: 4,
     title: 'Morality',
     description: 'What’s the point? You are free, if you’ve reached to the point of asking this question. Welcome to the edge of other people’s reality. There is no way back. I’m sorry, it’s too late to hide… you have already been infected with existentialism. I’m not going to tell you to...',
     url: '/BlogPosts/post4.jpg',
-    article: `${(
+    date: 'September 13, 2019',
+    article: `
       <div className="article">
         <p>What’s the point? </p>
         <p>This question alone can lead us to different directions. </p>
@@ -201,14 +202,13 @@ export const PhilosophicalPosts = [
         </p>
         <p>It’s ok to be lost. It’s ok to be awkward. It’s ok to be sad… it’s ok to feel empty. </p>
         <p>That’s your reality.</p>
-      </div>
-    )}`,
+      </div>`,
   },
 ]
 
 export const ProfessionalPosts = [
   {
-    id: 1,
+    id: 1001,
     title: 'Heyyo',
     description: '',
     url: '',

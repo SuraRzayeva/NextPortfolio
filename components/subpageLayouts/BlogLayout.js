@@ -15,8 +15,8 @@ const BlogLayout = ({ data }) => {
       <div className="grid">
         <Masonry breakpointCols={breakpointColumnsObj} className="my-masonry-grid" columnClassName="my-masonry-grid_column">
           {data.map((item) => (
-            <Link href="/">
-              <div className="blog-box" key={item.id}>
+            <Link as={`/blogs/${item.id}`} href="/blogs/[title]" key={item.id}>
+              <div className="blog-box">
                 <div className="image-div">
                   <img src={item.url} />
                 </div>
