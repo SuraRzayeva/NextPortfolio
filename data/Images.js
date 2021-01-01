@@ -159,3 +159,30 @@ export const PosterImages = [
     url: '/Galleries/PosterDesign/1.png',
   },
 ]
+
+export const MyImages = [
+  {
+    id: 'me1',
+    url: '/AboutMe/1.jpg',
+  },
+  {
+    id: 'me2',
+    url: '/AboutMe/6.jpg',
+  },
+  {
+    id: 'me3',
+    url: '/AboutMe/3.jpg',
+  },
+  {
+    id: 'me4',
+    url: '/AboutMe/4.jpg',
+  },
+  {
+    id: 'me5',
+    url: '/AboutMe/5.jpg',
+  },
+  {
+    id: 'me6',
+    url: '/AboutMe/2.jpg',
+  },
+]

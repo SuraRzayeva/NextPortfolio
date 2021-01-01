@@ -1,6 +1,7 @@
 import { BlogLayoutStyle } from '../../style/componentStyles/BlogLayoutStyle'
 import Masonry from 'react-masonry-css'
 import Link from 'next/link'
+import MainButton from '../atoms/MainButton'
 
 const BlogLayout = ({ data }) => {
   const breakpointColumnsObj = {
@@ -24,7 +25,7 @@ const BlogLayout = ({ data }) => {
                   <div className="post-info">
                     <h4>{item.title}</h4>
                     <p>{item.description}</p>
-                    <button className="cta">Read more</button>
+                    <MainButton label="Read More" />
                   </div>
                 </div>
               </div>

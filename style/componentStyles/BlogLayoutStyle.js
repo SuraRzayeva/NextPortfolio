@@ -12,13 +12,13 @@ width: 100%;
 
 
 .my-masonry-grid { 
-width: 100%;
-  display: flex;
-justify-content: center;
-margin: 0;
-padding: 0;
-align-items: flex-start;
-  width: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    align-items: flex-start;
+    width: auto;
 }
 
  
