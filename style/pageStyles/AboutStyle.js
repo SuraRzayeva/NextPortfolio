@@ -10,7 +10,7 @@ padding: 15rem 10rem;
 .container {
     display: flex;
     width: 90%;
-
+ 
 
     .about-text {
         width: 50%;
@@ -35,8 +35,8 @@ padding: 15rem 10rem;
             position: absolute;
             font-weight: 700;
             opacity: .25;
-            bottom: -30%;
-            left: 60%;
+            bottom: -35%;
+            left: 63%;
         }
 
         .introduction {

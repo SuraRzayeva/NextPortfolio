@@ -1,48 +1,48 @@
 export const WebImages = [
   {
-    id: 1,
+    id: 'w1',
     title: 'Zara UI Design',
     url: '/Galleries/WebDesign/1.jpg',
   },
   {
-    id: 2,
+    id: 'w2',
     title: 'Yummy Recipes Design',
+    url: '/Galleries/WebDesign/4.jpg',
+  },
+  {
+    id: 'w3',
+    title: 'Takko UI Design',
+    url: '/Galleries/WebDesign/3.jpg',
+  },
+  {
+    id: 'w4',
+    title: 'Zara UI Design',
     url: '/Galleries/WebDesign/2.jpg',
   },
   {
-    id: 8,
-    title: 'Takko UI Design',
-    url: '/Galleries/WebDesign/8.jpg',
-  },
-  {
-    id: 4,
-    title: 'Zara UI Design',
-    url: '/Galleries/WebDesign/8.jpg',
-  },
-  {
-    id: 5,
+    id: 'w5',
     title: 'Vuii UI Design',
-    url: '/Galleries/WebDesign/5.jpg',
+    url: '/Galleries/WebDesign/9.jpg',
   },
   {
-    id: 6,
+    id: 'w6',
     title: 'Zara UI Design',
     url: '/Galleries/WebDesign/6.jpg',
   },
   {
-    id: 7,
+    id: 'w7',
     title: 'Zara UI Design',
-    url: '/Galleries/WebDesign/1.jpg',
+    url: '/Galleries/WebDesign/7.jpg',
   },
   {
-    id: 7,
+    id: 'w8',
     title: 'Zara UI Design',
-    url: '/Galleries/WebDesign/1.jpg',
+    url: '/Galleries/WebDesign/8.jpg',
   },
   {
-    id: 7,
+    id: 'w9',
     title: 'Zara UI Design',
-    url: '/Galleries/WebDesign/1.jpg',
+    url: '/Galleries/WebDesign/5.jpg',
   },
 ]
 
@@ -151,7 +151,7 @@ export const PosterImages = [
   {
     id: 1,
     title: 'Zara UI Design',
-    url: '/Galleries/PosterDesign/1.png',
+    url: '/Galleries/PosterDesign/2.png',
   },
   {
     id: 2,

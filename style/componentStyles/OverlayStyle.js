@@ -19,7 +19,7 @@ overflow-y: scroll;
 
     .container {
 
-    width: 140rem;
+    width: 90rem;
     display: flex;
     justify-content: center;
     align-items: center;

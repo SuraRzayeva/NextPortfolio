@@ -49,7 +49,7 @@ const About = () => {
         <div className="photos">
           <Masonry breakpointCols={breakpointColumnsObj} className="my-masonry-grid" columnClassName="my-masonry-grid_column">
             {MyImages.map((img) => (
-              <img src={img.url} />
+              <img src={img.url} key={img.id} />
             ))}
           </Masonry>
         </div>

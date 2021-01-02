@@ -6,6 +6,7 @@ export const MainButtonStyle = Styled.button`
 font-size: 1.4rem;
 font-weight: 700;
 color: ${Colors.black};
+background: transparent;
 padding: 0;
 position: relative;
 transition: .2s ease all;
