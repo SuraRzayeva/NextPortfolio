@@ -5,17 +5,41 @@ export const ContactStyle = Styled.div`
 
 opacity: ${(props) => (props.menuActive ? 0.3 : 1)};
 width: 100vw;
-height: 95vh;
-padding: 15rem 10rem 1rem 10rem;
+padding: 10rem;
 
+.title {
+    
+            font-size: 6rem;
+            margin: 0;
+            position: relative;
+        
+
+    :before {
+            content: "Wanna work?";
+            position: absolute;
+            font-weight: 700;
+            opacity: .25;
+            top: -30%;
+            left: 15%;
+        }
+
+    :after {
+            content: 'Happy to hear from you';
+            position: absolute;
+            font-weight: 700;
+            opacity: .25;
+            bottom: -35%;
+            left: 10%;
+        }
+}
 
 .container {
     display: flex;
     width: 90%;
     display: flex;
     justify-content: center;
+    padding-top: 3rem;
     align-items: center;
-    padding-top: 8rem;
 
     .contact-text {
         width: 50%;
@@ -25,10 +49,6 @@ padding: 15rem 10rem 1rem 10rem;
 
        .text {
            width: 80%;
-        h1 {
-            font-size: 11rem;
-            margin: 0;
-        }
 
         p {
             font-size: 1.4rem;
@@ -45,12 +65,41 @@ padding: 15rem 10rem 1rem 10rem;
         display: flex;
         justify-content: center;
         align-items: center;
+        position: relative;
+
+        .success-msg {
+            width: 100%;
+            height: 100%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            p {
+                color: green;
+                font-weight: 600;
+                font-size: 1.2rem;
+            }
+        }
+
+        .error-msg {
+                position: absolute;
+                top: -10%;
+                left: 10%;
+
+                p {
+                    color: tomato;
+                    font-weight: 600;
+                    font-size: 1.2rem;
+                }
+            }
 
         form {
             display: flex;
             flex-direction: column;
             width: 85%;
             justify-content: flex-end;
+      
             
             .button {
                 display: flex;
@@ -63,7 +112,7 @@ padding: 15rem 10rem 1rem 10rem;
                 margin-bottom: 1rem;
                 border-style: none;
                 background: transparent;
-                border-bottom: 1px ${Colors.black} solid;
+                border-bottom:1px ${(props) => (props.error ? 'tomato' : Colors.black)} solid;
                 border-left: .3rem transparent solid;
                 outline: none;
                 color: ${Colors.black};
@@ -79,7 +128,7 @@ padding: 15rem 10rem 1rem 10rem;
             textarea {
                 border-style: none;
                 background: transparent;
-                border-bottom:1px ${Colors.black} solid;
+                border-bottom:1px ${(props) => (props.error ? 'tomato' : Colors.black)} solid;
                 border-left: .3rem transparent solid;
                 outline: none;
                 color: ${Colors.black};
@@ -104,9 +153,17 @@ padding: 15rem 10rem 1rem 10rem;
     .container {
         flex-direction: column;
         width: 100%;
+
+        .form {
+            .error-msg {
+                top: 0;
+                left: 1.3rem;
+            }
+        }
         .contact-text {
             width: 100%;
             height: 50%;
+            
         }
 
         .form {
@@ -120,12 +177,35 @@ padding: 15rem 10rem 1rem 10rem;
 }
 
 @media screen and (max-width: 850px) {
-    padding: 5rem 5rem 0 5rem;
-    height: 90vh;
+    padding: 10rem 5rem;;
+
+
+    .title {
+        :after {
+            font-size: 4rem;
+        }
+    }
 }
 
 @media screen and (max-width: 450px) {
-    padding: 10rem 3rem;
-    height: unset;
+    padding: 15rem 3rem;
+
+
+
+    .container {
+        .contact-text {
+            .text {
+                width: 100%;
+            }
+        }
+    }
+
+    .title {
+       font-size: 3rem;
+
+       :after {
+           font-size: 2rem;
+       }
+    }
 }
 `

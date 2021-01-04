@@ -1,3 +1,5 @@
+// ------------------------------------------------- WEB UI/UX
+
 export const WebImages = [
   {
     id: 'w1',
@@ -46,119 +48,98 @@ export const WebImages = [
   },
 ]
 
+// ------------------------------------------------- APP UI/UX
+
 export const AppImages = [
   {
-    id: 1,
+    id: 'app1',
     title: 'Zara UI Design',
     url: '/Galleries/WebDesign/1.jpg',
   },
   {
-    id: 2,
+    id: 'app2',
     title: 'Yummy Recipes Design',
     url: '/Galleries/WebDesign/2.jpg',
   },
   {
-    id: 8,
+    id: 'app3',
     title: 'Takko UI Design',
     url: '/Galleries/WebDesign/8.jpg',
   },
   {
-    id: 4,
+    id: 'app4',
     title: 'Zara UI Design',
     url: '/Galleries/WebDesign/8.jpg',
   },
   {
-    id: 5,
+    id: 'app5',
     title: 'Vuii UI Design',
     url: '/Galleries/WebDesign/5.jpg',
   },
   {
-    id: 6,
+    id: 'app6',
     title: 'Zara UI Design',
     url: '/Galleries/WebDesign/6.jpg',
   },
-  {
-    id: 7,
-    title: 'Zara UI Design',
-    url: '/Galleries/WebDesign/1.jpg',
-  },
-  {
-    id: 7,
-    title: 'Zara UI Design',
-    url: '/Galleries/WebDesign/1.jpg',
-  },
-  {
-    id: 7,
-    title: 'Zara UI Design',
-    url: '/Galleries/WebDesign/1.jpg',
-  },
 ]
+
+// ------------------------------------------------- ICONS
 
 export const IconImages = [
   {
-    id: 1,
+    id: 'icon1',
     title: 'Zara UI Design',
     url: '/Galleries/WebDesign/3.jpg',
   },
   {
-    id: 2,
+    id: 'icon2',
     title: 'Yummy Recipes Design',
     url: '/Galleries/WebDesign/2.jpg',
   },
   {
-    id: 8,
+    id: 'icon3',
     title: 'Takko UI Design',
     url: '/Galleries/WebDesign/4.jpg',
   },
   {
-    id: 4,
+    id: 'icon4',
     title: 'Zara UI Design',
     url: '/Galleries/WebDesign/1.jpg',
   },
   {
-    id: 5,
+    id: 'icon5',
     title: 'Vuii UI Design',
     url: '/Galleries/WebDesign/5.jpg',
   },
-  {
-    id: 6,
-    title: 'Zara UI Design',
-    url: '/Galleries/WebDesign/6.jpg',
-  },
-  {
-    id: 7,
-    title: 'Zara UI Design',
-    url: '/Galleries/WebDesign/1.jpg',
-  },
-  {
-    id: 7,
-    title: 'Zara UI Design',
-    url: '/Galleries/WebDesign/1.jpg',
-  },
-  {
-    id: 7,
-    title: 'Zara UI Design',
-    url: '/Galleries/WebDesign/1.jpg',
-  },
 ]
+
+// ------------------------------------------------- POSTERS
 
 export const PosterImages = [
   {
-    id: 1,
+    id: 'poster1',
     title: 'Zara UI Design',
     url: '/Galleries/PosterDesign/1.png',
   },
   {
-    id: 1,
+    id: 'poster2',
     title: 'Zara UI Design',
     url: '/Galleries/PosterDesign/2.png',
   },
   {
-    id: 2,
+    id: 'poster3',
     title: 'Yummy Recipes Design',
     url: '/Galleries/PosterDesign/1.png',
   },
 ]
+
+// ------------------------------------------------- ILLUSTRATIONS
+
+// ------------------------------------------------- CHARACTER DESIGN
+
+// ------------------------------------------------- LINE ART
+
+// ------------------------------------------------- MY IMAGES
 
 export const MyImages = [
   {

@@ -127,7 +127,6 @@ padding: 15rem 10rem;
             width: 100%;
             .profession {
             font-size: 3rem;
-
                 
         }
         }

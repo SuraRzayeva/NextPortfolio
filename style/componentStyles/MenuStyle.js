@@ -9,7 +9,7 @@ export const MenuStyle = Styled.div`
   outline: none;
 }
 
-position: absolute;
+position: fixed;
 width: 100%;
 height: 100%;
 top: 0;
