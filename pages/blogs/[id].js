@@ -7,13 +7,8 @@ import { ProfessionalPosts } from '../../data/blogPosts'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 
-const BlogPost = () => {
+const BlogPost = ({ title, date, article }) => {
   const { menuActive, setHomeActive } = useContext(Context)
-  const router = useRouter()
-  const { id } = router.query
-  const allBlogPosts = [...PhilosophicalPosts, ...ProfessionalPosts]
-  const selectedPost = allBlogPosts.find((post) => post.id == id)
-  const { title, date, article } = selectedPost
 
   useEffect(() => {
     setHomeActive(false)
@@ -37,6 +32,20 @@ const BlogPost = () => {
       </div>
     </BlogPostStyle>
   )
+}
+
+BlogPost.getInitialProps = async (ctx) => {
+  const { id } = ctx.query
+
+  const allBlogPosts = [...PhilosophicalPosts, ...ProfessionalPosts]
+  const selectedPost = allBlogPosts.find((post) => post.id == id)
+  const { title, date, article } = selectedPost
+
+  return {
+    title,
+    date,
+    article,
+  }
 }
 
 export default BlogPost

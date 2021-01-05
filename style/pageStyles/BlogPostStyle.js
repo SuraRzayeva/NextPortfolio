@@ -19,6 +19,7 @@ opacity: ${(props) => (props.menuActive ? 0.3 : 1)};
         cursor: pointer;
         position: relative;
         transition: .2s ease all;
+        outline: none;
     }
 
         button:after {

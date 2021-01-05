@@ -1,11 +1,11 @@
 import { SubpageLayout } from '../../../style/subpageStyles/SubpageLayout'
-import { PhilosophicalPosts } from '../../../data/blogPosts'
-import BlogLayout from '../../subpageLayouts/BlogLayout'
+import ProjectLayout from '../../subpageLayouts/ProjectLayout'
+import { DesignProjects } from '../../../data/projects'
 
 const Design = () => {
   return (
     <SubpageLayout>
-      <BlogLayout data={PhilosophicalPosts} />
+      <ProjectLayout data={DesignProjects} />
     </SubpageLayout>
   )
 }
