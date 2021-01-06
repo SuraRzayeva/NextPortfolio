@@ -1,4 +1,5 @@
 import Styled from 'styled-components'
+import { Colors } from '../designSpecs'
 
 export const FooterStyle = Styled.div`
 
@@ -8,7 +9,9 @@ bottom: 0;
 left: 0;
 
 p {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: ${Colors.black};
     padding-left: 10rem;
 }
 

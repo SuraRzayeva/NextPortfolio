@@ -9,7 +9,7 @@ width: 100%;
 
 .grid {
     width: 100%;
-
+    opacity: ${(props) => (props.loading == 0 ? 1 : 0)};
 
 .my-masonry-grid { 
     width: 100%;

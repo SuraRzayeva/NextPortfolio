@@ -40,16 +40,14 @@ opacity: ${(props) => (props.menuActive ? 0.3 : 1)};
   align-items: flex-end;
   justify-content: center;
 
-  button {
-    border-style: none;
-    background: transparent;
-    margin: 0;
-    padding: 0;
-    margin-bottom: 10%;
-    font-weight: 600;
-    font-size: 1.4rem;
+
+  .start-here {
+    width: 15rem;
+    height: 5rem;
+    display: flex;
+    align-items: flex-end;
     cursor: pointer;
-    color: ${black};
+    z-index: 10;
   }
 
 
@@ -58,6 +56,8 @@ opacity: ${(props) => (props.menuActive ? 0.3 : 1)};
     height: .5rem;
     background: ${detailColor2};
     border-radius: 1rem;
+    position: relative;
+    
   }
 
 }
@@ -90,6 +90,36 @@ padding: 0 5rem;
 }
 .line-block {
   width: 90%;
+}
+}
+
+@media screen and (max-width: 350px) {
+
+padding: 0 3rem;
+
+.hero {
+.hero-text {
+  font-size: 5rem;
+  line-height: 6rem;
+}
+}
+.line-block {
+width: 80%;
+}
+}
+
+@media screen and (max-width: 250px) {
+
+padding: 0 3rem;
+
+.hero {
+.hero-text {
+  font-size: 3rem;
+  line-height: 4rem;
+}
+}
+.line-block {
+width: 90%;
 }
 }
 

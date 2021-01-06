@@ -124,12 +124,12 @@ export const PosterImages = [
   {
     id: 'poster2',
     title: 'Zara UI Design',
-    url: '/Galleries/PosterDesign/2.png',
+    url: '/Galleries/PosterDesign/3.png',
   },
   {
     id: 'poster3',
     title: 'Yummy Recipes Design',
-    url: '/Galleries/PosterDesign/1.png',
+    url: '/Galleries/PosterDesign/2.png',
   },
 ]
 

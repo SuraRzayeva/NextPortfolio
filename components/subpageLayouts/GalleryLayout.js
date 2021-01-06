@@ -1,6 +1,7 @@
 import { GalleryLayoutStyle } from '../../style/componentStyles/GalleryLayoutStyle'
 import { useContext, useEffect, useState } from 'react'
 import Context from '../../context/Context'
+import Loading from '../atoms/Loading'
 import Masonry from 'react-masonry-css'
 
 const Gallery = ({ data }) => {
@@ -44,7 +45,7 @@ const Gallery = ({ data }) => {
 
   return (
     <GalleryLayoutStyle loading={loading}>
-      {loading == 1 ? <h1>Loading</h1> : null}
+      {loading == 1 ? <Loading /> : null}
       <div className="grid">
         <Masonry breakpointCols={breakpointColumnsObj} className="my-masonry-grid" columnClassName="my-masonry-grid_column">
           {data.map((item) => (
