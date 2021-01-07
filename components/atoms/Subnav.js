@@ -16,31 +16,34 @@ const Subnav = ({ uiux, graphic, blog, projects }) => {
             App <span>Design</span>
           </li>
           <li className="icon" onClick={() => setUiuxActivePage(3)}>
-            Icon <span> Design</span>
+            Iconography
           </li>
-          <li className="svg" onClick={() => setUiuxActivePage(4)}>
+          {/* <li className="svg" onClick={() => setUiuxActivePage(4)}>
             SVG <span>Animations</span>
-          </li>
+          </li> */}
         </ul>
       ) : null}
       {graphic ? (
         <ul>
           <li className="marketing" onClick={() => setGraphicActivePage(1)}>
-            Marketing Design
+            Posters
           </li>
           <li className="illustration" onClick={() => setGraphicActivePage(2)}>
             Illustrations
           </li>
           <li className="character" onClick={() => setGraphicActivePage(3)}>
-            Character Design
+            Characters
           </li>
           <li className="lineart" onClick={() => setGraphicActivePage(4)}>
-            Line Art
+            Lines
           </li>
         </ul>
       ) : null}
       {blog ? (
         <ul>
+          <li className="all-posts" onClick={() => setBlogActivePage(0)}>
+            All Posts
+          </li>
           <li className="professional" onClick={() => setBlogActivePage(1)}>
             Professional
           </li>

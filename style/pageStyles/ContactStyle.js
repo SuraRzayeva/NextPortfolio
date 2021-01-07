@@ -18,6 +18,7 @@ padding: 10rem;
             content: "Wanna work?";
             position: absolute;
             font-weight: 700;
+            color: ${Colors.detailColor};
             opacity: .25;
             top: -30%;
             left: 15%;
@@ -28,6 +29,7 @@ padding: 10rem;
             position: absolute;
             font-weight: 700;
             opacity: .25;
+            color: ${Colors.detailColor};
             bottom: -35%;
             left: 10%;
         }
@@ -76,7 +78,7 @@ padding: 10rem;
             align-items: center;
 
             p {
-                color: green;
+                color: ${Colors.detailColor};
                 font-weight: 600;
                 font-size: 1.2rem;
             }

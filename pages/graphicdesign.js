@@ -4,6 +4,9 @@ import { useContext, useEffect } from 'react'
 import Context from '../context/Context'
 import OverlayLayout from '../components/atoms/OverlayLayout'
 import PosterDesign from '../components/subpages/GraphicGallery/PosterDesign'
+import IllustrationDesign from '../components/subpages/GraphicGallery/IllustrationDesign'
+import CharacterDesign from '../components/subpages/GraphicGallery/CharacterDesign'
+import LineArtDesign from '../components/subpages/GraphicGallery/LineArtDesign'
 
 const GraphicDesign = () => {
   const { graphicActivePage, overlay, menuActive, setHomeActive } = useContext(Context)
@@ -19,9 +22,9 @@ const GraphicDesign = () => {
       <Subnav graphic={true} />
       <div className="container">
         {graphicActivePage === 1 && <PosterDesign />}
-        {graphicActivePage === 2 && 'heyyo'}
-        {graphicActivePage === 3 && 'huuuuu'}
-        {graphicActivePage === 4 && 'svg active'}
+        {graphicActivePage === 2 && <IllustrationDesign />}
+        {graphicActivePage === 3 && <CharacterDesign />}
+        {graphicActivePage === 4 && <LineArtDesign />}
       </div>
     </GalleryPageStyle>
   )

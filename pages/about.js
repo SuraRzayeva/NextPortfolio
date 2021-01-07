@@ -1,14 +1,40 @@
+import { useEffect, useState, useContext } from 'react'
 import { AboutStyle } from '../style/pageStyles/AboutStyle'
-import { useContext, useEffect } from 'react'
 import Context from '../context/Context'
 import { MyImages } from '../data/Images'
-import GalleryLayout from '../components/subpageLayouts/GalleryLayout'
+import Loading from '../components/atoms/Loading'
 import MainButton from '../components/atoms/MainButton'
 import Link from 'next/link'
 import Masonry from 'react-masonry-css'
 
 const About = () => {
   const { menuActive, setHomeActive } = useContext(Context)
+  const [loading, setLoading] = useState(1)
+  const [count, setCount] = useState(0)
+  const [allImagesCount, setAllImagesCount] = useState(0)
+
+  const increaseCount = () => {
+    setCount((prev) => prev + 1)
+    console.log('setting:' + count)
+  }
+
+  useEffect(() => {
+    setLoading(1)
+    setAllImagesCount(MyImages.length)
+  }, [])
+
+  useEffect(() => {
+    setAllImagesCount(MyImages.length)
+  }, [MyImages])
+
+  useEffect(() => {
+    setAllImagesCount(MyImages.length)
+    if (count == allImagesCount) {
+      setTimeout(() => {
+        setLoading(0)
+      }, 1100)
+    }
+  }, [count, allImagesCount, MyImages, loading])
 
   useEffect(() => {
     setHomeActive(false)
@@ -21,7 +47,8 @@ const About = () => {
   }
 
   return (
-    <AboutStyle menuActive={menuActive}>
+    <AboutStyle menuActive={menuActive} loading={loading}>
+      {loading == 1 ? <Loading full={true} /> : null}
       <div className="container">
         <div className="about-text">
           <div className="profession">
@@ -49,7 +76,7 @@ const About = () => {
         <div className="photos">
           <Masonry breakpointCols={breakpointColumnsObj} className="my-masonry-grid" columnClassName="my-masonry-grid_column">
             {MyImages.map((img) => (
-              <img src={img.url} key={img.id} />
+              <img src={img.url} key={img.id} onLoad={increaseCount} />
             ))}
           </Masonry>
         </div>

@@ -1,4 +1,5 @@
 import Styled from 'styled-components'
+import { Colors } from '../designSpecs'
 
 export const AboutStyle = Styled.div`
 
@@ -10,7 +11,7 @@ padding: 15rem 10rem;
 .container {
     display: flex;
     width: 90%;
- 
+    opacity: ${(props) => (props.loading == 0 ? 1 : 0)};
 
     .about-text {
         width: 50%;
@@ -26,6 +27,7 @@ padding: 15rem 10rem;
             position: absolute;
             font-weight: 700;
             opacity: .25;
+            color: ${Colors.detailColor};
             top: -30%;
             left: 15%;
         }
@@ -34,6 +36,7 @@ padding: 15rem 10rem;
             content: 'Marketer';
             position: absolute;
             font-weight: 700;
+            color: ${Colors.detailColor};
             opacity: .25;
             bottom: -35%;
             left: 63%;

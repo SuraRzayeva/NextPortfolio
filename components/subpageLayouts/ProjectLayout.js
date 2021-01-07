@@ -27,7 +27,9 @@ const BlogLayout = ({ data }) => {
   useEffect(() => {
     setAllImagesCount(data.length)
     if (count == allImagesCount) {
-      setLoading(0)
+      setTimeout(() => {
+        setLoading(0)
+      }, 1100)
     }
   }, [count, allImagesCount, data, loading])
 
@@ -40,6 +42,7 @@ const BlogLayout = ({ data }) => {
 
   return (
     <ProjectLayoutStyle loading={loading}>
+      {loading == 1 ? <Loading full={false} /> : null}
       <div className="grid">
         <Masonry breakpointCols={breakpointColumnsObj} className="my-masonry-grid" columnClassName="my-masonry-grid_column">
           {data.map((item) => (

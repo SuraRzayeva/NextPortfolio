@@ -65,6 +65,10 @@ ul {
         width: ${(props) => (props.graphicActivePage === 4 ? '100%' : 0)}
     }
 
+    .all-posts:after {
+        width: ${(props) => (props.blogActivePage === 0 ? '100%' : 0)}
+    }
+
     .professional:after {
         width: ${(props) => (props.blogActivePage === 1 ? '100%' : 0)}
     }

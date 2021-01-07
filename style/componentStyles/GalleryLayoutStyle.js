@@ -42,7 +42,7 @@ align-items: flex-start;
 
         img {
             width: 100%;
-            box-shadow: 0 0 5px ${blackOpa};
+            box-shadow: 0 0 5px ${Colors.detailColor};
         }
         
         :hover .overlay{
@@ -57,22 +57,22 @@ align-items: flex-start;
                 bottom: 0;
                 left:0;
                 z-index: 10;
-                background: linear-gradient(to top, black, transparent);
+                background: linear-gradient(to top, ${Colors.detailColor}, transparent);
                 display: flex;
                 justify-content: space-around;
                 align-items: flex-end;
                 opacity: 0;
                 transition: .1s ease all;
                 cursor: pointer;
+                padding: 0 3rem;
 
                 .title {
                     width: 90%;
-                    height: 40%;
+                    height: 6rem;
                     display: flex;
                     align-items: center;
                     
                     h4 {
-                        margin-left: 4rem;
                         color: white;
                         font-size: 1.5rem;
                     }
@@ -81,12 +81,13 @@ align-items: flex-start;
 
                 .zoom {
                     width: 10%;
-                    height: 40%;
+                    height: 6rem;
                     display: flex;
+                    justify-content: flex-end;
                     align-items: center;
 
                    img {
-                        width: 50%;
+                        width: 70%;
 
                     }
                 }

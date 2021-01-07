@@ -7,7 +7,7 @@ const ContextWrapper = ({ children, overlay, setOverlay }) => {
   const [homeActive, setHomeActive] = useState(false)
   const [uiuxActivePage, setUiuxActivePage] = useState(1)
   const [graphicActivePage, setGraphicActivePage] = useState(1)
-  const [blogActivePage, setBlogActivePage] = useState(1)
+  const [blogActivePage, setBlogActivePage] = useState(0)
   const [projectsActivePage, setProjectsActivePage] = useState(1)
 
   return (

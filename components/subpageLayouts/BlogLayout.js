@@ -27,7 +27,9 @@ const BlogLayout = ({ data }) => {
   useEffect(() => {
     setAllImagesCount(data.length)
     if (count == allImagesCount) {
-      setLoading(0)
+      setTimeout(() => {
+        setLoading(0)
+      }, 1100)
     }
   }, [count, allImagesCount, data, loading])
 

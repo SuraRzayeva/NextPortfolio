@@ -1,46 +1,48 @@
 import { LoadingStyle } from '../../style/componentStyles/LoadingStyle'
 
-const Loading = () => {
+const Loading = ({ full }) => {
   return (
-    <LoadingStyle>
-      <div className="catContainer">
-        <div className="catHead catColor">
-          <div className="catLeftEye catEye">
-            <div className="leftEyelid eyelid catColor"></div>
-            <div className="pupil"></div>
-          </div>
-          <div className="catRightEye catEye">
-            <div className="rightEyelid eyelid catColor"></div>
-            <div className="pupil"></div>
-          </div>
+    <LoadingStyle full={full}>
+      <svg id="svg-sprite">
+        <symbol id="paw" viewBox="0 0 249 209.32">
+          <ellipse cx="27.917" cy="106.333" stroke-width="0" rx="27.917" ry="35.833" />
+          <ellipse cx="84.75" cy="47.749" stroke-width="0" rx="34.75" ry="47.751" />
+          <ellipse cx="162" cy="47.749" stroke-width="0" rx="34.75" ry="47.751" />
+          <ellipse cx="221.083" cy="106.333" stroke-width="0" rx="27.917" ry="35.833" />
+          <path stroke-width="0" d="M43.98 165.39s9.76-63.072 76.838-64.574c0 0 71.082-6.758 83.096 70.33 0 0 2.586 19.855-12.54 31.855 0 0-15.75 17.75-43.75-6.25 0 0-7.124-8.374-24.624-7.874 0 0-12.75-.125-21.5 6.625 0 0-16.375 18.376-37.75 12.75 0 0-28.29-7.72-19.77-42.86z" />
+        </symbol>
+      </svg>
+
+      <div class="ajax-loader">
+        <div class="paw paw1">
+          <svg class="icon">
+            <use href="#paw" />
+          </svg>
         </div>
-        <div className="catLeftEar catEar catColor">
-          <div className="catLeftInsideEar catInsideEar"></div>
+        <div class="paw paw2">
+          <svg class="icon icon1">
+            <use href="#paw" />
+          </svg>
         </div>
-        <div className="catRightEar catEar catColor">
-          <div className="catRightInsideEar catInsideEar"></div>
+        <div class="paw paw3">
+          <svg class="icon icon2">
+            <use href="#paw" />
+          </svg>
         </div>
-        <div className="catHair catColor"></div>
-        <div className="catBody catColor">
-          <div className="catFoot leftFoot catColor"></div>
-          <div className="catFoot rightFoot catColor"></div>
+        <div class="paw paw4">
+          <svg class="icon icon3">
+            <use href="#paw" />
+          </svg>
         </div>
-        <div className="catTail">
-          <span className="catColor"></span>
-          <span className="catColor"></span>
-          <span className="catColor"></span>
-          <span className="catColor"></span>
-          <span className="catColor"></span>
-          <span className="catColor"></span>
-          <span className="catColor"></span>
-          <span className="catColor"></span>
-          <span className="catColor"></span>
-          <span className="catColor"></span>
-          <span className="catColor"></span>
-          <span className="catColor"></span>
-          <span className="catColor"></span>
-          <span className="catColor"></span>
-          <span className="catColor"></span>
+        <div class="paw paw5 ">
+          <svg class="icon icon4">
+            <use href="#paw" />
+          </svg>
+        </div>
+        <div class="paw paw6">
+          <svg class="icon icon5">
+            <use href="#paw" />
+          </svg>
         </div>
       </div>
     </LoadingStyle>

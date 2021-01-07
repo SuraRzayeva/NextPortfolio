@@ -39,7 +39,7 @@ opacity: ${(props) => (props.menuActive ? 0.3 : 1)};
   flex-direction: column;
   align-items: flex-end;
   justify-content: center;
-
+  cursor: pointer;
 
   .start-here {
     width: 15rem;
