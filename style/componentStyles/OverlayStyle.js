@@ -12,14 +12,22 @@ z-index: 1000;
 animation: fadeIn .2s ease forwards;
 overflow-y: scroll;
 
+.absolute-div {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 100;
+    transform: translate(-50%, -50%);
+}
+
 .wrapper {
     width: 100%;
     display: flex;
     justify-content: center;
+    opacity: ${(props) => (props.loading == 0 ? 1 : 0)};
 
     .container {
-
-    width: 90rem;
+    width: ${(props) => props.overlayWidth};
     display: flex;
     justify-content: center;
     align-items: center;

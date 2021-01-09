@@ -5,7 +5,7 @@ import GalleryLayout from '../../subpageLayouts/GalleryLayout'
 const LineArtDesign = () => {
   return (
     <SubpageLayout>
-      <GalleryLayout data={LineArts} />
+      <GalleryLayout data={LineArts} column={4} />
     </SubpageLayout>
   )
 }

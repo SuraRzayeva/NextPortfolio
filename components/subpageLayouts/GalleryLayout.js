@@ -4,7 +4,7 @@ import Context from '../../context/Context'
 import Loading from '../atoms/Loading'
 import Masonry from 'react-masonry-css'
 
-const Gallery = ({ data }) => {
+const Gallery = ({ data, column }) => {
   const { overlay, setOverlay } = useContext(Context)
   const [loading, setLoading] = useState(1)
   const [count, setCount] = useState(0)
@@ -15,9 +15,9 @@ const Gallery = ({ data }) => {
     console.log('setting:' + count)
   }
 
-  const showOverlay = (data) => {
+  const showOverlay = (data, overlayWidth) => {
     window.scrollTo(0, 0)
-    setOverlay({ status: true, data: data })
+    setOverlay({ status: true, data: data, overlayWidth: overlayWidth })
   }
 
   useEffect(() => {
@@ -39,8 +39,8 @@ const Gallery = ({ data }) => {
   }, [count, allImagesCount, data, loading])
 
   const breakpointColumnsObj = {
-    default: 3,
-    1100: 2,
+    default: column,
+    1100: column - 1,
     700: 1,
     500: 1,
   }
@@ -51,7 +51,7 @@ const Gallery = ({ data }) => {
       <div className="grid">
         <Masonry breakpointCols={breakpointColumnsObj} className="my-masonry-grid" columnClassName="my-masonry-grid_column">
           {data.map((item) => (
-            <div className="gallery-box" key={item.id} onClick={() => showOverlay(item.url)}>
+            <div className="gallery-box" key={item.id} onClick={() => showOverlay(item.url, item.overlayWidth)}>
               <img src={item.url} onLoad={increaseCount} />
               <div className="overlay">
                 <div className="title">

@@ -13,7 +13,7 @@ opacity: ${(props) => (props.menuActive ? 0.3 : 1)};
 
 
 .back-btn {
-   
+    opacity: ${(props) => (props.loading == 0 ? 1 : 0)};
     button {
         outline: none;
         background: transparent;
@@ -42,10 +42,9 @@ opacity: ${(props) => (props.menuActive ? 0.3 : 1)};
     }
 
     .container {
-    width: 70%;
-    align-self: center;
+    opacity: ${(props) => (props.loading == 0 ? 1 : 0)};
+    width: 90%;
     margin-top: 5rem;
-
     .date {
         margin: 0;
         padding: 0;
@@ -64,22 +63,63 @@ opacity: ${(props) => (props.menuActive ? 0.3 : 1)};
         }
     }
     .content {
-        margin-top: 5rem;
-        width: 90%;
-            p {
-                font-size: 1.6rem;
-                line-height: 2.4rem;
-            }  
-    }
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-top: 3rem;
+     }
 
-    img {
-        height: 50rem;
-    }
+     .description {
+         width: 100%;
+         display: flex;
+         flex-direction: column;
+         align-items: flex-start;
+         padding-right: 3rem;
+
+         p {
+            font-size: 1.6rem;
+            line-height: 2.2rem;
+            margin: 0;
+
+                span {
+                font-weight: 600;
+             }
+         }
+
+         a {
+            text-decoration: none;
+        }
+
+         h4 {
+             font-size: 1.4rem;
+             position: relative;
+         }    
+
+         h4::after {
+            content: '';
+            width: 0;
+            position: absolute;
+            left: 0;
+            bottom: -.5rem;
+            height: .2rem;
+            background: ${Colors.detailColor2};
+            transition: .2s ease all;
+        }
+
+        h4:hover:after {
+            width: 100%;
+        }
+        
+         .tools {
+             margin-top: 1rem;
+         }
+
+     }
+   
 }
 
 @media screen and (max-width: 850px) {
     padding: 13rem 5rem;
-
 
     .container {
         width: 100%;

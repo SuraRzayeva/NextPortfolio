@@ -4,10 +4,11 @@ import { useContext, useEffect } from 'react'
 import Context from '../context/Context'
 import Design from '../components/subpages/Projects/Design'
 import Development from '../components/subpages/Projects/Development'
+import OverlayLayout from '../components/atoms/OverlayLayout'
 
 const Projects = () => {
-  const { setHomeActive, projectsActivePage, menuActive } = useContext(Context)
-
+  const { setHomeActive, projectsActivePage, menuActive, overlay } = useContext(Context)
+  const { status } = overlay
   useEffect(() => {
     setHomeActive(false)
   }, [])

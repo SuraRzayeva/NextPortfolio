@@ -6,10 +6,11 @@ import GlobalStyle from '../style/GlobalStyle'
 import Sidebar from '../components/atoms/Sidebar'
 import Footer from '../components/atoms/Footer'
 
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps, children }) {
   const [overlay, setOverlay] = useState({
     status: false,
     data: '',
+    orientation: '',
   })
 
   return (

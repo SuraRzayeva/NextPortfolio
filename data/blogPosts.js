@@ -1,6 +1,6 @@
 export const PhilosophicalPosts = [
   {
-    id: 1,
+    id: 'TheySayIHaveSadEyes',
     title: 'They say I have sad eyes.',
     description: 'There is an immense curiosity growing inside me, I cannot stop. When I was a child, the questions were easier to answer. Or maybe I was just too naïve to be convinced with answers deeply rooted in our manmade fictional culture, which is considered an absolute reality… which is...',
     url: '/BlogPosts/post1.jpg',
@@ -43,7 +43,7 @@ export const PhilosophicalPosts = [
       </div>`,
   },
   {
-    id: 2,
+    id: 'WeAreTooLoud',
     title: 'We are too loud.',
     description: 'Our complexity is a simple one. Our complexity lies on the basis of everything… or nothing. It’s without masks… without stories… without values… without meaning. It’s just there… as a nice, soft feeling of sadness and… ',
     url: '/BlogPosts/post2.jpg',
@@ -92,7 +92,7 @@ export const PhilosophicalPosts = [
       </div>`,
   },
   {
-    id: 3,
+    id: 'TimeToFreeYourself',
     title: 'Time to free yourself.',
     description: 'Let’s play a game. We ask questions… and when it starts to hurt, we drink. I start. Why do people think that ‘happiness’ is equal to...',
     url: '/BlogPosts/post3.jpg',
@@ -155,7 +155,7 @@ export const PhilosophicalPosts = [
       </div>`,
   },
   {
-    id: 4,
+    id: 'Morality',
     title: 'Morality',
     description: 'What’s the point? You are free, if you’ve reached to the point of asking this question. Welcome to the edge of other people’s reality. There is no way back. I’m sorry, it’s too late to hide… you have already been infected with existentialism. I’m not going to tell you to...',
     url: '/BlogPosts/post4.jpg',

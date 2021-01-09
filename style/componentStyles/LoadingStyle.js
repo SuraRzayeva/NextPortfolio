@@ -9,7 +9,7 @@ export const LoadingStyle = Styled.div`
   top: 40%;
   left: 40%;
 	transform-origin: 50% 50%;
-	transform: rotate(90deg) translate(-50%, 0%);
+	transform: rotate(70deg) translate(-50%, 0%);
   width: 5rem;
   height: 20rem;
 
@@ -25,7 +25,8 @@ export const LoadingStyle = Styled.div`
 		}
 		
 		.icon{
-			fill: ${Colors.black};
+			fill: ${(props) => (props.lightColor ? Colors.white : Colors.black)};
+
 		}
   }
   .paw1 {

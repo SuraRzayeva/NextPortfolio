@@ -42,7 +42,7 @@ align-items: flex-start;
 
         img {
             width: 100%;
-            box-shadow: 0 0 5px ${Colors.detailColor};
+            box-shadow: 0 0 10px ${Colors.detailColorOpa};
         }
         
         :hover .overlay{

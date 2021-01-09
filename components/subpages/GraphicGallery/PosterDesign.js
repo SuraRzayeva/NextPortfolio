@@ -5,7 +5,7 @@ import GalleryLayout from '../../subpageLayouts/GalleryLayout'
 const PosterDesign = () => {
   return (
     <SubpageLayout>
-      <GalleryLayout data={PosterImages} />
+      <GalleryLayout data={PosterImages} column={3} />
     </SubpageLayout>
   )
 }
