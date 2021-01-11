@@ -12,7 +12,7 @@ p {
     font-size: 1.2rem;
     font-weight: 500;
     color: ${Colors.black};
-    padding-left: 10rem;
+    padding: 3rem 10rem;
 }
 
 @media screen and (max-width: 850px) {

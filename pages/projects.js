@@ -4,7 +4,7 @@ import { useContext, useEffect } from 'react'
 import Context from '../context/Context'
 import Design from '../components/subpages/Projects/Design'
 import Development from '../components/subpages/Projects/Development'
-import OverlayLayout from '../components/atoms/OverlayLayout'
+import SEOLayout from '../components/SEO/SEOLayout'
 
 const Projects = () => {
   const { setHomeActive, projectsActivePage, menuActive, overlay } = useContext(Context)
@@ -14,13 +14,16 @@ const Projects = () => {
   }, [])
 
   return (
-    <GalleryPageStyle menuActive={menuActive}>
-      <Subnav projects={true} />
-      <div className="container">
-        {projectsActivePage === 1 && <Development />}
-        {projectsActivePage === 2 && <Design />}
-      </div>
-    </GalleryPageStyle>
+    <>
+      <SEOLayout title="Projects | Portfolio - Sura Rzayeva" description="Here you can check my innovative web development and design projects which express my style and speciality." />
+      <GalleryPageStyle menuActive={menuActive}>
+        <Subnav projects={true} />
+        <div className="container">
+          {projectsActivePage === 1 && <Development />}
+          {projectsActivePage === 2 && <Design />}
+        </div>
+      </GalleryPageStyle>
+    </>
   )
 }
 

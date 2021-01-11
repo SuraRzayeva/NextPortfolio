@@ -80,3 +80,17 @@ export const LoadingStyle = Styled.div`
 }
 
 `
+
+const Hey = () => {
+  return (
+    <div className="content">
+      <p>'I\'ve had the opportunity to work with the Embassy of France in the last three years and designer these new year cards for them. </p>
+      <p>We used the trendy design elements from the year, add some french detail there and voila!</p>
+      <p>I absolutely love the drawing the sketch of the embassy building. </p>
+      <p>Side note: If you have a partner, enjoy your meal talking with them, theeeen pick a movie and watch it. Here am I, again, giving wonderful life hack recommendations.</p>
+      <p>You are welcome! :) </p>
+    </div>
+  )
+}
+
+export default Hey

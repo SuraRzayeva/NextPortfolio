@@ -40,7 +40,6 @@ width: 100%;
     flex-direction: column;
     cursor: pointer;
 
-
         .image-div {
 
             img {
@@ -124,7 +123,7 @@ width: 100%;
 }
 
 @media screen and (max-width: 450px) {
-    pointer-events: none;
+    
 }
 
 `

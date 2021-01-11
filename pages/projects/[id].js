@@ -1,14 +1,16 @@
 import { useContext, useEffect, useState } from 'react'
 import { SingleProjectStyle } from '../../style/pageStyles/SingleProjectStyle'
 import Context from '../../context/Context'
+import SEOLayout from '../../components/SEO/SEOLayout'
 import { DevelopmentProjects, DesignProjects } from '../../data/projects'
 import Link from 'next/link'
+import ReactHtmlParser from 'react-html-parser'
 import Loading from '../../components/atoms/Loading'
 import OverlayLayout from '../../components/atoms/OverlayLayout'
 import GalleryLayout from '../../components/subpageLayouts/GalleryLayout'
 
 const SingleProject = (props) => {
-  const { title, description, date, images, tools, link } = props
+  const { title, description, date, images, tools, link, url } = props
   const { menuActive, setHomeActive } = useContext(Context)
   const { overlay, setOverlay } = useContext(Context)
   const [loading, setLoading] = useState(1)
@@ -22,7 +24,6 @@ const SingleProject = (props) => {
   const showOverlay = (data) => {
     window.scrollTo(0, 0)
     setOverlay({ status: true, data: data })
-    console.log('overlay where')
   }
 
   useEffect(() => {
@@ -47,46 +48,53 @@ const SingleProject = (props) => {
     setHomeActive(false)
   }, [])
 
-  return (
-    <SingleProjectStyle menuActive={menuActive} loading={loading}>
-      {loading == 1 ? <Loading /> : null}
-      {overlay.status && <OverlayLayout />}
-      <Link href="/projects">
-        <div className="back-btn">
-          <button>Back to projects</button>
-        </div>
-      </Link>
-      <div className="container">
-        <div className="date">
-          <h4>{date}</h4>
-        </div>
-        <div className="title">
-          <h1>{title}</h1>
-          <div className="content">
-            <div className="description">
-              <p>{description}</p>
-              <div className="tools">
-                <p>
-                  In this projects I used:
-                  {tools.map((tool) => (
-                    <span key={tool}> {tool}</span>
-                  ))}
-                </p>
-              </div>
-              {link && (
-                <a href={link} target="_blank" key={link}>
-                  <h4> Click here to go to the project. </h4>
-                </a>
-              )}
+  if (!props) {
+    return <Loading />
+  } else {
+    return (
+      <>
+        <SEOLayout title={`${title} | Sura Rzayeva - Portfolio`} />
+        <SingleProjectStyle menuActive={menuActive} loading={loading}>
+          {loading == 1 ? <Loading /> : null}
+          {overlay.status && <OverlayLayout />}
+          <Link href="/projects">
+            <div className="back-btn">
+              <button>Back to projects</button>
             </div>
-            <div className="images">
-              <GalleryLayout data={images} column={3} />
+          </Link>
+          <div className="container">
+            <div className="date">
+              <h4>{date}</h4>
+            </div>
+            <div className="title">
+              <h1>{title}</h1>
+              <div className="content">
+                <div className="description">
+                  {ReactHtmlParser(description)}
+                  <div className="tools">
+                    <p>
+                      In this projects I used:
+                      {tools.map((tool) => (
+                        <span key={tool}> {tool}</span>
+                      ))}
+                    </p>
+                  </div>
+                  {link && (
+                    <a href={link} target="_blank" key={link}>
+                      <h4> Click here to go to the project. </h4>
+                    </a>
+                  )}
+                </div>
+                <div className="images">
+                  <GalleryLayout data={images} column={3} />
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-    </SingleProjectStyle>
-  )
+        </SingleProjectStyle>
+      </>
+    )
+  }
 }
 
 SingleProject.getInitialProps = async (ctx) => {

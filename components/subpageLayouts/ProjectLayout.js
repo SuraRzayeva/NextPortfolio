@@ -12,7 +12,6 @@ const BlogLayout = ({ data }) => {
 
   const increaseCount = () => {
     setCount((prev) => prev + 1)
-    console.log('setting:' + count)
   }
 
   useEffect(() => {
@@ -58,7 +57,7 @@ const BlogLayout = ({ data }) => {
                     <div className="tools">
                       I used:
                       {item.tools.map((item) => (
-                        <span> {item}</span>
+                        <span key={item}> {item}</span>
                       ))}
                     </div>
                     <MainButton label="Read More" />

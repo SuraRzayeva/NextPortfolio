@@ -12,7 +12,6 @@ const Gallery = ({ data, column }) => {
 
   const increaseCount = () => {
     setCount((prev) => prev + 1)
-    console.log('setting:' + count)
   }
 
   const showOverlay = (data, overlayWidth) => {
@@ -45,28 +44,32 @@ const Gallery = ({ data, column }) => {
     500: 1,
   }
 
-  return (
-    <GalleryLayoutStyle loading={loading}>
-      {loading == 1 ? <Loading full={false} /> : null}
-      <div className="grid">
-        <Masonry breakpointCols={breakpointColumnsObj} className="my-masonry-grid" columnClassName="my-masonry-grid_column">
-          {data.map((item) => (
-            <div className="gallery-box" key={item.id} onClick={() => showOverlay(item.url, item.overlayWidth)}>
-              <img src={item.url} onLoad={increaseCount} />
-              <div className="overlay">
-                <div className="title">
-                  <h4>{item.title}</h4>
-                </div>
-                <div className="zoom">
-                  <img src="/icons/loupe.svg" alt="" />
+  if (!data) {
+    return <Loading />
+  } else {
+    return (
+      <GalleryLayoutStyle loading={loading}>
+        {loading == 1 ? <Loading full={false} /> : null}
+        <div className="grid">
+          <Masonry breakpointCols={breakpointColumnsObj} className="my-masonry-grid" columnClassName="my-masonry-grid_column">
+            {data.map((item) => (
+              <div className="gallery-box" key={item.id} onClick={() => showOverlay(item.url, item.overlayWidth)}>
+                <img src={item.url} onLoad={increaseCount} />
+                <div className="overlay">
+                  <div className="title">
+                    <h4>{item.title}</h4>
+                  </div>
+                  <div className="zoom">
+                    <img src="/icons/loupe.svg" alt="" />
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
-        </Masonry>
-      </div>
-    </GalleryLayoutStyle>
-  )
+            ))}
+          </Masonry>
+        </div>
+      </GalleryLayoutStyle>
+    )
+  }
 }
 
 export default Gallery

@@ -11,6 +11,7 @@ overflow-x: hidden;
 opacity: ${(props) => (props.menuActive ? 0.3 : 1)};
 
 .back-btn {
+    opacity: ${(props) => (props.loading == 0 ? 1 : 0)};
     button {
         background: transparent;
         padding: 0;
@@ -40,6 +41,7 @@ opacity: ${(props) => (props.menuActive ? 0.3 : 1)};
 }
 
 .container {
+    opacity: ${(props) => (props.loading == 0 ? 1 : 0)};
     width: 70%;
     align-self: center;
     margin-top: 5rem;
@@ -64,9 +66,19 @@ opacity: ${(props) => (props.menuActive ? 0.3 : 1)};
     .content {
         margin-top: 5rem;
         width: 90%;
+        display: flex;
+        flex-direction: column;
             p {
                 font-size: 1.6rem;
                 line-height: 2.4rem;
+               
+            }
+
+            img {
+                width: 80%;
+                display: inline;
+                margin: 0;
+                align-self: center;
             }
     
     }

@@ -2,8 +2,7 @@ import { useContext, useEffect, useState } from 'react'
 import Context from '../context/Context'
 import { IndexStyle } from '../style/pageStyles/IndexStyle'
 import Cat from '../components/atoms/Cat'
-import MainButton from '../components/atoms/MainButton'
-import Loading from '../components/atoms/Loading'
+import SEOLayout from '../components/SEO/SEOLayout'
 export default function Home() {
   const { menuActive, setMenuActive, englishActive, setHomeActive, homeActive } = useContext(Context)
 
@@ -17,23 +16,26 @@ export default function Home() {
   }
 
   return (
-    <IndexStyle menuActive={menuActive}>
-      <div className="hero">
-        <h1 className="hero-text">{englishActive ? 'Ready for' : 'Bereit'}</h1>
-        <h1 className="hero-text">{englishActive ? 'something' : 'für etwas'}</h1>
-        <h1 className="hero-text">
-          {englishActive ? 'cool' : 'Tolles'}
-          <span>?</span>
-        </h1>
-      </div>
-      <div className="line-block">
-        {/* <div className="start-here" onClick={toggleMenu}>
+    <>
+      <SEOLayout />
+      <IndexStyle menuActive={menuActive}>
+        <div className="hero">
+          <h1 className="hero-text">{englishActive ? 'Ready for' : 'Bereit'}</h1>
+          <h1 className="hero-text">{englishActive ? 'something' : 'für etwas'}</h1>
+          <h1 className="hero-text">
+            {englishActive ? 'cool' : 'Tolles'}
+            <span>?</span>
+          </h1>
+        </div>
+        <div className="line-block">
+          {/* <div className="start-here" onClick={toggleMenu}>
           <MainButton label="Start here" />
         </div> */}
-        <div className="line" onClick={toggleMenu}>
-          <Cat />
+          <div className="line" onClick={toggleMenu}>
+            <Cat />
+          </div>
         </div>
-      </div>
-    </IndexStyle>
+      </IndexStyle>
+    </>
   )
 }
