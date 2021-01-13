@@ -38,7 +38,7 @@ width: 100%;
     border-radius: 1rem;
     margin-right: 3rem;
     flex-direction: column;
-    cursor: pointer;
+    /* cursor: pointer; */
 
     :hover .image-div img {
         filter: grayscale(0);
@@ -63,7 +63,7 @@ width: 100%;
                 justify-content: center;
                 align-items: center;
                 transition: .1s ease all;
-                cursor: pointer;
+                /* cursor: pointer; */
    
 
                 .post-info {
@@ -91,7 +91,7 @@ width: 100%;
                         font-weight: 700;
                         padding: 0;
                         position: relative;
-                        cursor: pointer;
+                        /* cursor: pointer; */
                         transition: .2s ease all;
                     }
 

@@ -7,6 +7,7 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 padding: 13rem 10rem;
+padding-bottom: 5rem;
 overflow-x: hidden;
 opacity: ${(props) => (props.menuActive ? 0.3 : 1)};
 
@@ -17,7 +18,7 @@ opacity: ${(props) => (props.menuActive ? 0.3 : 1)};
         padding: 0;
         font-weight: 700;
         font-size: 1.4rem;
-        cursor: pointer;
+        /* cursor: pointer; */
         position: relative;
         transition: .2s ease all;
         outline: none;
@@ -71,13 +72,17 @@ opacity: ${(props) => (props.menuActive ? 0.3 : 1)};
             p {
                 font-size: 1.6rem;
                 line-height: 2.4rem;
-               
+            }
+
+            h1 {
+                font-size: 2rem;
+                line-height: 3rem;
             }
 
             img {
                 width: 80%;
                 display: inline;
-                margin: 0;
+                margin: 2rem 0;
                 align-self: center;
             }
     
@@ -94,6 +99,9 @@ opacity: ${(props) => (props.menuActive ? 0.3 : 1)};
             h1 {
                 font-size: 8rem;
             }
+        }
+        .content {
+            margin-top: 2rem;
         }
     }
 }
@@ -117,6 +125,10 @@ opacity: ${(props) => (props.menuActive ? 0.3 : 1)};
 
     .content {
         width: 100%;
+        margin-top: 1rem;
+        img {
+            width: 100%;
+        }
     }
     
     }

@@ -24,7 +24,7 @@ transition: 0.3s ease all;
     flex-direction: column;
     justify-content: center;
     padding-left: 10rem;
-    cursor: pointer;
+    /* cursor: pointer; */
 
 
     .title {
@@ -40,6 +40,7 @@ transition: 0.3s ease all;
         font-weight: 400;
         font-size: 1.2rem;
         color: ${black};
+        margin-top: 0.5rem;
 
         .line-break {
             display: none;
@@ -61,7 +62,7 @@ transition: 0.3s ease all;
         border-style: none;
         margin-right: 2rem;
         text-transform: uppercase;
-        cursor: pointer;
+        /* cursor: pointer; */
         font-weight: 600;
 
         h4{
@@ -88,7 +89,8 @@ transition: 0.3s ease all;
         :hover h4:after {
             width: 4rem;
             height: 4rem;
-            border: 2px solid ${detailColor2};
+            background: ${detailColor2};
+            z-index: -1;
             opacity: 1;
         }
 
@@ -104,7 +106,7 @@ transition: 0.3s ease all;
         flex-direction: column;
         align-items: flex-end;
         padding-bottom: 1rem;
-        cursor: pointer;
+        position: relative;
 
         .line {
             width: 80%;
@@ -127,6 +129,31 @@ transition: 0.3s ease all;
             transform: rotate(45deg) translate(-5%,-100%);
         }
 
+    }
+
+    .burger-menu:after {
+        content: '';
+        width: 0;
+        height: 0;
+        border-radius: 50%;
+        position: absolute;
+        top: 40%;
+        left:70%;
+        opacity: 0;
+        transform: translate(-50%,-50%);
+        transition: .3s ease all;
+    }
+
+    .burger-menu:hover:after {
+        width: 4rem;
+        height: 4rem;
+        background: ${detailColor2};
+        z-index: -1;
+        opacity: 1;
+    }
+
+    .burger-menu:hover {
+        transform: scale(1.1);
     }
 }
 

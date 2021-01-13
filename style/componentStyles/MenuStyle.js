@@ -72,7 +72,7 @@ transition: 0.5s ease all;
     left: 60%;
     animation: ${(props) => (props.menuActive ? 'box1ToCenter .5s ease forwards;' : 'box1Back .5s ease forwards; ')}
     z-index: ${(props) => (props.menuActive ? '100;' : '-100; ')}
-    cursor: ${(props) => (props.menuActive ? 'pointer;' : null)}
+    /* cursor: ${(props) => (props.menuActive ? 'pointer;' : null)} */
   }
 
   .box-2 {
@@ -80,7 +80,7 @@ transition: 0.5s ease all;
     left: 20%;
     animation: ${(props) => (props.menuActive ? 'box2ToCenter .5s ease forwards;' : 'box2Back .5s ease forwards; ')}
     z-index: ${(props) => (props.menuActive ? '100;' : '-100; ')}
-    cursor: ${(props) => (props.menuActive ? 'pointer;' : null)}
+    /* cursor: ${(props) => (props.menuActive ? 'pointer;' : null)} */
   }
 
 
@@ -89,7 +89,7 @@ transition: 0.5s ease all;
     left: 50%;
     animation: ${(props) => (props.menuActive ? 'box3ToCenter .5s ease forwards;' : 'box3Back .5s ease forwards; ')}
     z-index: ${(props) => (props.menuActive ? '100;' : '-100; ')}
-    cursor: ${(props) => (props.menuActive ? 'pointer;' : null)}
+    /* cursor: ${(props) => (props.menuActive ? 'pointer;' : null)} */
  
   }
 
@@ -99,7 +99,7 @@ transition: 0.5s ease all;
 
     animation: ${(props) => (props.menuActive ? 'box5ToCenter .5s ease forwards;' : 'box5Back .5s ease forwards; ')}
     z-index: ${(props) => (props.menuActive ? '100;' : '-100; ')}
-    cursor: ${(props) => (props.menuActive ? 'pointer;' : null)}
+    /* cursor: ${(props) => (props.menuActive ? 'pointer;' : null)} */
 
   }
 
@@ -108,7 +108,7 @@ transition: 0.5s ease all;
     top: -5%;
     animation: ${(props) => (props.menuActive ? 'box6ToCenter .5s ease forwards;' : 'box6Back .5s ease forwards; ')}
     z-index: ${(props) => (props.menuActive ? '100;' : '-100; ')}
-    cursor: ${(props) => (props.menuActive ? 'pointer;' : null)}
+    /* cursor: ${(props) => (props.menuActive ? 'pointer;' : null)} */
   }
 
   .box-6 {
@@ -116,7 +116,7 @@ transition: 0.5s ease all;
     left: 7%;
     animation: ${(props) => (props.menuActive ? 'box4ToCenter .5s ease forwards;' : 'box4Back .5s ease forwards; ')}
     z-index: ${(props) => (props.menuActive ? '100;' : '-100; ')}
-    cursor: ${(props) => (props.menuActive ? 'pointer;' : null)}
+    /* cursor: ${(props) => (props.menuActive ? 'pointer;' : null)} */
   }
 
 

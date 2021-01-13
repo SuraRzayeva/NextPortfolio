@@ -10,16 +10,17 @@ import CharacterDesign from '../components/subpages/GraphicGallery/CharacterDesi
 import LineArtDesign from '../components/subpages/GraphicGallery/LineArtDesign'
 
 const GraphicDesign = () => {
-  const { graphicActivePage, overlay, menuActive, setHomeActive } = useContext(Context)
+  const { graphicActivePage, overlay, menuActive, setHomeActive, setBlogActive } = useContext(Context)
   const { status } = overlay
 
   useEffect(() => {
     setHomeActive(false)
+    setBlogActive(false)
   }, [])
 
   return (
     <>
-      <SEOLayout />
+      <SEOLayout title="Graphic Design | Portfolio - Sura Rzayeva" />
       <GalleryPageStyle menuActive={menuActive}>
         {status && <OverlayLayout />}
         <Subnav graphic={true} />

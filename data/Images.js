@@ -120,26 +120,26 @@ export const IconImages = [
 export const PosterImages = [
   {
     id: 'poster1',
-    title: 'Zara UI Design',
+    title: "Design for the Lecture on 'Kinetic Illusions in Opt Art'",
     url: '/Galleries/PosterDesign/1.png',
     overlayWidth: '40%',
   },
   {
     id: 'poster2',
-    title: 'Zara UI Design',
+    title: "Design for 'Writer Talks - Nihilistic Adventures'",
     url: '/Galleries/PosterDesign/2.png',
     overlayWidth: '50%',
   },
   {
     id: 'poster3',
-    title: 'Yummy Recipes Design',
-    url: '/Galleries/PosterDesign/3.png',
+    title: 'Poster 1 for the Psycological Episodes by Think Co.',
+    url: '/Galleries/PosterDesign/4.png',
     overlayWidth: '80%',
   },
   {
     id: 'poster4',
-    title: 'Yummy Recipes Design',
-    url: '/Galleries/PosterDesign/4.png',
+    title: 'Poster 3 for the Psycological Episodes by Think Co.',
+    url: '/Galleries/PosterDesign/3.png',
     overlayWidth: '50%',
   },
 ]
@@ -155,14 +155,8 @@ export const Illustrations = [
   },
   {
     id: 'il2',
-    title: 'Zara UI Design',
+    title: 'Sexy Giraffe',
     url: '/Galleries/Illustrations/2.png',
-    overlayWidth: '50%',
-  },
-  {
-    id: 'il3',
-    title: 'Yummy Recipes Design',
-    url: '/Galleries/Illustrations/3.png',
     overlayWidth: '50%',
   },
 ]

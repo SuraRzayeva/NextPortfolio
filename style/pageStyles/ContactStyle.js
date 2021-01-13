@@ -50,11 +50,25 @@ padding: 10rem;
         align-items: center;
 
        .text {
-           width: 80%;
+           width: 95%;
 
         p {
             font-size: 1.4rem;
             line-height: 2rem;
+        }
+
+        ul {
+            padding: 0;
+
+            li {
+                font-size: 1.4rem;
+                margin-bottom: .5rem;
+                user-select: all;
+
+                span {
+                    font-weight: 700;
+                }
+            }
         }
        }
 
@@ -99,7 +113,7 @@ padding: 10rem;
         form {
             display: flex;
             flex-direction: column;
-            width: 85%;
+            width: 80%;
             justify-content: flex-end;
       
             

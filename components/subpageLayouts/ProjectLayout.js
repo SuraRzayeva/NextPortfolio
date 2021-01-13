@@ -1,14 +1,16 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useContext } from 'react'
 import { ProjectLayoutStyle } from '../../style/componentStyles/ProjectLayoutStyle'
 import Masonry from 'react-masonry-css'
 import Loading from '../atoms/Loading'
 import Link from 'next/link'
+import Context from '../../context/Context'
 import MainButton from '../atoms/MainButton'
 
 const BlogLayout = ({ data }) => {
   const [loading, setLoading] = useState(1)
   const [count, setCount] = useState(0)
   const [allImagesCount, setAllImagesCount] = useState(0)
+  const { englishActive } = useContext(Context)
 
   const increaseCount = () => {
     setCount((prev) => prev + 1)
@@ -52,15 +54,15 @@ const BlogLayout = ({ data }) => {
                 </div>
                 <div className="post-description">
                   <div className="post-info">
-                    <h4>{item.title}</h4>
-                    <p>{item.shortInfo}</p>
+                    <h4>{englishActive ? item.title : item.titleDE}</h4>
+                    <p>{englishActive ? item.shortInfo : item.shortInfoDE}</p>
                     <div className="tools">
-                      I used:
+                      {englishActive ? 'I used:' : 'Was ich benutzt habe:'}
                       {item.tools.map((item) => (
                         <span key={item}> {item}</span>
                       ))}
                     </div>
-                    <MainButton label="Read More" />
+                    <MainButton label={englishActive ? 'Read More' : 'Mehr Lesen'} />
                   </div>
                 </div>
               </div>

@@ -9,6 +9,7 @@ const GlobalStyle = createGlobalStyle`
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     user-select: none;
     color: ${Colors.black};
+    cursor: none;
 }
 
 html {
@@ -24,7 +25,8 @@ body {
     font-family: 'Montserrat', sans-serif;
     background-color: ${Colors.white};
     overflow-x: hidden;
-    overflow-y: ${(props) => (props.overlay ? 'hidden' : 'scroll')}
+    overflow-y: ${(props) => (props.overlay ? 'hidden' : 'scroll')};
+   
 }
 
 button {

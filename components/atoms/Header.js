@@ -4,7 +4,7 @@ import { HeaderStyle } from '../../style/componentStyles/HeaderStyle'
 import Link from 'next/link'
 
 const Header = () => {
-  const { menuActive, setMenuActive, englishActive, setEnglishActive } = useContext(Context)
+  const { menuActive, setMenuActive, englishActive, setEnglishActive, blogActive } = useContext(Context)
 
   const toggleMenu = () => {
     setMenuActive((prev) => !prev)
@@ -25,9 +25,11 @@ const Header = () => {
         </div>
       </Link>
       <div className="nav-section">
-        <button className="lang" onClick={toggleLanguage}>
-          <h4>{englishActive ? 'de' : 'en'}</h4>
-        </button>
+        {!blogActive && (
+          <button className="lang" onClick={toggleLanguage}>
+            <h4>{englishActive ? 'de' : 'en'}</h4>
+          </button>
+        )}
         <div className="burger-menu" onClick={toggleMenu}>
           <div className={`line line1 ${menuActive ? 'line1x' : null}`}></div>
           <div className={`line line2 ${menuActive ? 'line2x' : null}`}></div>

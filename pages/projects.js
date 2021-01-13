@@ -7,10 +7,11 @@ import Development from '../components/subpages/Projects/Development'
 import SEOLayout from '../components/SEO/SEOLayout'
 
 const Projects = () => {
-  const { setHomeActive, projectsActivePage, menuActive, overlay } = useContext(Context)
+  const { setHomeActive, projectsActivePage, menuActive, overlay, setBlogActive } = useContext(Context)
   const { status } = overlay
   useEffect(() => {
     setHomeActive(false)
+    setBlogActive(false)
   }, [])
 
   return (

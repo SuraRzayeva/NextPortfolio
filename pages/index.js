@@ -4,11 +4,12 @@ import { IndexStyle } from '../style/pageStyles/IndexStyle'
 import Cat from '../components/atoms/Cat'
 import SEOLayout from '../components/SEO/SEOLayout'
 export default function Home() {
-  const { menuActive, setMenuActive, englishActive, setHomeActive, homeActive } = useContext(Context)
+  const { menuActive, setMenuActive, englishActive, setHomeActive, homeActive, setBlogActive } = useContext(Context)
 
   useEffect(() => {
     setHomeActive(true) // to stylize the credit and other homepage related design
     menuActive && setMenuActive(false) // to close the menu when getting back to the homepage clicking on the logo
+    setBlogActive(false)
   }, [])
 
   const toggleMenu = () => {

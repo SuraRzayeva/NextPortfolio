@@ -39,14 +39,14 @@ opacity: ${(props) => (props.menuActive ? 0.3 : 1)};
   flex-direction: column;
   align-items: flex-end;
   justify-content: center;
-  cursor: pointer;
+  /* cursor: pointer; */
 
   .start-here {
     width: 15rem;
     height: 5rem;
     display: flex;
     align-items: flex-end;
-    cursor: pointer;
+    /* cursor: pointer; */
     z-index: 10;
   }
 

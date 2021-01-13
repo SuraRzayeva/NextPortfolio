@@ -20,7 +20,7 @@ opacity: ${(props) => (props.menuActive ? 0.3 : 1)};
         padding: 0;
         font-weight: 700;
         font-size: 1.4rem;
-        cursor: pointer;
+        /* cursor: pointer; */
         position: relative;
         transition: .2s ease all;
     }

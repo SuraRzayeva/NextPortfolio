@@ -212,59 +212,38 @@ export const PhilosophicalPosts = [
 
 export const ProfessionalPosts = [
   {
-    id: '10MostImportantMetaTags',
-    title: '10 Most Important Meta Tags',
-    description: 'Meta Tags can affect the way that users see your site in the search results and whether or not they actually click through to your site. In this blog post, I decided to share the most important 10 meta tags with you.',
-    url: '/BlogPosts/Professional/Blog1-MetaTags/1.jpg',
-    images: ['/BlogPosts/Professional/Blog1-MetaTags/1.jpg', '/BlogPosts/post4.jpg', '/BlogPosts/post1.jpg'],
+    id: 'WhyIMigratedFromReactToNextJs',
+    title: 'Why I migrated from React to Next.js',
+    description: 'Recently, as you may have noticed, I have built my personal portfolio again using Next.js and decided to share with you the reasons why I migrated from React into Next.js and why I think Next.js is the future of React in many ways.',
+    url: '/BlogPosts/Professional/Blog1-Migration/1.jpg',
+    images: ['/BlogPosts/Professional/Blog1-Migration/2.jpg', '/BlogPosts/Professional/Blog1-Migration/3.jpg'],
     date: 'January 10, 2021',
     article: `
       <div>
-      <img src='/BlogPosts/Professional/Blog1-MetaTags/1.jpg' {syntaxcorrection}={increaseCount}/>
-        <p>What’s the point? </p>
-        <p>This question alone can lead us to different directions. </p>
-        <p>What’s the point? You are free, if you’ve reached to the point of asking this question. Welcome to the edge of other people’s reality. There is no way back. I’m sorry, it’s too late to hide… you have already been infected with existentialism.</p>
-        <p>
-          I’m not going to tell you to dedicate yourself to finding the answer. Don’t waste your life looking for something that doesn’t exist. You can try. You can deny every doubt in your mind and keep pushing yourself into a mediocre lifestyle, just because you’re afraid of facing yourself. Just because you’re
-          afraid of living a meaningless life. But, why to choose to add more suffering to life, as if there were less? Living to find a meaning is not meaningful at all.{' '}
+        <p>Recently, I’ve migrated my personal portfolio, this webpage, from React into Next.js and by ‘migrated’ I mean, I’ve built it again using Next.js, because I decided to optimize the logic of my code and data structure in order to make it easier to read and understand. Also, I wanted to make it more beautiful, because, hey, I’m more designer than a developer. :)</p>
+        <p>Anyway, as my new webpage is online now, I decided to share the reasons why I made this change and said ‘goodbye’ to React. Just kidding, this is not a sad story.</p>
+
+        <img src='/BlogPosts/Professional/Blog1-Migration/2.jpg' {syntaxcorrection}={increaseCount}/>
+
+        <p>At first, a little bit about my React background: I started coding in React about a year ago and I immediately fell in love with it. It was originally created by Facebook and has become one of the most popular libraries in the frontend world today. It is easily extendable and can include features like routing as well as state management patterns with libraries like Redux etc. Plus, hooks like useState, useEffect and useContext? Oh my 001001011, It felt like coding in Heaven, using magical functions from the Garden of Eden and making api calls to the Highest Glory…  Building single page applications with React was really fun.</p>
+        <p>Then I met with Next.js, which was developed by Vercel (formerly Zeit) and created on top of React in an effort to build an easy-to-use development framework. It uses many of the popular features of React and, right out of the box, provides things like pre-rendering, routing, code splitting, webpack support and much more. When I first started coding in Next.js, everything felt like the same… But, was it?</p>
+        <p>The answer is: kind of. Let’s talk about the differences between them.</p>
+        <h1>The major distinction, which was also very important for me was Client Side Rendering and Server Side Rendering, shortly CSR and SSR.</h1>
+        <p>The regular React app does something called Client Side Routing and what this means is when you make a request to this website, basically all of the logic for that site gets shipped down in javascript with a single blank HTML page and then everything is rendered on the client side. So any API call that you can make, is made from the frontend, because basically all of the application is sent down at the initial request.</p>
+
+        <p>Next.js, on the other hand, gives you the flexibility to choose between CSR and SSR (or a mix of both!) on a per page basis. This is actually the traditional way of building web pages. So, basically you make a request to a server, then the server interacts with the database, fetches all the information needed and sends that page back to you. This would happen with every request for a different page that you would need. 
         </p>
-        <p>Viktor Frankl believed that humans are motivated by something called a ‘will to meaning’, which is the desire to find meaning in life. He argued that life can have meaning even in the most miserable of circumstances, and that the motivation for living comes from finding that meaning. </p>
-        <h1> So which are the most important ones? </h1>
-        <p>
-          In other words, if you’re looking for THE meaning, you won’t find it. But if you’re looking for A meaning. It’s possible to find one and stick to it. Do you think all those people around you have a clue about what the hell they are doing in life? No! The majority just live on autopilot… not questioning
-          existence, repeating what others do, following some stupid norms and rules, not overthinking about it and hoping for the best. They think if they live mediocre lives, if they complete all the vain steps of society, if they are normal, if they fit… when they die, some angel will appear and tell them
-          ‘congratulations you lived a meaningful life’.{' '}
-        </p>
-        <img src='/BlogPosts/Professional/Blog1-MetaTags/1.jpg' {syntaxcorrection}={increaseCount}/>
-        <p>
-          No. Nobody will tell you if your life is, or was, meaningful or not. But you will know it. You will feel it. How?! How is it even possible to feel it? What’s this thing inside of us, constantly whispering about good and bad, and shaming us, and cheering us, and making us to feel guilty or be proud of
-          ourselves? I call it our inner Roskolnikov. Others call it morality, which is the only thing that will keep you sane in this abstract reality.{' '}
-        </p>
-        <p>Don’t lose it. </p>
-        <p>Not losing your morality, when there's nothing left... is your elegancy. Not because they deserve it. Just because you're the Übermensch. Just because you deserve it. Not because you're a narcissist. But, because you have the control.</p>
-        <p>This is the same ‘control’ which kept Viktor Frankl alive in hell. This is the same control which helped Albert Camus to fight his nihilistic monsters. This is the same control which gifted freedom to Jean-Paul Sartre in a desert of meaninglessness. </p>
-        <p>
-          Don’t turn to god or nature to find some morality either. God has no morality. Nature on the other hand… doesn’t give a shit about you. No. Nature doesn’t have any morality either. I mean… at least ‘morality’ in a sense of word, which is rooted in our consciousness, which has some biological explanations,
-          keeping all those philosophers and psychologists occupied during centuries. I don’t want to touch its biological explanations, because when it comes to biological reality, it becomes very hard for me to concentrate on to the idea of meaning.
-        </p>
-        <p>Anyway…</p>
-        <img src='/BlogPosts/post4.jpg' {syntaxcorrection}={increaseCount}/>
-        <p>
-          It’s very interesting that morality is the quality lacking in God and Nature, but present to us in experience. When it comes to encountering with the universe – its indifference toward us, its apparent lack of purpose, and the suffering and death in it – leads us to the conclusion that we are in an absurd and
-          miserable situation, and ending our ride can seem appealing. Yet this needn’t be an invitation to suicide. In such a situation, we can still lead a meaningful and moral life; in other words… add some music to your ride.
-        </p>
-        <p>
-          Life is suffering. God is dead. Cosmos doesn’t care. Nature is not ultimately holistic and purposeful in any meaningful sense. However there is still a possibility for you to make a meaningful life and meet suffering with a compassionate imagination. Since nobody else—and nothing else—will value you, value
-          yourself. If God and Nature will not speak, you speak. If no one is listening, you listen. You question. You choose. You create value. You find your meaning.{' '}
-        </p>
-        <p>However. </p>
-        <img src='/BlogPosts/post1.jpg' {syntaxcorrection}={increaseCount}/>
-        <p>
-          Remember. You already asked the question. ‘What’s point?’ So… Make some place in your soul for cold nihilism, which will never leave you. There is no cure for it. Be ready to live with a huge emptiness inside. Nothing will totally fill it. But you can accept it. Only acceptance will make you free. Only
-          freedom will help you to keep your morality. Only morality will keep you sane.{' '}
-        </p>
-        <p>It’s ok to be lost. It’s ok to be awkward. It’s ok to be sad… it’s ok to feel empty. </p>
-        <p>That’s your reality.</p>
+        <h1>Now you can ask, ‘Which are the benefits of SSR for you, Sura?’</h1>
+        <p>I’d not even let you finish your question and immediately say: ‘SSR means better SEO practises!’</p>
+
+        <img src='/BlogPosts/Professional/Blog1-Migration/3.jpg' {syntaxcorrection}={increaseCount}/>
+
+        <p>SEO is essential for making your webpage easier for Google to understand. Basically, before indexing the page, Google has to go in and run all of the javascript, in order to understand what’s going on the page. With SSR, by the time you get to the page,  the search engine has already all of the information needed, in order to gauge SEO of that page. Better SEO means better performance, which means more visitors to the webpage! Yay!</p>
+        <p>With Next.js, I was able to write my code in React - the technology I love. And the visitor on my site gets a plain HTML document (with visible content, and a little rehydrated JS), which gets a massive performance boost. Plus, Google loves me now!</p>
+        <p>Besides the mentioned advantage, Next.js has other cool features like built-in static and dynamic routing, stable incremental static regeneration, webpack 5 support, persistent caching for page bundles, out of the box support for Sass Modules and Typescript, all sorts of performance optimizations, amazing deployment processes and community and much more.</p>
+        <p>Shortly, Next.js abstracted away all those performance and development setups I needed with a typical React app and allowed me to focus on what matters - my business logic code and data structure. So, I’m really convinced that Next.js is the future of React.</p>
+        <p>If you want to dig deeper and learn more about React.js, click <a href="https://reactjs.org/" target="_blank">here</a> and about Next.js, click <a href="https://nextjs.org/docs/getting-started" target="_blank">here</a>.</p>
+        <p>Thank you for reading my post and good luck!</p>
       </div>`,
   },
 ]

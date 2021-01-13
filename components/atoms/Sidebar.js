@@ -9,31 +9,36 @@ const Sidebar = () => {
   return (
     <SidebarStyle homeActive={homeActive}>
       <ul>
-        <Link href="">
+        <a href="https://github.com/SuraRzayeva" target="_blank">
           <li>
             <img src="/icons/github.svg" alt="github" />
           </li>
-        </Link>
-        <Link href="">
+        </a>
+        <a href="https://www.linkedin.com/in/surarzayeva/" target="_blank">
           <li>
             <img src="/icons/linkedin.svg" alt="linkedin" />
           </li>
-        </Link>
-        <Link href="">
+        </a>
+        <a href="https://www.instagram.com/surarzayeva/" target="_blank">
           <li>
             <img src="/icons/instagram.svg" alt="instagram" />
           </li>
-        </Link>
-        <Link href="">
+        </a>
+        <a href="https://twitter.com/SuraRzayeva" target="_blank">
           <li>
             <img src="/icons/twitter.svg" alt="twitter" />
           </li>
-        </Link>
-        <Link href="">
+        </a>
+        <a href="https://dribbble.com/SuraRzayeva" target="_blank">
           <li>
             <img src="/icons/dribble.svg" alt="dribble" />
           </li>
-        </Link>
+        </a>
+        <a href="https://codepen.io/SuraRzayeva" target="_blank">
+          <li>
+            <img src="/icons/codepen.svg" alt="codepen" />
+          </li>
+        </a>
         <Link href="/contact">
           <li>
             <img src="/icons/envelope.svg" alt="contact" />

@@ -5,7 +5,7 @@ import SEOLayout from '../components/SEO/SEOLayout'
 import MainButton from '../components/atoms/MainButton'
 
 const Contact = () => {
-  const { menuActive, setHomeActive } = useContext(Context)
+  const { menuActive, setHomeActive, setBlogActive, englishActive } = useContext(Context)
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [message, setMessage] = useState('')
@@ -30,6 +30,7 @@ const Contact = () => {
 
   useEffect(() => {
     setHomeActive(false)
+    setBlogActive(false)
   }, [])
 
   useEffect(() => {
@@ -45,34 +46,51 @@ const Contact = () => {
 
   return (
     <>
-      <SEOLayout />
+      <SEOLayout title="Contact me | Portfolio - Sura Rzayeva" englishActive={englishActive} />
       <ContactStyle menuActive={menuActive} error={error}>
         <div className="title">
-          <h1>Contact</h1>
+          <h1>{englishActive ? 'Contact' : 'Kontakt'}</h1>
         </div>
         <div className="container">
           <div className="contact-text">
             <div className="text">
               <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
-                into electronic typesetting, remaining essentially unchanged.
+                {englishActive
+                  ? "Do you have an idea and need help in developing it further? Do you need a brand design or a webpage? Or just a UI/UX design? Or a logo? Or just a poster. Do you want an animation of yourself or a line-art portrait of someone you love? They can be great gifts, you know... Contact me, I'd be delighted to work with you."
+                  : 'Hast du eine Idee und brauchst Hilfe bei der Weiterentwicklung? Benötigst du ein Markendesign oder eine Webseite? Oder nur ein UI / UX-Design? Oder ein Logo? Oder nur ein Poster. Möchtest du eine Animation von dich selbst oder ein Strichbild von jemandem, den du liebst? Es kann eine großartige Geschenke sein, weißt du? ... Kontaktiere mich, ich würde mich freuen, mit dir zusammenzuarbeiten.'}
               </p>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+              <p>
+                {englishActive
+                  ? "Did you like my characters and want to use them... Or you just want to write me, say 'hello' and tell me what you think about my art... or about my crazy blog posts...(?)"
+                  : "Hat dir meine Figur gefallen und du wolltest sie benutzen ... Oder du willst mir einfach schreiben, 'Hallo' sagen und mir sagen, was du über meine Kunst denkst ... oder über meine verrückten Blog-Beiträge ... (?)"}
+              </p>
+              <p>{englishActive ? "I'll be very happy to hear from you. Send me a message! Or you can also follow me on Instagram, Codepen and Twitter!" : 'Ich werde mich sehr freuen, von dir zu hören. Schick mir eine Nachricht! Oder du kannst mir auch auf Instagram, Codepen und Twitter folgen!'}</p>
+              <ul>
+                <li>
+                  <span>Email: </span>sura.rzayeva@gmail.com
+                </li>
+                <li>
+                  <span>Tel: </span> +49 178 4036246
+                </li>
+                <li>
+                  <span>{englishActive ? 'Address' : 'Addresse'}</span> {englishActive ? 'Berlin, Germany' : 'Berlin, Deutschland'}
+                </li>
+              </ul>
             </div>
           </div>
           <div className="form">
             {error ? (
               <div className="error-msg">
-                <p>Please fill all the input fiels.</p>
+                <p>{englishActive ? 'Please fill all the input fiels.' : 'Bitte alle Felder ausfüllen'}</p>
               </div>
             ) : null}
             {!success ? (
               <form action="" onSubmit={submitMessage}>
-                <input type="text" name="name" placeholder="Name" autoComplete="false" onChange={(cursor) => setName(cursor.target.value)} />
+                <input type="text" name="name" placeholder={englishActive ? 'Full Name' : 'Vollname'} autoComplete="false" onChange={(cursor) => setName(cursor.target.value)} />
                 <input type="email" name="email" placeholder="Email" onChange={(cursor) => setEmail(cursor.target.value)} />
-                <textarea name="message" id="" cols="30" rows="8" placeholder="Message" onChange={(cursor) => setMessage(cursor.target.value)} />
+                <textarea name="message" id="" cols="30" rows="8" placeholder={englishActive ? 'Message' : 'Nachricht'} onChange={(cursor) => setMessage(cursor.target.value)} />
                 <div className="button">
-                  <MainButton label="Send Message" />
+                  <MainButton label={englishActive ? 'Send message' : 'Nachricht senden'} />
                 </div>
               </form>
             ) : (

@@ -9,7 +9,7 @@ import Link from 'next/link'
 import Masonry from 'react-masonry-css'
 
 const About = () => {
-  const { menuActive, setHomeActive } = useContext(Context)
+  const { menuActive, setHomeActive, setBlogActive } = useContext(Context)
   const [loading, setLoading] = useState(1)
   const [count, setCount] = useState(0)
   const [allImagesCount, setAllImagesCount] = useState(0)
@@ -39,6 +39,7 @@ const About = () => {
 
   useEffect(() => {
     setHomeActive(false)
+    setBlogActive(false)
   }, [])
 
   const breakpointColumnsObj = {
@@ -49,7 +50,7 @@ const About = () => {
 
   return (
     <>
-      <SEOLayout />
+      <SEOLayout title="About me| Portfolio - Sura Rzayeva" />
       <AboutStyle menuActive={menuActive} loading={loading}>
         {loading == 1 ? <Loading full={true} /> : null}
         <div className="container">

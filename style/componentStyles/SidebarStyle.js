@@ -18,7 +18,7 @@ ul {
         font-weight: 600;
         width: 1.7rem;
         position: relative;
-        cursor: pointer;
+        /* cursor: pointer; */
 
         img {
             width: 100%;
@@ -37,13 +37,16 @@ ul {
         opacity: 0;
         transform: translate(-50%,-50%);
         transition: .3s ease all;
+        z-index: -1;
     }
 
     li:hover:after {
         width: 4rem;
         height: 4rem;
         border: 2px solid ${detailColor2};
+        background: ${detailColor2};
         opacity: 1;
+   
     }
 
     li:hover img {
@@ -56,7 +59,7 @@ ul {
     bottom: 0;
     top: unset;
     right: unset;
-    bottom: 3.5rem;
+    bottom: 5rem;
     display: flex;
     justify-content: ${(props) => (props.homeActive ? 'flex-end' : 'flex-start')}
     width: 100vw;
@@ -80,7 +83,7 @@ ul {
 }
 
 @media screen and (max-width: 450px) {
-    bottom: 3.5rem;
+    bottom: 5rem;
     padding: 0 3rem;
     ul {
         width: 50vw;

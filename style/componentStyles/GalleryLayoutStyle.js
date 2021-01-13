@@ -63,7 +63,7 @@ align-items: flex-start;
                 align-items: flex-end;
                 opacity: 0;
                 transition: .1s ease all;
-                cursor: pointer;
+                /* cursor: pointer; */
                 padding: 0 3rem;
 
                 .title {

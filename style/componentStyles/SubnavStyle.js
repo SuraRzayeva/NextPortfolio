@@ -17,7 +17,7 @@ ul {
         margin-right: 10rem;
         font-size: 1.3rem;
         font-weight: 600;
-        cursor: pointer;
+        /* cursor: pointer; */
         position: relative;
         transition: .2s ease all;
     }

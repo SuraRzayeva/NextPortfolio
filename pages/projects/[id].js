@@ -10,8 +10,8 @@ import OverlayLayout from '../../components/atoms/OverlayLayout'
 import GalleryLayout from '../../components/subpageLayouts/GalleryLayout'
 
 const SingleProject = (props) => {
-  const { title, description, date, images, tools, link, url } = props
-  const { menuActive, setHomeActive } = useContext(Context)
+  const { title, description, date, images, tools, link, url, shortInfo } = props
+  const { menuActive, setHomeActive, englishActive } = useContext(Context)
   const { overlay, setOverlay } = useContext(Context)
   const [loading, setLoading] = useState(1)
   const [count, setCount] = useState(0)
@@ -53,7 +53,7 @@ const SingleProject = (props) => {
   } else {
     return (
       <>
-        <SEOLayout title={`${title} | Sura Rzayeva - Portfolio`} />
+        <SEOLayout title={`${title} | Portfolio - Sura Rzayeva`} description={shortInfo} image={url} />
         <SingleProjectStyle menuActive={menuActive} loading={loading}>
           {loading == 1 ? <Loading /> : null}
           {overlay.status && <OverlayLayout />}
@@ -81,7 +81,7 @@ const SingleProject = (props) => {
                   </div>
                   {link && (
                     <a href={link} target="_blank" key={link}>
-                      <h4> Click here to go to the project. </h4>
+                      <h4> {englishActive ? 'Click here to go to the project.' : 'Klicken Sie hier, um zum Projekt zu gelangen.'} </h4>
                     </a>
                   )}
                 </div>
@@ -101,7 +101,7 @@ SingleProject.getInitialProps = async (ctx) => {
   const { id } = ctx.query
   const allProjects = [...DevelopmentProjects, ...DesignProjects]
   const selectedProject = allProjects.find((project) => project.id == id)
-  const { url, title, description, date, images, tools, link } = selectedProject
+  const { url, title, description, date, images, tools, link, shortInfo } = selectedProject
 
   return {
     url,
@@ -111,6 +111,7 @@ SingleProject.getInitialProps = async (ctx) => {
     images,
     tools,
     link,
+    shortInfo,
   }
 }
 

@@ -8,15 +8,16 @@ import { GalleryPageStyle } from '../style/pageStyles/GalleryPageStyle'
 import AllPosts from '../components/subpages/Blogs/AllPosts'
 
 const Blog = () => {
-  const { blogActivePage, menuActive, setHomeActive } = useContext(Context)
+  const { blogActivePage, menuActive, setHomeActive, setBlogActive } = useContext(Context)
 
   useEffect(() => {
     setHomeActive(false)
+    setBlogActive(true)
   }, [])
 
   return (
     <>
-      <SEOLayout />
+      <SEOLayout title="Blog | Portfolio - Sura Rzayeva" />
       <GalleryPageStyle menuActive={menuActive}>
         <Subnav blog={true} />
         <div className="container">

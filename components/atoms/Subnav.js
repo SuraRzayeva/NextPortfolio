@@ -42,7 +42,7 @@ const Subnav = ({ uiux, graphic, blog, projects }) => {
       {blog ? (
         <ul>
           <li className="all-posts" onClick={() => setBlogActivePage(0)}>
-            All Posts
+            All
           </li>
           <li className="professional" onClick={() => setBlogActivePage(1)}>
             Professional

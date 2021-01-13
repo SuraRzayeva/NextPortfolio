@@ -21,12 +21,14 @@ p {
     display: flex;
 
     p {
+        padding: 1rem;
         padding-left: 5rem;
     }
 }
 
 @media screen and (max-width: 450px) {
     p {
+        padding: 1rem;
         padding-left: 3rem;
     }
 }

@@ -10,7 +10,7 @@ background: transparent;
 padding: 0;
 position: relative;
 transition: .2s ease all;
-cursor: pointer;
+/* cursor: pointer; */
 outline: none;
 
 :after {

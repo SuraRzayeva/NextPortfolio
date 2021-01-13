@@ -5,6 +5,7 @@ import Header from '../components/atoms/Header'
 import GlobalStyle from '../style/GlobalStyle'
 import Sidebar from '../components/atoms/Sidebar'
 import Footer from '../components/atoms/Footer'
+import Cursor from '../components/atoms/Cursor'
 
 function MyApp({ Component, pageProps }) {
   const [overlay, setOverlay] = useState({
@@ -16,6 +17,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <ContextWrapper overlay={overlay} setOverlay={setOverlay}>
       <Header />
+      <Cursor />
       <Component {...pageProps} />
       <Sidebar />
       <Footer />
