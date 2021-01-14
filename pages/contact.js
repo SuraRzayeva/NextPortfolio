@@ -46,7 +46,7 @@ const Contact = () => {
 
   return (
     <>
-      <SEOLayout title="Contact me | Portfolio - Sura Rzayeva" englishActive={englishActive} />
+      <SEOLayout title="Contact me | Portfolio - Sura Rzayeva" description="I'll be very happy to hear from you. Send me a message! Or you can also follow me on Instagram, Codepen and Twitter!" />
       <ContactStyle menuActive={menuActive} error={error}>
         <div className="title">
           <h1>{englishActive ? 'Contact' : 'Kontakt'}</h1>

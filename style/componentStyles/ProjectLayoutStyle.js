@@ -59,7 +59,6 @@ width: 100%;
                 transition: .1s ease all;
                 /* cursor: pointer; */
    
-
                 .post-info {
                     display: flex;
                     align-items: flex-start;

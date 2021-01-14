@@ -20,7 +20,7 @@ const OverlayLayout = () => {
 
   return (
     <OverlayStyle onClick={() => setOverlay(false)} loading={loading} overlayWidth={overlayWidth}>
-      <div className="absolute-div">{loading == 1 ? <Loading lightColor={true} /> : null}</div>
+      {loading == 1 ? <Loading lightColor={true} /> : null}
       <div className="wrapper">
         <div className="container">
           <img src={data} alt="" onLoad={showPhoto} />

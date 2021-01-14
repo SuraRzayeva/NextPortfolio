@@ -17,7 +17,11 @@ const Blog = () => {
 
   return (
     <>
-      <SEOLayout title="Blog | Portfolio - Sura Rzayeva" />
+      <SEOLayout
+        title="Blog | Portfolio - Sura Rzayeva"
+        description="In this blog you can find my articles about design, coding, science, psychology and philosophy. I give you information about the latest hot topic in design and development industry and sometimes question our reality and existence. Enjoy!"
+        image="/Projects/Portfolio/3.png"
+      />
       <GalleryPageStyle menuActive={menuActive}>
         <Subnav blog={true} />
         <div className="container">

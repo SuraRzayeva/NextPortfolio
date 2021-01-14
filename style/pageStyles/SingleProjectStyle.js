@@ -79,7 +79,7 @@ opacity: ${(props) => (props.menuActive ? 0.3 : 1)};
          p {
             font-size: 1.6rem;
             line-height: 2.2rem;
-            margin: .5rem 0;
+            margin: 1rem 0;
 
                 span {
                 font-weight: 600;
@@ -88,6 +88,8 @@ opacity: ${(props) => (props.menuActive ? 0.3 : 1)};
 
          a {
             text-decoration: none;
+            font-weight: 700;
+            
         }
 
          h4 {

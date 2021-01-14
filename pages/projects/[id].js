@@ -8,9 +8,10 @@ import ReactHtmlParser from 'react-html-parser'
 import Loading from '../../components/atoms/Loading'
 import OverlayLayout from '../../components/atoms/OverlayLayout'
 import GalleryLayout from '../../components/subpageLayouts/GalleryLayout'
+import BackToTop from '../../components/atoms/BackToTop'
 
 const SingleProject = (props) => {
-  const { title, description, date, images, tools, link, url, shortInfo } = props
+  const { title, description, date, images, tools, link, url, shortInfo, descriptionDE, titleDE } = props
   const { menuActive, setHomeActive, englishActive } = useContext(Context)
   const { overlay, setOverlay } = useContext(Context)
   const [loading, setLoading] = useState(1)
@@ -53,13 +54,13 @@ const SingleProject = (props) => {
   } else {
     return (
       <>
-        <SEOLayout title={`${title} | Portfolio - Sura Rzayeva`} description={shortInfo} image={url} />
+        <SEOLayout title={`${title} | Portfolio - Sura Rzayeva`} description={shortInfo} image={url} type="article" />
         <SingleProjectStyle menuActive={menuActive} loading={loading}>
           {loading == 1 ? <Loading /> : null}
           {overlay.status && <OverlayLayout />}
           <Link href="/projects">
             <div className="back-btn">
-              <button>Back to projects</button>
+              <button>{englishActive ? 'Back to projects' : 'Zurück zu Projekten'}</button>
             </div>
           </Link>
           <div className="container">
@@ -67,13 +68,13 @@ const SingleProject = (props) => {
               <h4>{date}</h4>
             </div>
             <div className="title">
-              <h1>{title}</h1>
+              <h1>{englishActive ? title : titleDE}</h1>
               <div className="content">
                 <div className="description">
-                  {ReactHtmlParser(description)}
+                  {ReactHtmlParser(englishActive ? description : descriptionDE)}
                   <div className="tools">
                     <p>
-                      In this projects I used:
+                      {englishActive ? 'In this project I used:' : 'Was ich in diesem Projekt verwendet habe:'}
                       {tools.map((tool) => (
                         <span key={tool}> {tool}</span>
                       ))}
@@ -81,7 +82,7 @@ const SingleProject = (props) => {
                   </div>
                   {link && (
                     <a href={link} target="_blank" key={link}>
-                      <h4> {englishActive ? 'Click here to go to the project.' : 'Klicken Sie hier, um zum Projekt zu gelangen.'} </h4>
+                      <h4> {englishActive ? 'Click here to go to the project.' : 'Hier klicken, um zum Projekt zu gelangen.'} </h4>
                     </a>
                   )}
                 </div>
@@ -91,6 +92,7 @@ const SingleProject = (props) => {
               </div>
             </div>
           </div>
+          <BackToTop />
         </SingleProjectStyle>
       </>
     )
@@ -101,17 +103,19 @@ SingleProject.getInitialProps = async (ctx) => {
   const { id } = ctx.query
   const allProjects = [...DevelopmentProjects, ...DesignProjects]
   const selectedProject = allProjects.find((project) => project.id == id)
-  const { url, title, description, date, images, tools, link, shortInfo } = selectedProject
+  const { url, title, description, date, images, tools, link, shortInfo, descriptionDE, titleDE } = selectedProject
 
   return {
     url,
     title,
     description,
+    descriptionDE,
     date,
     images,
     tools,
     link,
     shortInfo,
+    titleDE,
   }
 }
 

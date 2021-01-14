@@ -35,6 +35,10 @@ button {
     color: ${Colors.black};
 }
 
+img {
+    pointer-events: none;
+}
+
 @media screen and (min-width: 1800px) {
     html {
         font-size: 70%;

@@ -2,7 +2,7 @@ import Head from 'next/head'
 import { useRouter } from 'next/router'
 
 const SEOLayout = (props) => {
-  const { title = 'Portfolio | Sura Rzayeva', description = 'Professional Portfolio of Sura Rzayeva - Designer, Developer and Marketing Specialist, based in Germany, Berlin.', type = 'website', canonicalPath, image = '/AboutMe/4.jpg' } = props
+  const { title = 'Portfolio | Sura Rzayeva', description = 'Professional Portfolio of Sura Rzayeva - Designer, Developer and Marketing Specialist, based in Germany, Berlin.', type = 'website', canonicalPath, image = '/Projects/Portfolio/1.png' } = props
   const router = useRouter()
 
   return (

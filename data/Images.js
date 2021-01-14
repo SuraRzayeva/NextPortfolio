@@ -266,6 +266,18 @@ export const Characters = [
     url: '/Galleries/CharacterDesign/17.png',
     overlayWidth: '50%',
   },
+  {
+    id: 'char18',
+    title: 'Elf Woman',
+    url: '/Galleries/CharacterDesign/18.png',
+    overlayWidth: '50%',
+  },
+  {
+    id: 'char19',
+    title: 'Elf Woman',
+    url: '/Galleries/CharacterDesign/19.png',
+    overlayWidth: '50%',
+  },
 ]
 
 // ------------------------------------------------- LINE ART

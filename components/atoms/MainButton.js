@@ -1,7 +1,7 @@
 import { MainButtonStyle } from '../../style/componentStyles/MainButtonStyle'
 
-const MainButton = ({ label }) => {
-  return <MainButtonStyle>{label}</MainButtonStyle>
+const MainButton = ({ label, callback }) => {
+  return <MainButtonStyle onClick={callback}>{label}</MainButtonStyle>
 }
 
 export default MainButton

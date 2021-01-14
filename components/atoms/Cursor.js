@@ -2,7 +2,7 @@ import { CursorStyle } from '../../style/componentStyles/CursorStyle'
 import { useEffect, useRef } from 'react'
 
 const Cursor = () => {
-  const cursorRef = useRef()
+  const cursorRef = useRef(null)
 
   useEffect(() => {
     document.addEventListener('click', () => {
@@ -29,6 +29,8 @@ const Cursor = () => {
       cursorRef.current.style.top = `${mouseY}px`
       cursorRef.current.style.left = `${mouseX}px`
     })
+
+    return () => {}
   }, [])
 
   return (

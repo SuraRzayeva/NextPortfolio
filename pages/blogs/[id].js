@@ -7,6 +7,7 @@ import Loading from '../../components/atoms/Loading'
 import { PhilosophicalPosts } from '../../data/blogPosts'
 import { ProfessionalPosts } from '../../data/blogPosts'
 import Link from 'next/link'
+import BackToTop from '../../components/atoms/BackToTop'
 
 const BlogPost = ({ title, date, article, description, images, url }) => {
   const { menuActive, setHomeActive } = useContext(Context)
@@ -43,7 +44,7 @@ const BlogPost = ({ title, date, article, description, images, url }) => {
 
   return (
     <>
-      <SEOLayout title={`${title} | Portfolio - Sura Rzayeva`} description={description} image={url} />
+      <SEOLayout title={`${title} | Portfolio - Sura Rzayeva`} description={description} image={url} type="article" />
       <BlogPostStyle menuActive={menuActive} loading={loading}>
         {loading == 1 ? <Loading full={false} /> : null}
         <Link href="/blog">
@@ -59,6 +60,7 @@ const BlogPost = ({ title, date, article, description, images, url }) => {
             <h1>{title}</h1>
           </div>
           <div className="content">{ReactHtmlParser(article)}</div>
+          <BackToTop />
         </div>
       </BlogPostStyle>
     </>

@@ -6,10 +6,10 @@ export const LoadingStyle = Styled.div`
 	position: fixed;
 	/* top: ${(props) => (props.full ? '40%' : '25%')};
 	left: ${(props) => (props.full ? '40%' : '25%')}; */
-  top: 50%;
+  top: 40%;
   left: 40%;
 	transform-origin: 50% 50%;
-	transform: rotate(70deg) translate(-50%, -50%);
+	transform: rotate(70deg);
   width: 5rem;
   height: 20rem;
 
@@ -72,11 +72,6 @@ export const LoadingStyle = Styled.div`
 	}
 }
 
-@media screen and (max-width: 850px) {
-  .ajax-loader{
-    top: 40%;
-    left: 50%;
-  }
-}
+
 
 `

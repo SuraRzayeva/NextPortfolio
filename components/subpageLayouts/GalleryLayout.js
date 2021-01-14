@@ -3,6 +3,7 @@ import { useContext, useEffect, useState } from 'react'
 import Context from '../../context/Context'
 import Loading from '../atoms/Loading'
 import Masonry from 'react-masonry-css'
+import BackToTop from '../atoms/BackToTop'
 
 const Gallery = ({ data, column }) => {
   const { overlay, setOverlay } = useContext(Context)
@@ -15,7 +16,6 @@ const Gallery = ({ data, column }) => {
   }
 
   const showOverlay = (data, overlayWidth) => {
-    window.scrollTo(0, 0)
     setOverlay({ status: true, data: data, overlayWidth: overlayWidth })
   }
 
@@ -31,9 +31,13 @@ const Gallery = ({ data, column }) => {
   useEffect(() => {
     setAllImagesCount(data.length)
     if (count == allImagesCount) {
-      setTimeout(() => {
+      const timeout = setTimeout(() => {
         setLoading(0)
       }, 1100)
+      return () => {
+        console.log('Component unmounting')
+        clearTimeout(timeout)
+      }
     }
   }, [count, allImagesCount, data, loading])
 
@@ -66,6 +70,7 @@ const Gallery = ({ data, column }) => {
               </div>
             ))}
           </Masonry>
+          {/* <BackToTop /> */}
         </div>
       </GalleryLayoutStyle>
     )

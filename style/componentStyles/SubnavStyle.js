@@ -17,7 +17,6 @@ ul {
         margin-right: 10rem;
         font-size: 1.3rem;
         font-weight: 600;
-        /* cursor: pointer; */
         position: relative;
         transition: .2s ease all;
     }
@@ -109,9 +108,23 @@ ul {
 
 @media screen and (max-width: 450px) {
     padding:0 3rem;
+
+    ul {
+        li {
+            font-size: 1.4rem;
+            margin-right: 3rem;
+        }
+    }
 }
 
 @media screen and (max-width: 350px) {
     padding:0 2rem;
+
+    ul {
+        li {
+            font-size: 1.2rem;
+            margin-right: 2rem;
+        }
+    }
 }
 `

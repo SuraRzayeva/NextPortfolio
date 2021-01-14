@@ -20,7 +20,7 @@ const GraphicDesign = () => {
 
   return (
     <>
-      <SEOLayout title="Graphic Design | Portfolio - Sura Rzayeva" />
+      <SEOLayout title="Graphic Design | Portfolio - Sura Rzayeva" description="In this gallery you can see my art, which include marketing posters, illustrations, character design and line art." image="/Projects/Portfolio/2.png" />
       <GalleryPageStyle menuActive={menuActive}>
         {status && <OverlayLayout />}
         <Subnav graphic={true} />

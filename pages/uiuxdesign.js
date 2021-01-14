@@ -20,7 +20,7 @@ const UiUxDesign = () => {
 
   return (
     <>
-      <SEOLayout title="UI/UX Gallery | Portfolio - Sura Rzayeva" image={WebImages[0].url} />
+      <SEOLayout title="UI/UX Gallery | Portfolio - Sura Rzayeva" image={WebImages[0].url} description="In this gallery you can see my digital art which are the landing page designs for websites, app designs and icons to use in the development process of a project." />
       <GalleryPageStyle menuActive={menuActive}>
         {status && <OverlayLayout />}
         <Subnav uiux={true} />

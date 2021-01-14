@@ -85,8 +85,13 @@ opacity: ${(props) => (props.menuActive ? 0.3 : 1)};
                 margin: 2rem 0;
                 align-self: center;
             }
-    
     }
+         .back-top {      
+             margin-top: 3rem;      
+                button {
+                
+                }
+            }
 }
 
 @media screen and (max-width: 850px) {

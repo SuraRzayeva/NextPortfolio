@@ -19,7 +19,7 @@ display: flex;
 transition: 0.3s ease all;
 
 .logo-section {
-    width: 50%;
+    width: 30%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -32,6 +32,7 @@ transition: 0.3s ease all;
         font-weight: 700;
         padding: 0;
         margin: 0;
+        transition: all .3s ease;
         color: ${black};
   }
 
@@ -48,8 +49,12 @@ transition: 0.3s ease all;
   }
 }
 
+.logo-section:hover .title{
+    color: ${detailColor2};
+}
+
 .nav-section {
-  width: 50%;
+  width: 70%;
   height: 100%;
   display: flex;
   padding-right: 10rem;
@@ -73,29 +78,8 @@ transition: 0.3s ease all;
             transition: .3s ease all;
         }
 
-        h4:after {
-            content: '';
-            width: 0;
-            height: 0;
-            border-radius: 50%;
-            position: absolute;
-            top: 50%;
-            left:50%;
-            opacity: 0;
-            transform: translate(-50%,-50%);
-            transition: .3s ease all;
-        }
-
-        :hover h4:after {
-            width: 4rem;
-            height: 4rem;
-            background: ${detailColor2};
-            z-index: -1;
-            opacity: 1;
-        }
-
         :hover h4 {
-            font-size: 1.75rem;
+            color: ${detailColor2};
         }
     }
 
@@ -131,29 +115,10 @@ transition: 0.3s ease all;
 
     }
 
-    .burger-menu:after {
-        content: '';
-        width: 0;
-        height: 0;
-        border-radius: 50%;
-        position: absolute;
-        top: 40%;
-        left:70%;
-        opacity: 0;
-        transform: translate(-50%,-50%);
-        transition: .3s ease all;
-    }
-
-    .burger-menu:hover:after {
-        width: 4rem;
-        height: 4rem;
-        background: ${detailColor2};
-        z-index: -1;
-        opacity: 1;
-    }
-
     .burger-menu:hover {
-        transform: scale(1.1);
+        .line {
+            background: ${detailColor2};
+        }
     }
 }
 
@@ -194,10 +159,39 @@ transition: 0.3s ease all;
 @media screen and (max-width: 350px) {
     .logo-section {
         padding-left: 2rem;
+        width: 60%;
     }
     
     .nav-section {
         padding-right: 2rem;
+        
+    }
+}
+
+@media screen and (max-width: 250px) {
+    .logo-section {
+        width: 50%;
+       .profession {
+            .line-break {
+                display: none;
+            
+            }
+        }
+    }
+}
+
+
+@media (pointer: coarse) {
+    .nav-section {
+        .burger-menu:after {
+            display: none;
+        }
+
+        button {
+            h4:after {
+                display: none;
+            }
+        }
     }
 }
 

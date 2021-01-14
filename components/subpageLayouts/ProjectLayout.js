@@ -28,9 +28,13 @@ const BlogLayout = ({ data }) => {
   useEffect(() => {
     setAllImagesCount(data.length)
     if (count == allImagesCount) {
-      setTimeout(() => {
+      const timeout = setTimeout(() => {
         setLoading(0)
       }, 1100)
+      return () => {
+        console.log('Component unmounting')
+        clearTimeout(timeout)
+      }
     }
   }, [count, allImagesCount, data, loading])
 

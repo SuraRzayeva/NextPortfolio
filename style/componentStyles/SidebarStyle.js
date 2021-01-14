@@ -32,17 +32,18 @@ ul {
         height: 0;
         border-radius: 50%;
         position: absolute;
-        top: 50%;
-        left:50%;
+        top: 20%;
+        left:70%;
         opacity: 0;
         transform: translate(-50%,-50%);
         transition: .3s ease all;
         z-index: -1;
+        display: none;
     }
 
     li:hover:after {
-        width: 4rem;
-        height: 4rem;
+        width: 2.3rem;
+        height: 2.3rem;
         border: 2px solid ${detailColor2};
         background: ${detailColor2};
         opacity: 1;
@@ -92,6 +93,15 @@ ul {
             width: 1.7rem;
         }
     }
+}
+
+@media (pointer: coarse) {
+
+ul {
+    li:after {
+        display: none;
+    }
+}
 }
 
 `

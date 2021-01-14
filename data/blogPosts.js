@@ -3,7 +3,7 @@ export const PhilosophicalPosts = [
     id: 'TheySayIHaveSadEyes',
     title: 'They say I have sad eyes.',
     description: 'There is an immense curiosity growing inside me, I cannot stop. When I was a child, the questions were easier to answer. Or maybe I was just too naïve to be convinced with answers deeply rooted in our manmade fictional culture, which is considered an absolute reality… which is...',
-    url: '/BlogPosts/post1.jpg',
+    url: '/BlogPosts/Philosophical/post1.jpg',
     images: [],
     date: 'September 13, 2019',
     article: `
@@ -30,12 +30,12 @@ export const PhilosophicalPosts = [
           It’s funny, talking about pain and lost feelings at the same time. This is the real definition of suffering I guess. Maybe, the feelings are not lost at all. Maybe they are just tangled, and you don’t give a shit, because you convinced yourself that the biological explanations are the only ones to our ‘inner
           revolutions’. Fuck feelings you say, which is a hormonal game making us sacrifice ourselves for the sake of evolution anyways! But, sometimes, you want to give a shit about something, because you think that, ‘that something’ should be your priority. Do you know what my priority right now is? Nothing. Do you
           know where I want to see myself in like 30 years? Nowhere. This doesn’t mean I just sit there doing nothing and waiting to die. I try, I work too hard, I’m a curious mind… There are a lot of things in this world to learn, to discover, to experience, to create. I try to be successful, even though, success
-          doesn’t mean anything to me. This is just…to put it right, like… if I can’t achieve anything at all… it’s ok.{' '}
+          doesn’t mean anything to me. This is just…to put it right, like… if I can’t achieve anything at all… it’s ok.
         </p>
         <p>
           People say, this is an easy place to exist. And I agree. It’s easier to live with nihilistic mindset. But it’s painful to live with it, if the only thing you desire is to find a meaning. I cannot say I don’t care… I care. A lot. It’s just I don’t understand why I care or what I care about. There is no
           emptiness there. There is just pain. There is no just bland indifference. There is a burning curiosity, I cannot restrain. There is sadness I don’t kind of want to vanish. There is a sweet melancholy inside, I’m happy with. Yes, I can use that word. Happy. Being in pain, doesn’t mean to be unhappy. You don’t
-          even know what the happiness is. So, why not to define that word for ourselves? Why to choose to fit in, when we can't? Why to destroy ourselves? Let's create our own reality… our own morality. I decided to get comfortable with this absolute meaninglessness. We are creative, we can create our own meaning.{' '}
+          even know what the happiness is. So, why not to define that word for ourselves? Why to choose to fit in, when we can't? Why to destroy ourselves? Let's create our own reality… our own morality. I decided to get comfortable with this absolute meaninglessness. We are creative, we can create our own meaning.
         </p>
         <p>
           Because, as Alain de Botton said, melancholy is not rage or bitterness or a mental illness needs to be cured. It is a noble species of sadness that arises when we are open to the fact that life is inherently difficult for everyone and that suffering and disappointment are at the heart of human experience. It
@@ -47,7 +47,7 @@ export const PhilosophicalPosts = [
     id: 'WeAreTooLoud',
     title: 'We are too loud.',
     description: 'Our complexity is a simple one. Our complexity lies on the basis of everything… or nothing. It’s without masks… without stories… without values… without meaning. It’s just there… as a nice, soft feeling of sadness and… ',
-    url: '/BlogPosts/post2.jpg',
+    url: '/BlogPosts/Philosophical/post2.jpg',
     images: [],
     date: 'September 13, 2019',
     article: `
@@ -72,7 +72,7 @@ export const PhilosophicalPosts = [
         <p>No. It just hurts. Can you stop?</p>
         <p>
           You can. But you don’t want to. What exactly are you trying to find? The lost pieces of this puzzle? Excuse me, but which puzzle? You don’t even have a single piece of this imaginary puzzle, let alone the lost ones. There is no fucking puzzle! It’s in your mind… in our mind. We are wasting our lives to find
-          pieces of something that doesn’t even exist! It’s funny! I’m actually laughing here… I’m sure you can feel it, because, we have a connection, remember? But, we have no puzzle. I’m sorry.{' '}
+          pieces of something that doesn’t even exist! It’s funny! I’m actually laughing here… I’m sure you can feel it, because, we have a connection, remember? But, we have no puzzle. I’m sorry.
         </p>
         <p>So… can we stop now?</p>
         <p>You know what? At this point, it doesn’t matter. Nothing matters. </p>
@@ -97,7 +97,7 @@ export const PhilosophicalPosts = [
     id: 'TimeToFreeYourself',
     title: 'Time to free yourself.',
     description: 'Let’s play a game. We ask questions… and when it starts to hurt, we drink. I start. Why do people think that ‘happiness’ is equal to...',
-    url: '/BlogPosts/post3.jpg',
+    url: '/BlogPosts/Philosophical/post3.jpg',
     images: [],
     date: 'September 13, 2019',
     article: `
@@ -115,13 +115,13 @@ export const PhilosophicalPosts = [
         <p>Let’s talk about happiness.</p>
         <p>
           ‘Happiness’, on the other hand, is a purely metaphysical concept that doesn’t even exist in the same ‘reality’. It arises from philosophical abstraction and has nothing to do with biological feelings. Correlation does not imply causation either. Don’t you agree? Ask parents who sacrificed their lives for
-          their children, if they are happy or not. What do you think the answer will be? Ask soldiers who voluntarily died on the battlefield in order to protect their homelands. Ask scientists, warriors, heroes… even terrorists… who accepted death in order to reach ‘the truth’, ask them if they are happy.{' '}
+          their children, if they are happy or not. What do you think the answer will be? Ask soldiers who voluntarily died on the battlefield in order to protect their homelands. Ask scientists, warriors, heroes… even terrorists… who accepted death in order to reach ‘the truth’, ask them if they are happy.
         </p>
         <p>Spoiler alert: They are happy.</p>
         <p>You are happy, if you find meaning in your suffering… if you find meaning in life. </p>
         <p>
           I understand the idea of relativity. I agree that ‘meaning’ is a relative concept… and there is no such thing as ‘the absolute meaning’… But, I don’t think that ‘happiness’ is relative. We are not that different from each other. When it comes to morality, we can make some true and false claims about human
-          subjectivity.{' '}
+          subjectivity.
         </p>
         <p>
           You cannot find your maps in life without diving deep into darkness… without getting lost… without staring into the demonic eyes of the Unknown, ready to die… to lose… to risk. ‘Acceptance’ is a powerful attitude, but it will hurt. Life is suffering. Tragedies happen… people die, god is dead, nature doesn’t
@@ -142,14 +142,14 @@ export const PhilosophicalPosts = [
         <p>How pathetic! Are you that mediocre? Are you that weak? </p>
         <p>
           No. Don’t let the comforts of modern life mislead you. You’re tougher than you think. We are capable of facing hell and still survive. We have the magic inside, which feeds on our pain and becomes stronger. Life happens to us and we accept… we adapt. Trust me, we can adapt to anything… The problem with
-          ‘sensitive people’ is that they’ve never been in any situation that would turn them into the monsters they’re capable of being.{' '}
+          ‘sensitive people’ is that they’ve never been in any situation that would turn them into the monsters they’re capable of being.
         </p>
         <p>Unleash your monsters. </p>
         <p>Do something crazy… something scary. Don’t think about other people… nobody matters, nothing matters. Do something for your life, that you want to do. I guarantee you, it will hurt… but it will make you happy. </p>
         <p>‘Those who have a 'why' to live, can bear with almost any 'how'’ — said Nietzsche. </p>
         <p>
           It’s your job to find that ‘why’. You cannot find it by simply avoiding the uncomfortable… by rejecting the reality, by hiding behind your biological emotions, or playing the victim. Take responsibility for your own life. Stop the excuses. You’re living your own masterpiece, only yours. You are in control of
-          your decisions, no matter what happens. Conjure your own world, not only metaphorically but also literally and neurologically.{' '}
+          your decisions, no matter what happens. Conjure your own world, not only metaphorically but also literally and neurologically.
         </p>
         <p>“Everything can be taken from a man but one thing: the last of the human freedoms — to choose one’s attitude in any given set of circumstances, to choose one’s own way.” — said Viktor Frankl.</p>
         <p>There is nothing for you to lose. Wake up! You are dying.</p>
@@ -161,7 +161,7 @@ export const PhilosophicalPosts = [
     id: 'Morality',
     title: 'Morality',
     description: 'What’s the point? You are free, if you’ve reached to the point of asking this question. Welcome to the edge of other people’s reality. There is no way back. I’m sorry, it’s too late to hide… you have already been infected with existentialism. I’m not going to tell you to...',
-    url: '/BlogPosts/post4.jpg',
+    url: '/BlogPosts/Philosophical/post4.jpg',
     images: [],
     date: 'September 13, 2019',
     article: `
@@ -171,39 +171,38 @@ export const PhilosophicalPosts = [
         <p>What’s the point? You are free, if you’ve reached to the point of asking this question. Welcome to the edge of other people’s reality. There is no way back. I’m sorry, it’s too late to hide… you have already been infected with existentialism.</p>
         <p>
           I’m not going to tell you to dedicate yourself to finding the answer. Don’t waste your life looking for something that doesn’t exist. You can try. You can deny every doubt in your mind and keep pushing yourself into a mediocre lifestyle, just because you’re afraid of facing yourself. Just because you’re
-          afraid of living a meaningless life. But, why to choose to add more suffering to life, as if there were less? Living to find a meaning is not meaningful at all.{' '}
+          afraid of living a meaningless life. But, why to choose to add more suffering to life, as if there were less? Living to find a meaning is not meaningful at all.
         </p>
         <p>Viktor Frankl believed that humans are motivated by something called a ‘will to meaning’, which is the desire to find meaning in life. He argued that life can have meaning even in the most miserable of circumstances, and that the motivation for living comes from finding that meaning. </p>
         <p>
           In other words, if you’re looking for THE meaning, you won’t find it. But if you’re looking for A meaning. It’s possible to find one and stick to it. Do you think all those people around you have a clue about what the hell they are doing in life? No! The majority just live on autopilot… not questioning
           existence, repeating what others do, following some stupid norms and rules, not overthinking about it and hoping for the best. They think if they live mediocre lives, if they complete all the vain steps of society, if they are normal, if they fit… when they die, some angel will appear and tell them
-          ‘congratulations you lived a meaningful life’.{' '}
+          ‘congratulations you lived a meaningful life’.
         </p>
         <p>
           No. Nobody will tell you if your life is, or was, meaningful or not. But you will know it. You will feel it. How?! How is it even possible to feel it? What’s this thing inside of us, constantly whispering about good and bad, and shaming us, and cheering us, and making us to feel guilty or be proud of
-          ourselves? I call it our inner Roskolnikov. Others call it morality, which is the only thing that will keep you sane in this abstract reality.{' '}
+          ourselves? I call it our inner Roskolnikov. Others call it morality, which is the only thing that will keep you sane in this abstract reality.
         </p>
         <p>Don’t lose it. </p>
         <p>Not losing your morality, when there's nothing left... is your elegancy. Not because they deserve it. Just because you're the Übermensch. Just because you deserve it. Not because you're a narcissist. But, because you have the control.</p>
         <p>This is the same ‘control’ which kept Viktor Frankl alive in hell. This is the same control which helped Albert Camus to fight his nihilistic monsters. This is the same control which gifted freedom to Jean-Paul Sartre in a desert of meaninglessness. </p>
         <p>
           Don’t turn to god or nature to find some morality either. God has no morality. Nature on the other hand… doesn’t give a shit about you. No. Nature doesn’t have any morality either. I mean… at least ‘morality’ in a sense of word, which is rooted in our consciousness, which has some biological explanations,
-          keeping all those philosophers and psychologists occupied during centuries. I don’t want to touch its biological explanations, because when it comes to biological reality, it becomes very hard for me to concentrate on to the idea of meaning.{' '}
+          keeping all those philosophers and psychologists occupied during centuries. I don’t want to touch its biological explanations, because when it comes to biological reality, it becomes very hard for me to concentrate on to the idea of meaning.
         </p>
         <p>Anyway…</p>
         <p>
           It’s very interesting that morality is the quality lacking in God and Nature, but present to us in experience. When it comes to encountering with the universe – its indifference toward us, its apparent lack of purpose, and the suffering and death in it – leads us to the conclusion that we are in an absurd and
-          miserable situation, and ending our ride can seem appealing. Yet this needn’t be an invitation to suicide. In such a situation, we can still lead a meaningful and moral life; in other words… add some music to your ride.{' '}
+          miserable situation, and ending our ride can seem appealing. Yet this needn’t be an invitation to suicide. In such a situation, we can still lead a meaningful and moral life; in other words… add some music to your ride.
         </p>
         <p>
           Life is suffering. God is dead. Cosmos doesn’t care. Nature is not ultimately holistic and purposeful in any meaningful sense. However there is still a possibility for you to make a meaningful life and meet suffering with a compassionate imagination. Since nobody else—and nothing else—will value you, value
-          yourself. If God and Nature will not speak, you speak. If no one is listening, you listen. You question. You choose. You create value. You find your meaning.{' '}
+          yourself. If God and Nature will not speak, you speak. If no one is listening, you listen. You question. You choose. You create value. You find your meaning.
         </p>
         <p>However. </p>
         <p>
           Remember. You already asked the question. ‘What’s point?’ So… Make some place in your soul for cold nihilism, which will never leave you. There is no cure for it. Be ready to live with a huge emptiness inside. Nothing will totally fill it. But you can accept it. Only acceptance will make you free. Only
-          freedom will help you to keep your morality. Only morality will keep you sane.{' '}
-        </p>
+          freedom will help you to keep your morality. Only morality will keep you sane.</p>
         <p>It’s ok to be lost. It’s ok to be awkward. It’s ok to be sad… it’s ok to feel empty. </p>
         <p>That’s your reality.</p>
       </div>`,

@@ -3,7 +3,7 @@ import { useContext } from 'react'
 import Context from '../../context/Context'
 
 const Subnav = ({ uiux, graphic, blog, projects }) => {
-  const { uiuxActivePage, setUiuxActivePage, graphicActivePage, setGraphicActivePage, blogActivePage, setBlogActivePage, projectsActivePage, setProjectsActivePage } = useContext(Context)
+  const { uiuxActivePage, setUiuxActivePage, graphicActivePage, setGraphicActivePage, blogActivePage, setBlogActivePage, projectsActivePage, setProjectsActivePage, englishActive } = useContext(Context)
 
   return (
     <SubnavStyle uiuxActivePage={uiuxActivePage} graphicActivePage={graphicActivePage} blogActivePage={blogActivePage} projectsActivePage={projectsActivePage}>
@@ -16,7 +16,7 @@ const Subnav = ({ uiux, graphic, blog, projects }) => {
             App <span>Design</span>
           </li>
           <li className="icon" onClick={() => setUiuxActivePage(3)}>
-            Iconography
+            {englishActive ? 'Iconography' : 'Ikonographie'}
           </li>
           {/* <li className="svg" onClick={() => setUiuxActivePage(4)}>
             SVG <span>Animations</span>
@@ -26,36 +26,36 @@ const Subnav = ({ uiux, graphic, blog, projects }) => {
       {graphic ? (
         <ul>
           <li className="marketing" onClick={() => setGraphicActivePage(1)}>
-            Posters
-          </li>
-          <li className="illustration" onClick={() => setGraphicActivePage(2)}>
-            Illustrations
+            {englishActive ? 'Posters' : 'Poster'}
           </li>
           <li className="character" onClick={() => setGraphicActivePage(3)}>
-            Characters
+            {englishActive ? 'Creatures' : 'Geschöpfe'}
           </li>
           <li className="lineart" onClick={() => setGraphicActivePage(4)}>
-            Lines
+            {englishActive ? 'Lines' : 'Linien'}
+          </li>
+          <li className="illustration" onClick={() => setGraphicActivePage(2)}>
+            {englishActive ? 'Illustrations' : 'Illustrationen'}
           </li>
         </ul>
       ) : null}
       {blog ? (
         <ul>
           <li className="all-posts" onClick={() => setBlogActivePage(0)}>
-            All
+            {englishActive ? 'All' : 'Alle'}
           </li>
           <li className="professional" onClick={() => setBlogActivePage(1)}>
-            Professional
+            {englishActive ? 'Professional' : 'Professionell'}
           </li>
           <li className="philosophical" onClick={() => setBlogActivePage(2)}>
-            Philosophical
+            {englishActive ? 'Philosophical' : 'Philosophisch'}
           </li>
         </ul>
       ) : null}
       {projects ? (
         <ul>
           <li className="development" onClick={() => setProjectsActivePage(1)}>
-            Development
+            {englishActive ? 'Development' : 'Entwicklung'}
           </li>
           <li className="design" onClick={() => setProjectsActivePage(2)}>
             Design
