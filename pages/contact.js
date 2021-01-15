@@ -99,9 +99,9 @@ const Contact = () => {
             ) : null}
             {!success ? (
               <form action="#" onSubmit={submitMessage}>
-                <input type="text" name="name" placeholder={englishActive ? 'Full Name' : 'Vollname'} autoComplete="false" onChange={(cursor) => setName(cursor.target.value)} />
-                <input type="email" name="email" placeholder="Email" onChange={(cursor) => setEmail(cursor.target.value)} />
-                <textarea name="message" id="" cols="30" rows="8" placeholder={englishActive ? 'Message' : 'Nachricht'} onChange={(cursor) => setMessage(cursor.target.value)} />
+                <input type="text" name="name" value={name} placeholder={englishActive ? 'Full Name' : 'Vollname'} autoComplete="false" onChange={(cursor) => setName(cursor.target.value)} />
+                <input type="email" name="email" placeholder="Email" onChange={(cursor) => setEmail(cursor.target.value)} value={email} />
+                <textarea name="message" id="" cols="30" rows="8" placeholder={englishActive ? 'Message' : 'Nachricht'} onChange={(cursor) => setMessage(cursor.target.value)} value={message} />
                 <div className="button">
                   <MainButton label={englishActive ? 'Send message' : 'Nachricht senden'} />
                 </div>
