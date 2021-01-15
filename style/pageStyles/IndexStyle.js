@@ -19,6 +19,7 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 opacity: ${(props) => (props.menuActive ? 0.3 : 1)};
+overflow-x: hidden;
 
 .hero {
   width: 80%;

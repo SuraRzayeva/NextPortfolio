@@ -6,6 +6,7 @@ const { detailColor2, black } = Colors
 export const BlogLayoutStyle = Styled.div`
 
 width: 100%;
+overflow-x: hidden;
 
 .grid {
     width: 100%;

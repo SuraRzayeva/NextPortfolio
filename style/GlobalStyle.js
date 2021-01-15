@@ -7,7 +7,6 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
     list-style: none;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    user-select: none;
     color: ${Colors.black};
     cursor: none;
 }
@@ -26,7 +25,7 @@ body {
     background-color: ${Colors.white};
     overflow-x: hidden;
     overflow-y: ${(props) => (props.overlay ? 'hidden' : 'scroll')};
-   
+    user-select: none;
 }
 
 button {

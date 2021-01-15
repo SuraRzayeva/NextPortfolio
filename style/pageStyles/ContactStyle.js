@@ -6,6 +6,7 @@ export const ContactStyle = Styled.div`
 opacity: ${(props) => (props.menuActive ? 0.3 : 1)};
 width: 100vw;
 padding: 10rem;
+overflow-x: hidden;
 
 .title {
     

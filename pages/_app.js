@@ -8,6 +8,7 @@ import Footer from '../components/atoms/Footer'
 import Cursor from '../components/atoms/Cursor'
 
 function MyApp({ Component, pageProps }) {
+  const [menuActive, setMenuActive] = useState(false)
   const [overlay, setOverlay] = useState({
     status: false,
     data: '',

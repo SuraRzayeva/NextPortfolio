@@ -8,7 +8,7 @@ height: 90vh;
 display: flex;
 justify-content: center;
 align-items: center;
-
+overflow-x: hidden;
 
 .container {
     display: flex;

@@ -6,6 +6,7 @@ const { black, shadow1, blackOpa } = Colors
 export const GalleryLayoutStyle = Styled.div`
 
 width: 100%;
+overflow-x: hidden;
 
 .grid {
     width: 100%;

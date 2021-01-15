@@ -7,6 +7,8 @@ opacity: ${(props) => (props.menuActive ? 0.3 : 1)};
 
 width: 100vw;
 padding: 15rem 10rem;
+overflow-x: hidden;
+
 
 .container {
     display: flex;

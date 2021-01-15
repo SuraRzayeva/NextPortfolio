@@ -10,6 +10,7 @@ padding: 13rem 10rem;
 padding-bottom: 5rem;
 overflow-x: hidden;
 opacity: ${(props) => (props.menuActive ? 0.3 : 1)};
+overflow-x: hidden;
 
 .back-btn {
     opacity: ${(props) => (props.loading == 0 ? 1 : 0)};
