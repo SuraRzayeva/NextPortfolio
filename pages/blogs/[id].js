@@ -9,7 +9,7 @@ import { ProfessionalPosts } from '../../data/blogPosts'
 import Link from 'next/link'
 import BackToTop from '../../components/atoms/BackToTop'
 
-const BlogPost = ({ title, date, article, description, images, url }) => {
+const BlogPost = ({ title, date, article, description, images, url, ogImage }) => {
   const { menuActive, setHomeActive } = useContext(Context)
   const [loading, setLoading] = useState(1)
   const [count, setCount] = useState(0)
@@ -44,7 +44,7 @@ const BlogPost = ({ title, date, article, description, images, url }) => {
 
   return (
     <>
-      <SEOLayout title={`${title} | Portfolio - Sura Rzayeva`} description={description} image={url} type="article" />
+      <SEOLayout title={`${title} | Portfolio - Sura Rzayeva`} description={description} image={ogImage} type="article" />
       <BlogPostStyle menuActive={menuActive} loading={loading}>
         {loading == 1 ? <Loading full={false} /> : null}
         <Link href="/blog">
@@ -72,7 +72,7 @@ BlogPost.getInitialProps = async (ctx) => {
 
   const allBlogPosts = [...PhilosophicalPosts, ...ProfessionalPosts]
   const selectedPost = allBlogPosts.find((post) => post.id == id)
-  const { title, date, article, description, images, url } = selectedPost
+  const { title, date, article, description, images, url, ogImage } = selectedPost
 
   return {
     title,
@@ -80,6 +80,7 @@ BlogPost.getInitialProps = async (ctx) => {
     article,
     description,
     images,
+    ogImage,
     url,
   }
 }

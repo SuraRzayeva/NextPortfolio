@@ -4,6 +4,7 @@ export const PhilosophicalPosts = [
     title: 'They say I have sad eyes.',
     description: 'There is an immense curiosity growing inside me, I cannot stop. When I was a child, the questions were easier to answer. Or maybe I was just too naïve to be convinced with answers deeply rooted in our manmade fictional culture, which is considered an absolute reality… which is...',
     url: '/BlogPosts/Philosophical/post1.jpg',
+    ogImage: '/BlogPosts/Philosophical/post1.jpg',
     images: [],
     date: 'September 12, 2019',
     article: `
@@ -48,6 +49,7 @@ export const PhilosophicalPosts = [
     title: 'We are too loud.',
     description: 'Our complexity is a simple one. Our complexity lies on the basis of everything… or nothing. It’s without masks… without stories… without values… without meaning. It’s just there… as a nice, soft feeling of sadness and… ',
     url: '/BlogPosts/Philosophical/post2.jpg',
+    ogImage: '/BlogPosts/Philosophical/post2.jpg',
     images: [],
     date: 'February 27, 2020',
     article: `
@@ -98,6 +100,7 @@ export const PhilosophicalPosts = [
     title: 'Time to free yourself.',
     description: 'Let’s play a game. We ask questions… and when it starts to hurt, we drink. I start. Why do people think that ‘happiness’ is equal to...',
     url: '/BlogPosts/Philosophical/post3.jpg',
+    ogImage: '/BlogPosts/Philosophical/post3.jpg',
     images: [],
     date: 'September 2, 2020',
     article: `
@@ -162,6 +165,7 @@ export const PhilosophicalPosts = [
     title: 'Morality',
     description: 'What’s the point? You are free, if you’ve reached to the point of asking this question. Welcome to the edge of other people’s reality. There is no way back. I’m sorry, it’s too late to hide… you have already been infected with existentialism. I’m not going to tell you to...',
     url: '/BlogPosts/Philosophical/post4.jpg',
+    ogImage: '/BlogPosts/Philosophical/post4.jpg',
     images: [],
     date: 'December 10, 2019',
     article: `
@@ -215,6 +219,7 @@ export const ProfessionalPosts = [
     title: 'Why I migrated from React to Next.js',
     description: 'Recently, as you may have noticed, I have built my personal portfolio again using Next.js and decided to share with you the reasons why I migrated from React into Next.js and why I think Next.js is the future of React in many ways.',
     url: '/BlogPosts/Professional/Blog1-Migration/1.jpg',
+    ogImage: '/BlogPosts/Professional/Blog1-Migration/2.jpg',
     images: ['/BlogPosts/Professional/Blog1-Migration/2.jpg', '/BlogPosts/Professional/Blog1-Migration/3.jpg'],
     date: 'January 10, 2021',
     article: `
