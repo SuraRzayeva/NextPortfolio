@@ -92,7 +92,7 @@ padding: 10rem;
             align-items: center;
 
             p {
-                color: ${Colors.detailColor};
+                color: #4BB543;
                 font-weight: 600;
                 font-size: 1.2rem;
             }

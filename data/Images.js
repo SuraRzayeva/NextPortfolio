@@ -62,19 +62,19 @@ export const WebImages = [
 export const AppImages = [
   {
     id: 'app1',
-    title: 'Catchio Shopping App',
+    title: 'Recipes App',
     url: '/Galleries/AppDesign/1.png',
     overlayWidth: '50%',
   },
   {
     id: 'app2',
-    title: 'Moblary Books App',
+    title: 'Minimalistic Furniture App',
     url: '/Galleries/AppDesign/2.png',
     overlayWidth: '50%',
   },
   {
     id: 'app3',
-    title: 'Glassmorphism',
+    title: 'Glassmorphism Book App',
     url: '/Galleries/AppDesign/3.png',
     overlayWidth: '50%',
   },

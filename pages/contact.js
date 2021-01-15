@@ -1,6 +1,7 @@
 import { ContactStyle } from '../style/pageStyles/ContactStyle'
 import { useContext, useEffect, useState } from 'react'
 import Context from '../context/Context'
+import emailjs from 'emailjs-com'
 import SEOLayout from '../components/SEO/SEOLayout'
 import MainButton from '../components/atoms/MainButton'
 
@@ -18,7 +19,19 @@ const Contact = () => {
     if (name.trim() == '' || email.trim() == '' || message.trim() == '') {
       setError(true)
     } else {
-      setSuccess(true)
+      emailjs.sendForm('gmail', 'template_h9l9aa6', e.target, 'user_h4Q1w3EOmf1x7pPQIXfud').then(
+        (result) => {
+          console.log(result.text)
+          setSuccess(true)
+          setName('')
+          setEmail('')
+          setMessage('')
+        },
+        (error) => {
+          setError(true)
+          console.log(error)
+        }
+      )
     }
   }
 
@@ -40,7 +53,7 @@ const Contact = () => {
         setMessage('')
         setName('')
         setEmail('')
-      }, 1500)
+      }, 3500)
     }
   }, [success])
 
@@ -85,7 +98,7 @@ const Contact = () => {
               </div>
             ) : null}
             {!success ? (
-              <form action="" onSubmit={submitMessage}>
+              <form action="#" onSubmit={submitMessage}>
                 <input type="text" name="name" placeholder={englishActive ? 'Full Name' : 'Vollname'} autoComplete="false" onChange={(cursor) => setName(cursor.target.value)} />
                 <input type="email" name="email" placeholder="Email" onChange={(cursor) => setEmail(cursor.target.value)} />
                 <textarea name="message" id="" cols="30" rows="8" placeholder={englishActive ? 'Message' : 'Nachricht'} onChange={(cursor) => setMessage(cursor.target.value)} />

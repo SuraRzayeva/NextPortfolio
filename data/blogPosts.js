@@ -5,7 +5,7 @@ export const PhilosophicalPosts = [
     description: 'There is an immense curiosity growing inside me, I cannot stop. When I was a child, the questions were easier to answer. Or maybe I was just too naïve to be convinced with answers deeply rooted in our manmade fictional culture, which is considered an absolute reality… which is...',
     url: '/BlogPosts/Philosophical/post1.jpg',
     images: [],
-    date: 'September 13, 2019',
+    date: 'September 12, 2019',
     article: `
       <div>
         <p>There is an immense curiosity growing inside me, I cannot stop. When I was a child, the questions were easier to answer. Or maybe I was just too naïve to be convinced with answers deeply rooted in our manmade fictional culture, which is considered an absolute reality… which is not.</p>
@@ -49,7 +49,7 @@ export const PhilosophicalPosts = [
     description: 'Our complexity is a simple one. Our complexity lies on the basis of everything… or nothing. It’s without masks… without stories… without values… without meaning. It’s just there… as a nice, soft feeling of sadness and… ',
     url: '/BlogPosts/Philosophical/post2.jpg',
     images: [],
-    date: 'September 13, 2019',
+    date: 'February 27, 2020',
     article: `
       <div>
         <p>… can we just stop?</p>
@@ -99,7 +99,7 @@ export const PhilosophicalPosts = [
     description: 'Let’s play a game. We ask questions… and when it starts to hurt, we drink. I start. Why do people think that ‘happiness’ is equal to...',
     url: '/BlogPosts/Philosophical/post3.jpg',
     images: [],
-    date: 'September 13, 2019',
+    date: 'September 2, 2020',
     article: `
       <div>
         <p>It’s time to wake up, sweetheart, you’re missing life.</p>
@@ -163,7 +163,7 @@ export const PhilosophicalPosts = [
     description: 'What’s the point? You are free, if you’ve reached to the point of asking this question. Welcome to the edge of other people’s reality. There is no way back. I’m sorry, it’s too late to hide… you have already been infected with existentialism. I’m not going to tell you to...',
     url: '/BlogPosts/Philosophical/post4.jpg',
     images: [],
-    date: 'September 13, 2019',
+    date: 'December 10, 2019',
     article: `
       <div>
         <p>What’s the point? </p>
