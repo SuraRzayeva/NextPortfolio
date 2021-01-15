@@ -8,8 +8,7 @@ export const HeaderStyle = Styled.div`
 *:active, *:focus {
   outline: none;
 }
-
-z-index: 200;
+z-index: 90;
 position: ${(props) => (props.homeActive ? 'fixed' : 'absolute')};
 width: 100%;
 padding-top: 3rem;
