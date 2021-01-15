@@ -27,6 +27,10 @@ function MyApp({ Component, pageProps }) {
     orientation: '',
   })
 
+  useEffect(() => {
+    document.querySelector('body').style.visibility = 'visible'
+  }, [])
+
   return (
     <ContextWrapper overlay={overlay} setOverlay={setOverlay}>
       <Header />
