@@ -10,7 +10,7 @@ export const HeaderStyle = Styled.div`
 }
 
 z-index: 200;
-position: absolute;
+position: ${(props) => (props.homeActive ? 'fixed' : 'absolute')};
 width: 100%;
 padding-top: 3rem;
 top: 0;

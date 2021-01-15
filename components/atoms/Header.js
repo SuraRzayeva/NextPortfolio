@@ -4,7 +4,7 @@ import { HeaderStyle } from '../../style/componentStyles/HeaderStyle'
 import Link from 'next/link'
 
 const Header = () => {
-  const { menuActive, setMenuActive, englishActive, setEnglishActive, blogActive } = useContext(Context)
+  const { menuActive, setMenuActive, englishActive, setEnglishActive, blogActive, homeActive } = useContext(Context)
 
   const toggleMenu = () => {
     setMenuActive((prev) => !prev)
@@ -15,7 +15,7 @@ const Header = () => {
   }
 
   return (
-    <HeaderStyle>
+    <HeaderStyle homeActive={homeActive}>
       <Link href="/">
         <div className="logo-section">
           <h1 className="title">Sura Rzayeva</h1>

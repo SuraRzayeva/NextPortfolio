@@ -116,8 +116,5 @@ width: 100%;
            
 }
 
-@media screen and (max-width: 450px) {
-    pointer-events: none;
-}
 
 `
