@@ -166,7 +166,7 @@ transition: 0.5s ease all;
     transform: none;
   }
   to {
-    top: 30%;
+    top: 25%;
     left: 30%;
     transform: translate(-50%, -50%);
   }
@@ -174,7 +174,7 @@ transition: 0.5s ease all;
 
 @keyframes box1BackM {
   from {
-    top: 30%;
+    top: 25%;
     left: 30%;
     transform: translate(-50%, -50%);
   }
@@ -221,7 +221,7 @@ transition: 0.5s ease all;
     transform: none;
   }
   to {
-    top: 30%;
+    top: 25%;
     left: 70%;
     transform: translate(-50%, -50%);
   }
@@ -230,7 +230,7 @@ transition: 0.5s ease all;
 
 @keyframes box2BackM {
   from {
-    top: 30%;
+    top: 25%;
     left: 70%;
     transform: translate(-50%, -50%);
   }
@@ -332,7 +332,7 @@ transition: 0.5s ease all;
     transform: none;
   }
   to {
-    top: 70%;
+    top: 75%;
     left: 70%;
     transform: translate(-50%, -50%);
   }
@@ -342,7 +342,7 @@ transition: 0.5s ease all;
 
 @keyframes box4BackM {
   from {
-    top: 70%;
+    top: 75%;
     left: 70%;
     transform: translate(-50%, -50%);
   }
@@ -443,7 +443,7 @@ transition: 0.5s ease all;
     transform: none;
   }
   to {
-    top: 70%;
+    top: 75%;
     left: 30%;
     transform: translate(-50%, -50%);
   }
@@ -451,7 +451,7 @@ transition: 0.5s ease all;
 
 @keyframes box6BackM {
   from {
-    top: 70%;
+    top: 75%;
     left: 30%;
     transform: translate(-50%, -50%);
   }
