@@ -8,6 +8,7 @@ import WebDesign from '../components/subpages/UiUxGallery/WebDesign'
 import OverlayLayout from '../components/atoms/OverlayLayout'
 import AppDesign from '../components/subpages/UiUxGallery/AppDesign'
 import IconDesign from '../components/subpages/UiUxGallery/IconDesign'
+import SvgDesign from '../components/subpages/UiUxGallery/SvgDesign'
 
 const UiUxDesign = () => {
   const { setHomeActive, uiuxActivePage, overlay, menuActive, setBlogActive } = useContext(Context)
@@ -28,7 +29,7 @@ const UiUxDesign = () => {
           {uiuxActivePage === 1 && <WebDesign />}
           {uiuxActivePage === 2 && <AppDesign />}
           {uiuxActivePage === 3 && <IconDesign />}
-          {uiuxActivePage === 4 && 'svg active'}
+          {uiuxActivePage === 4 && <SvgDesign />}
         </div>
       </GalleryPageStyle>
     </>

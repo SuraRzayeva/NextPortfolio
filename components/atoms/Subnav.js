@@ -18,9 +18,9 @@ const Subnav = ({ uiux, graphic, blog, projects }) => {
           <li className="icon" onClick={() => setUiuxActivePage(3)}>
             {englishActive ? 'Iconography' : 'Ikonographie'}
           </li>
-          {/* <li className="svg" onClick={() => setUiuxActivePage(4)}>
-            SVG <span>Animations</span>
-          </li> */}
+          <li className="svg" onClick={() => setUiuxActivePage(4)}>
+            SVG <span>Animation</span>
+          </li>
         </ul>
       ) : null}
       {graphic ? (

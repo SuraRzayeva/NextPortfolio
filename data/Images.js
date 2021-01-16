@@ -357,6 +357,17 @@ export const LineArts = [
   },
 ]
 
+// ------------------------------------------------- SVG GIFS
+
+export const SvgImages = [
+  {
+    id: 'svg1',
+    title: 'Checkbox Animation',
+    url: '/Galleries/SvgDesign/1.gif',
+    overlayWidth: '50%',
+  },
+]
+
 // ------------------------------------------------- MY IMAGES
 
 export const MyImages = [
