@@ -37,12 +37,12 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <ContextWrapper overlay={overlay} setOverlay={setOverlay} preLoad={preLoad} setPreLoad={setPreLoad}>
-      <Header style={{ visibility: preLoad }} />
+      <Header />
       <Cursor />
-      <Component {...pageProps} style={{ visibility: preLoad }} />
-      <Sidebar style={{ visibility: preLoad }} />
-      <Footer style={{ visibility: preLoad }} />
-      <Menu style={{ visibility: preLoad }} />
+      <Component {...pageProps} />
+      <Sidebar />
+      <Footer />
+      <Menu />
       <GlobalStyle overlay={overlay.status} />
     </ContextWrapper>
   )
