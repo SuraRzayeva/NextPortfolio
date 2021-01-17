@@ -3,12 +3,14 @@ import { useContext } from 'react'
 import Context from '../../context/Context'
 
 const Footer = () => {
-  const { homeActive, setHomeActive } = useContext(Context)
+  const { homeActive, setHomeActive, preLoad } = useContext(Context)
   const date = new Date().getFullYear()
 
   return (
     <FooterStyle homeActive={homeActive}>
-      <p className="credit"> &copy; • Sura Rzayeva • {date}</p>
+      <p className="credit" style={{ visibility: preLoad }}>
+        &copy; • Sura Rzayeva • {date}
+      </p>
     </FooterStyle>
   )
 }
