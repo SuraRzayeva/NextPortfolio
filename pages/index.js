@@ -36,7 +36,7 @@ export default function Home() {
       <SEOLayout />
       {!loading ? (
         <IndexStyle menuActive={menuActive}>
-          <div className="hero">
+          <div className="hero" style={{ visibility: preLoad }}>
             <h1 className="hero-text">{englishActive ? 'Ready for' : 'Bereit'}</h1>
             <h1 className="hero-text">{englishActive ? 'something' : 'für etwas'}</h1>
             <h1 className="hero-text">
@@ -44,7 +44,7 @@ export default function Home() {
               <span>?</span>
             </h1>
           </div>
-          <div className="line-block">
+          <div className="line-block" style={{ visibility: preLoad }}>
             <div className="line" onClick={toggleMenu}>
               <Cat />
             </div>
