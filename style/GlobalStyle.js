@@ -26,7 +26,6 @@ body {
     overflow-x: hidden;
     overflow-y: ${(props) => (props.overlay ? 'hidden' : 'scroll')};
     user-select: none;
-    visibility: hidden;
 }
 
 button {

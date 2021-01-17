@@ -27,18 +27,22 @@ function MyApp({ Component, pageProps }) {
     orientation: '',
   })
 
+  const [preLoad, setPreLoad] = useState('hidden')
+
   useEffect(() => {
-    document.querySelector('body').style.visibility = 'visible'
+    window.addEventListener('load', () => {
+      setPreLoad('visible')
+    })
   }, [])
 
   return (
-    <ContextWrapper overlay={overlay} setOverlay={setOverlay}>
-      <Header />
+    <ContextWrapper overlay={overlay} setOverlay={setOverlay} preLoad={preLoad} setPreLoad={setPreLoad}>
+      <Header style={{ visibility: preLoad }} />
       <Cursor />
-      <Component {...pageProps} />
-      <Sidebar />
-      <Footer />
-      <Menu />
+      <Component {...pageProps} style={{ visibility: preLoad }} />
+      <Sidebar style={{ visibility: preLoad }} />
+      <Footer style={{ visibility: preLoad }} />
+      <Menu style={{ visibility: preLoad }} />
       <GlobalStyle overlay={overlay.status} />
     </ContextWrapper>
   )

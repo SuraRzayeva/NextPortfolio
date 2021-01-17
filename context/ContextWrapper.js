@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import Context from './Context'
 
-const ContextWrapper = ({ children, overlay, setOverlay }) => {
+const ContextWrapper = ({ children, overlay, setOverlay, preLoad, setPreLoad }) => {
   const [menuActive, setMenuActive] = useState(false)
   const [englishActive, setEnglishActive] = useState(true)
   const [homeActive, setHomeActive] = useState(false)
@@ -13,7 +13,28 @@ const ContextWrapper = ({ children, overlay, setOverlay }) => {
 
   return (
     <Context.Provider
-      value={{ menuActive, setMenuActive, englishActive, setEnglishActive, homeActive, setHomeActive, uiuxActivePage, setUiuxActivePage, graphicActivePage, setGraphicActivePage, blogActivePage, setBlogActivePage, projectsActivePage, setProjectsActivePage, overlay, setOverlay, blogActive, setBlogActive }}
+      value={{
+        menuActive,
+        setMenuActive,
+        englishActive,
+        setEnglishActive,
+        homeActive,
+        setHomeActive,
+        uiuxActivePage,
+        setUiuxActivePage,
+        graphicActivePage,
+        setGraphicActivePage,
+        blogActivePage,
+        setBlogActivePage,
+        projectsActivePage,
+        setProjectsActivePage,
+        overlay,
+        setOverlay,
+        blogActive,
+        setBlogActive,
+        preLoad,
+        setPreLoad,
+      }}
     >
       {children}
     </Context.Provider>

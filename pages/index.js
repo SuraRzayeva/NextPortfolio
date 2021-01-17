@@ -6,7 +6,7 @@ import SEOLayout from '../components/SEO/SEOLayout'
 import Loading from '../components/atoms/Loading'
 
 export default function Home() {
-  const { menuActive, setMenuActive, englishActive, setHomeActive, homeActive, setBlogActive } = useContext(Context)
+  const { menuActive, setMenuActive, englishActive, setHomeActive, homeActive, setBlogActive, preLoad } = useContext(Context)
   const [loading, setLoading] = useState(false)
 
   useEffect(() => {
