@@ -21,7 +21,7 @@ body {
     width: 100vw;
     height: 100vh;
     box-sizing: border-box;
-    font-family: 'Helvetica', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     background-color: ${Colors.white};
     overflow-x: hidden;
     overflow-y: ${(props) => (props.overlay ? 'hidden' : 'scroll')};
