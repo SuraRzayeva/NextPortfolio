@@ -126,21 +126,27 @@ export const PosterImages = [
   },
   {
     id: 'poster2',
-    title: "Design for 'Writer Talks - Nihilistic Adventures'",
-    url: '/Galleries/PosterDesign/2.png',
+    title: "'Moral Discussions on Genetic Algorithms'",
+    url: '/Galleries/PosterDesign/3.png',
     overlayWidth: '50%',
   },
   {
     id: 'poster3',
-    title: 'Poster 1 for the Psycological Episodes by Think Co.',
-    url: '/Galleries/PosterDesign/4.png',
+    title: "'Writer Talks - Nihilistic Adventures'",
+    url: '/Galleries/PosterDesign/2.png',
     overlayWidth: '80%',
   },
   {
     id: 'poster4',
-    title: 'Poster 3 for the Psycological Episodes by Think Co.',
-    url: '/Galleries/PosterDesign/3.png',
+    title: 'III. Psycological Episodes by Think Co.',
+    url: '/Galleries/PosterDesign/4.png',
     overlayWidth: '50%',
+  },
+  {
+    id: 'poster5',
+    title: 'II. Psycological Episodes by Think Co.',
+    url: '/Galleries/PosterDesign/5.png',
+    overlayWidth: '80%',
   },
 ]
 
