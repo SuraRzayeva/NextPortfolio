@@ -84,6 +84,12 @@ export const AppImages = [
 
 export const IconImages = [
   {
+    id: 'icon6',
+    title: 'Finance Icon Set',
+    url: '/Galleries/IconDesign/6.png',
+    overlayWidth: '50%',
+  },
+  {
     id: 'icon1',
     title: 'Hamburger Menu Icons',
     url: '/Galleries/IconDesign/1.png',
