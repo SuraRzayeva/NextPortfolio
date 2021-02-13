@@ -20,6 +20,26 @@ export const DevelopmentProjects = [
     link: false,
   },
   {
+    id: 'CryptoNews',
+    title: 'Crypto News',
+    titleDE: 'Krypto Nachrichten',
+    shortInfo: 'Crypto News is a useful website where busy people can read the most important daily headlines about cryptocurrency from different news sources.',
+    shortInfoDE: 'Crypto News ist eine nützliche Website, auf der vielbeschäftigte Menschen die wichtigsten täglichen Schlagzeilen über Kryptowährung aus verschiedenen Nachrichtenquellen lesen können.',
+    description:
+      '<div><p>Cryptocurrency is a very interesting topic to me and I try to follow the market news daily. It helps me to improve my analysis of the market and, of course, personally make better financial decisions. However, I am an extremely busy person, and cannot afford to read every single media source in order to get general information about the market.</p><p>So I decided to build a webpage, where busy people, who are also curious about cryptocurrency, business, and investment, can get all the actual headlines from just one source. I havve used a News API to gather all the current headlines from leading media sources in the industry. If an article is interesting to the user, they can simply click on "read more" and get to the source of it.</p><p>I have also created a user-friendly UX and neonic UI, which gives an impression of innovation, technology, and change, which are also the characteristics of cryptocurrency. I hope it will be useful for you. Enjoy!</p></div>',
+    descriptionDE:
+      '<div><p>Kryptowährung ist für mich ein sehr interessantes Thema und ich versuche täglich, die Marktnachrichten zu verfolgen. Es hilft mir, meine Marktanalyse zu verbessern und natürlich persönlich bessere finanzielle Entscheidungen zu treffen. Ich bin jedoch sehr beschäftigt und kann es mir nicht leisten, jede einzelne Medienquelle zu lesen, um allgemeine Informationen über den Markt zu erhalten.</p><p>Deshalb habe ich beschlossen, eine Webseite zu erstellen, auf der vielbeschäftigte Leute, die auch neugierig auf Kryptowährung, Geschäft und Investitionen sind, alle aktuellen Schlagzeilen aus einer Hand erhalten können. Ich habe eine Nachrichten-API verwendet, um alle aktuellen Schlagzeilen aus führenden Medienquellen der Branche zu sammeln. Wenn ein Artikel für den Benutzer interessant ist, kann er einfach auf "Lesen Sie mehr" klicken und zur Quelle des Artikels gelangen.</p><p>Ich habe auch eine benutzerfreundliche UX- und Neonic-Benutzeroberfläche erstellt, die einen Eindruck von Innovation, Technologie und Veränderung vermittelt, die auch die Merkmale der Kryptowährung sind. Ich hoffe, es wird für Sie nützlich sein. Genießen!</p></div>',
+    url: '/Projects/CryptoNews/3.png',
+    tools: ['Vue JS,', 'Nuxt js,', 'SSR,', 'REST API,', 'Sass,', 'XD,', 'Illustrator'],
+    date: 'February 13, 2021',
+    images: [
+      { id: '1', title: 'Headlines 1', url: '/Projects/CryptoNews/1.png', overlayWidth: '80%' },
+      { id: '2', title: 'Headlines 2', url: '/Projects/CryptoNews/2.png', overlayWidth: '80%' },
+      { id: '3', title: 'Headlines 3', url: '/Projects/CryptoNews/3.png', overlayWidth: '80%' },
+    ],
+    link: 'https://cryptonews.vercel.app/',
+  },
+  {
     id: 'PokemonPokedex',
     title: 'Pokemon Pokedex',
     titleDE: 'Pokemon Pokedex',
