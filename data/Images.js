@@ -177,6 +177,12 @@ export const Illustrations = [
 
 export const Characters = [
   {
+    id: 'char20',
+    title: 'Psychedelic Friendships',
+    url: '/Galleries/CharacterDesign/20.png',
+    overlayWidth: '50%',
+  },
+  {
     id: 'char1',
     title: 'Surreal Turtle',
     url: '/Galleries/CharacterDesign/1.png',
