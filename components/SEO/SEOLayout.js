@@ -18,8 +18,11 @@ const SEOLayout = (props) => {
       <meta property="og:url" key="og:url" content={`https://surarzayeva.com${router.asPath}`} />
       <meta property="og:type" key="og:type" content={type} />
       <meta property="og:image" key="og:image" content={image} />
-      <meta name="twitter:card" content="summary" key="twitter:creator"></meta>
+      <meta name="twitter:card" content="summary_large_image" key="twitter:creator"></meta>
       <meta name="twitter:creator" content="@surarzayeva" />
+      <meta name="twitter:title" content={title}></meta>
+      <meta name="twitter:image" content={image} />
+      <meta name="twitter:description" content={description} />
       <link rel="canonical" key="canonical" href={`https://surarzayeva.com${canonicalPath ? canonicalPath : router.asPath}`} />
     </Head>
   )

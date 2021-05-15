@@ -5,7 +5,7 @@ export const PhilosophicalPosts = [
     description:
       'Couple of months ago, I read a book about sleep and there was a sentence that kept me awake at night. ‘Brain signals’, said the author, ‘...are chaotic.’ You cannot anticipate them. You cannot predict them. In fact, they are so random that, if you convert them into sound, which he did, you would find it impossible to dance.',
     url: '/BlogPosts/Philosophical/post5.jpg',
-    ogImage: '/BlogPosts/Philosophical/post1.jpg',
+    ogImage: '/BlogPosts/Philosophical/post5.jpg',
     images: [],
     date: 'May 15, 2021',
     article: `
