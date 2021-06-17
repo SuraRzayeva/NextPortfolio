@@ -20,7 +20,7 @@ const Header = () => {
         <div className="logo-section" style={{ visibility: preLoad }}>
           <h1 className="title">Sura Rzayeva</h1>
           <p className="profession">
-            <span className="line-break">|</span> Designer <br className="line-break" />| Developer <br className="line-break" />| Marketer
+            <span className="line-break">|</span> Developer <br className="line-break" />| Designer <br className="line-break" />| 3D Creator
           </p>
         </div>
       </Link>

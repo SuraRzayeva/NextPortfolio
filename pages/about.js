@@ -60,7 +60,7 @@ const About = () => {
             </div>
             {englishActive ? (
               <div className="introduction">
-                <p>My name is Sura Rzayeva and I am a designer.</p>
+                <p>My name is Sura Rzayeva and I am a creator.</p>
                 <p>I grew up in a very heavily artistic environment. My mother is an artist and ART was kind of like a religion in my family and I’ve been educated by my mum since I remember myself. </p>
                 <p>Then, I studied Design and started working as a freelance graphic designer.</p>
                 <p>Then I’ve changed my professional direction a little bit and started working in marketing and promotion for a long time. Design, however, has always been a part of my life. A very precious part.</p>

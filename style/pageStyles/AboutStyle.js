@@ -35,7 +35,7 @@ overflow-x: hidden;
         }
 
         .profession:after {
-            content: 'Marketer';
+            content: 'Creator';
             position: absolute;
             font-weight: 700;
             color: ${Colors.detailColor};

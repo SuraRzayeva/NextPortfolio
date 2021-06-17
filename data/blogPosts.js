@@ -3,7 +3,7 @@ export const PhilosophicalPosts = [
     id: 'FooledByRandomness',
     title: 'Fooled by Randomness or Blind to Determinism?',
     description:
-      'Couple of months ago, I read a book about sleep and there was a sentence that kept me awake at night. ‘Brain signals’, said the author, ‘...are chaotic.’ You cannot anticipate them. You cannot predict them. In fact, they are so random that, if you convert them into sound, which he did, you would find it impossible to dance.',
+      'A couple of months ago, I read a book about sleep and there was a sentence that kept me awake at night. ‘Brain signals’, said the author, ‘...are chaotic.’ You cannot anticipate them. You cannot predict them. In fact, they are so random that, if you convert them into sound, which he did, you would find it impossible to dance.',
     url: '/BlogPosts/Philosophical/post5.jpg',
     ogImage: '/BlogPosts/Philosophical/post5.jpg',
     images: [],
