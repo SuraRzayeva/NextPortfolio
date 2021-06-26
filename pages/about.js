@@ -60,32 +60,30 @@ const About = () => {
             </div>
             {englishActive ? (
               <div className="introduction">
-                <p>My name is Sura Rzayeva and I am a creator.</p>
-                <p>I grew up in a very heavily artistic environment. My mother is an artist and ART was kind of like a religion in my family and I’ve been educated by my mum since I remember myself. </p>
+                <p>Hey, thank for visiting my webpage.</p>
+                <p>I'm a developer with a background of graphic and UI/UX Design, and a degree on business. </p>
+                <p>I grew up in a very heavily artistic environment. My mother is an artist and ART was kind of like a religion in my family and I’ve been educated by my mum since I remember myself.</p>
                 <p>Then, I studied Design and started working as a freelance graphic designer.</p>
                 <p>Then I’ve changed my professional direction a little bit and started working in marketing and promotion for a long time. Design, however, has always been a part of my life. A very precious part.</p>
-                <p>After digging deeper in marketing and failing in a couple of e-commerce business projects, I’ve decided to get a second education on marketing and learn its fundamentals and specialize in human behavior. Now I’m a student again.</p>
-                <p>Currently, my passion is coding. It feels good to design with code. And it’s also fun because you can do anything you want and every day we have a new and better technological innovation to try.</p>
-                <p>I think, design, development, and marketing are three very important factors in creating a successful project and my idea is to master these factors and experiment with new technologies.</p>
-                <p>I deeply believe that in essence life is meaningless, but it’s ok. We need to define our meaning and stick to it. My meaning in life is to create… to improve… to reach my full potential and I love it.</p>
+                <p>After trying and failing in a couple of business projects, I’ve decided to get a second education on business, get specialized on the fundamentals and work on digital algorithms that can draw attention to businesses.</p>
+                <p>I think, design and development are very important factors in creating a successful business, brand identity with a strong story and my idea is to master these factors and experiment with new technologies.</p>
+                <p>I don't believe in objective meaning in life. I think we need to define our meaning and stick to it. My meaning in life is to create… to improve… to reach my full potential and I love it.</p>
                 <p>I hope my imagination won’t scare you.</p>
-                <p>If you want to work together or learn more about my skills or just to say ‘hi’,</p>
+                <p>If you want to work together or learn more about me or just to say ‘hi’,</p>
               </div>
             ) : (
               <div className="introduction">
-                <p>Mein Name ist Sura Rzayeva und ich bin Designerin.</p>
+                <p>Hey, danke für meine Website besuchen.</p>
+                <p>Ich bin ein Entwickler mit einem Hintergrund in Grafik- und UI/UX-Design mit einem Abschluss in Betriebswirtschaft.</p>
                 <p>Ich bin in einem sehr künstlerischen Umfeld aufgewachsen. Meine Mutter ist Künstlerin und Kunst war eine Art Religion in meiner Familie und ich wurde von meiner Mutter erzogen, seit ich mich erinnere.</p>
                 <p>Dann habe ich Design studiert und angefangen, als freiberuflicher Grafikdesigner zu arbeiten.</p>
                 <p>Dann habe ich meine berufliche Ausrichtung ein wenig geändert und lange Zeit im Marketing und in der Werbung gearbeitet. Design war jedoch schon immer ein Teil meines Lebens. Ein sehr wertvoller Teil.</p>
-                <p>
-                  Nachdem ich mich eingehender mit Marketing befasst und einige E-Commerce-Geschäftsprojekte nicht bestanden habe, habe ich mich entschlossen, eine zweite Ausbildung zum Marketing zu absolvieren, die Grundlagen zu erlernen und mich auf menschliches Verhalten zu spezialisieren. Jetzt bin ich wieder
-                  Studentin.
-                </p>
-                <p>Derzeit ist meine Leidenschaft das Codieren. Es fühlt sich gut an, mit Code zu entwerfen. Und es macht auch Spaß, weil Sie alles tun können, was Sie wollen, und wir jeden Tag eine neue und bessere technologische Innovation ausprobieren können.</p>
-                <p>Ich denke, Design, Entwicklung und Marketing sind drei sehr wichtige Faktoren für ein erfolgreiches Projekt. Meine Idee ist es, diese Faktoren zu beherrschen und mit neuen Technologien zu experimentieren.</p>
-                <p>Ich bin der festen Überzeugung, dass das Leben im Wesentlichen bedeutungslos ist, aber es ist in Ordnung. Wir müssen unsere Bedeutung definieren und dabei bleiben. Mein Sinn im Leben ist es, zu schaffen… sich zu verbessern… mein volles Potenzial zu erreichen und ich liebe es.</p>
+                <p>Nachdem ich in einigen Business-Projekten versucht und gescheitert bin, habe ich mich entschieden, eine zweite Ausbildung in Business zu machen, mich auf die Grundlagen zu spezialisieren und an digitalen Algorithmen zu arbeiten, die auf Unternehmen aufmerksam machen können.</p>
+
+                <p>Ich denke, Design und Entwicklung sind sehr wichtige Faktoren bei der Schaffung eines erfolgreichen Unternehmens, einer Markenidentität mit einer starken Geschichte und meine Idee ist es, diese Faktoren zu beherrschen und mit neuen Technologien zu experimentieren.</p>
+                <p>Ich glaube nicht an den objektiven Sinn des Lebens. Ich denke, wir müssen unsere Bedeutung definieren und daran festhalten. Mein Sinn im Leben ist es zu erschaffen... zu verbessern... mein volles Potenzial auszuschöpfen und ich liebe es.</p>
                 <p>Ich hoffe, meine Fantasie wird dich nicht erschrecken.</p>
-                <p>Wenn du zusammenarbeiten oder mehr über meine Fähigkeiten erfahren oder einfach nur "Hallo" sagen möchtest, kontaktiere mich.</p>
+                <p>Wenn du zusammenarbeiten oder mehr über meine Fähigkeiten erfahren oder einfach nur "Hallo" sagen möchtest,</p>
               </div>
             )}
             <Link href="/contact">
